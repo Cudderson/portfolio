@@ -1,9 +1,5 @@
-import Button from "./Button";
+import InputDisplay from "./InputDisplay"
 
-const App = () => {
-    return (
-        <Button />
-    )
-}
+const App = () => <InputDisplay/>
 
 export default App
