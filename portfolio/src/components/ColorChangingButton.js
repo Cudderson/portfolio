@@ -2,7 +2,7 @@
 // Create a component that renders a button that changes colors each second
 import { useState } from "react";
 
-const ColorChangingButton = () => {
+const ColorChangingButton = (props) => {
     const [color, changeColor] = useState('blue');
   
     const getNewColor = () => {
@@ -24,7 +24,7 @@ const ColorChangingButton = () => {
    
     return (
       <button style={{backgroundColor: color, fontSize: '40px', margin: '4rem 0 0 37%', border: 'none', borderRadius: '4px', padding: '1.25rem 2rem'}}>
-          I love to create!
+          {props.message}
       </button>
     )
 }
