@@ -8,6 +8,8 @@ import App from './components/App';
 // const Welcome = ({name}) => <h2>Hello, {name}</h2>;
 
 ReactDOM.render(
-    <App />,
+    <div style={{marginLeft: '500px'}}>
+      <App />
+    </div>,
     document.getElementById('root')
 );

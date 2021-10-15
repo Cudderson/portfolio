@@ -1,26 +1,11 @@
-// import ColorChangingButton from "./ColorChangingButton";
-import { MyForm } from './MyForm';
-// import { useState } from "react";
+import TodoList from "./TodoList";
 
 const App = () => {
-    return (
-        <div>
-            <MyForm />
-        </div>
-    )
+  return (
+    <div>
+      <TodoList />
+    </div>
+  )
 }
-
-// const App = () => {
-//   const [visible, toggleVisibility] = useState(true);
-
-//   const handleToggle = () => toggleVisibility(!visible);
-
-//   return (
-//     <div>
-//       {visible ? <ColorChangingButton message={"I am visible!"} /> : null}
-//       <button onClick={handleToggle}>show/hide</button>
-//     </div>
-//   )
-// }
 
 export default App
