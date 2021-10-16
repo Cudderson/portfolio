@@ -28,6 +28,14 @@ const TodoList = () => {
     }))
   }
 
+  const deleteTodo = (id) => {
+    updateTodos(todos.filter(todo => todo.id !== id));
+  }
+
+  const removeAllCompleted = () => {
+    updateTodos(todos.filter(todo => !todo.complete));
+  }
+
   let filtered_todos = [];
 
   // try removing this condition since it's the default
@@ -45,9 +53,13 @@ const TodoList = () => {
   return (
     <div>
       <TodoForm onSubmit={addTodo} />
+      <br/>
       <div>
           Remaining todos: {todos.filter(todo => !todo.complete).length}
       </div>
+      <br/>
+      <div><button onClick={removeAllCompleted}>Delete All Completed Todos</button></div>
+      <br/>
       <div>
           <button onClick={() => updateTodoFilter('all')}>All</button>
           <button onClick={() => updateTodoFilter('active')}>Active</button>
@@ -58,6 +70,7 @@ const TodoList = () => {
             key={todo.id} 
             todo={todo} 
             toggleComplete={() => toggleComplete(todo.id)}
+            deleteTodo={() => deleteTodo(todo.id)}
           />
       ))}
     </div>
