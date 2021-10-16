@@ -5,6 +5,7 @@ import { useState } from "react";
 const TodoList = () => {
   const [todos, updateTodos] = useState([]);
   const [todoFilter, updateTodoFilter] = useState('all');
+  const [toggleStatus, toggleAllComplete] = useState(false);
 
   const addTodo = (todo) => {
     updateTodos([todo, ...todos]);
@@ -58,7 +59,31 @@ const TodoList = () => {
           Remaining todos: {todos.filter(todo => !todo.complete).length}
       </div>
       <br/>
-      <div><button onClick={removeAllCompleted}>Delete All Completed Todos</button></div>
+      {/* .some() Determines whether the specified callback function returns true for any element of an array. */}
+      {/* this is better than filter() because it allows us to exit early */}
+
+      {todos.some(todo => todo.complete) ? (
+          <div><button onClick={removeAllCompleted}>Delete All Completed Todos</button></div>
+      ) : (
+          <div><button>No Completed Todos</button></div>
+      )}
+
+      <br/>
+
+      <div>
+        <button
+          onClick={() => (
+            updateTodos(todos.map(todo => ({
+              ...todo,
+              complete: !toggleStatus
+            }))),
+            toggleAllComplete(!toggleStatus)
+          )}
+        >
+            {toggleStatus ? 'Mark All Active' : 'Mark All Complete'}
+        </button>
+      </div>
+      
       <br/>
       <div>
           <button onClick={() => updateTodoFilter('all')}>All</button>
