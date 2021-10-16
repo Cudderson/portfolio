@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const TodoList = () => {
   const [todos, updateTodos] = useState([]);
+  const [todoFilter, updateTodoFilter] = useState('all');
 
   const addTodo = (todo) => {
     updateTodos([todo, ...todos]);
@@ -27,10 +28,32 @@ const TodoList = () => {
     }))
   }
 
+  let filtered_todos = [];
+
+  // try removing this condition since it's the default
+  if (todoFilter === 'all') {
+      filtered_todos = todos;
+  }
+  else if (todoFilter === 'active') {
+      filtered_todos = todos.filter(todo => !todo.complete)
+  }
+  else if (todoFilter === 'completed') {
+      filtered_todos = todos.filter(todo => todo.complete)
+  }
+
+
   return (
     <div>
       <TodoForm onSubmit={addTodo} />
-      {todos.map(todo => (
+      <div>
+          Remaining todos: {todos.filter(todo => !todo.complete).length}
+      </div>
+      <div>
+          <button onClick={() => updateTodoFilter('all')}>All</button>
+          <button onClick={() => updateTodoFilter('active')}>Active</button>
+          <button onClick={() => updateTodoFilter('completed')}>Completed</button>
+      </div>
+      {filtered_todos.map(todo => (
           <Todo 
             key={todo.id} 
             todo={todo} 
