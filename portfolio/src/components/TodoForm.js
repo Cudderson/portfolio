@@ -12,11 +12,14 @@ const TodoForm = (props) => {
       e.preventDefault();
       // we use the onSubmit function provided by props (addTodo)
       // by doing this, we lift state up to TodoList where todos are stored, rather than in TodoForm
+      // therefore, all we need to do is call the props.onSubmit in order to store a todo
       props.onSubmit({
           id: Math.floor(Math.random() * 10000),
           text: text,
           complete: false,
-      })
+      });
+
+      updateText("");
   }
 
   return (
@@ -27,6 +30,7 @@ const TodoForm = (props) => {
         placeholder="todo..."
         onChange={handleChange}
       />
+      <button onClick={handleSubmit}>add todo</button>
     </form>
   )
 }
