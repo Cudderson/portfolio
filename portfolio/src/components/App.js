@@ -1,37 +1,32 @@
-import TodoList from "./TodoList";
-import { useFetch } from "./useFetch";
-import { useState, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
+  // when done, we'll extract into components
+  const [api_response, updateApiResponse] = useState(null);
+  const [my_avatar, updateMyAvatar] = useState(null);
 
-  const [number, setNumber] = useState(0);
-
-  const url = `http://numbersapi.com/${number}/trivia`;
-  const {data, loading} = useFetch(url);
-
-  // here, we could use useEffect to store the number in localStorage and reference it on every render to persist across a refresh
-
-  const inputRef = useRef();
+  useEffect(() => {
+    // when abstracting, maybe call this function from JSX?
+    const fetchData = async () => {
+      // const github_api_url = 'https://api.github.com';
+      const github_repo_url = "https://api.github.com/users/cudderson";
+  
+      const response = await fetch(github_repo_url);
+      const data = await response.json();
+  
+      // update state for avatar and api refs
+      updateMyAvatar(data.avatar_url);
+      updateApiResponse(JSON.stringify(data, null, 4));
+    }
+    fetchData();
+  }, [])
 
   return (
     <div>
-      <div>
-        {data ? data : 'loading...'}
-      </div>
-      <br />
-      <div>
-        <div>
-          {"Number: " + number}
-        </div>
-        <button onClick={() => setNumber(Math.floor(Math.random() * 1000))}>Get Random Number Fact</button>
-      </div>
-      <br />
-        <input ref={inputRef}/>
-        <button onClick={() => {inputRef.current.focus()}}>Click To Focus On Input Field</button>
-      <br />
-      <TodoList />
+      <pre>{api_response}</pre>
+      <img src={my_avatar} alt={"my avatar"}></img>
     </div>
   )
 }
 
-export default App
+export default App;
