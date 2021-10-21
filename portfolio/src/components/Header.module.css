@@ -1,0 +1,23 @@
+/* keeping for reference */
+/* @media (max-width: 1000px) {
+  .header {
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 90%;
+    max-width: 1200px;
+    padding: 3rem;
+    font-size: 1rem;
+    color: goldenrod;
+  }
+} */
+
+.header {
+  display: grid;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 90%;
+  max-width: 1200px;
+  padding: 3rem;
+  font-size: 1rem;
+  color: goldenrod;
+}
