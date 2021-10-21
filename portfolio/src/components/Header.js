@@ -1,9 +1,10 @@
 import styles from './Header.module.css';
+import HeaderBrand from './HeaderBrand';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      This is my header.
+      <HeaderBrand />
     </header>
   )
 }
