@@ -1,5 +1,20 @@
 .header-nav {
   border: 2px solid black;
-  width: 400px;
-  height: 50px;
+}
+
+/* this should be a global */
+.header-nav > ul {
+  display: flex;
+  flex-direction: row; 
+
+  /* make this a global for ol, ul */
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+/* this selector is auto-applied on import */
+.header-nav > ul > li {
+  color: blue;
+  padding: .75rem 1.25rem;
 }

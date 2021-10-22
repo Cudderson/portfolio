@@ -6,7 +6,12 @@ const App = () => {
   document.querySelector('body').style.margin = 0;
 
   return (
-    <Header />
+    <div>
+      <Header />
+      <main>
+        (everything except footer can go here)
+      </main>
+    </div>
   )
 }
 
