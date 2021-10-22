@@ -12,7 +12,8 @@
 } */
 
 .header {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   border: 2px solid black;
   width: 90%;
