@@ -1,0 +1,9 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 0;
+  /* multiple elements have this property. Would it be better suited on a global container? */
+  width: 90%;
+  max-width: 1200px;
+}

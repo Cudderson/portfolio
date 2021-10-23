@@ -1,4 +1,6 @@
 import Header from './Header';
+import Hero from './Hero';
+import Projects from './Projects';
 
 const App = () => {
 
@@ -9,7 +11,8 @@ const App = () => {
     <div>
       <Header />
       <main>
-        (everything except footer can go here)
+        <Hero />
+        <Projects />
       </main>
     </div>
   )
