@@ -1,4 +1,5 @@
 import Header from './Header';
+import Hero from './Hero';
 
 const App = () => {
 
@@ -9,7 +10,7 @@ const App = () => {
     <div>
       <Header />
       <main>
-        (everything except footer can go here)
+        <Hero />
       </main>
     </div>
   )
