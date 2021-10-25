@@ -1,6 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
-import Projects from './Projects';
+import ProjectsList from './ProjectsList';
 
 const App = () => {
 
@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
-        <Projects />
+        <ProjectsList />
       </main>
     </div>
   )
