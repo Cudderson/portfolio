@@ -10,7 +10,7 @@ const useFetchGithubData = async () => {
 
   // update state for avatar and api refs
   updateMyAvatar(data.avatar_url);
-  updateApiResponse(JSON.stringify(data, null, 4));
+  updateApiResponse(JSON.stringify(data, null, 1));
 }
 
 export default useFetchGithubData;
