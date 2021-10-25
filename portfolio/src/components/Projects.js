@@ -3,39 +3,30 @@ import styles from './Projects.module.css';
 
 const Projects = () => {
 
-  const [api_data, updateApiData] = useState([]);
-
-  const getRepos = async () => {
-    const response = await fetch('https://api.github.com/users/cudderson/repos');
-    const json_obj = await response.json();
-    console.log(json_obj);
-
-    let repos = [];
-
-    json_obj.forEach(repo => {
-      repos.push(repo.name);
-    });
-
-    updateApiData(repos);
-  }
-
-  useEffect(() => {
-    getRepos();
-  }, []);
-
   return (
     <div className={styles.projects}>
       <h2>Featured Projects</h2>
       <h3>All projects built entirely by me!</h3>
-      {/* need keys for the below elements */}
-      {api_data.map(repo => (
-        <h6>{repo}</h6>
-      ))}
       <div className={styles['projects-inner']}>
-        {/* projects will eventually be here */}
+        {/* can make dynamic in future */}
+        <div className={styles.item}>
+          <h2>Natural Selection Simulator</h2>
+          <h4>A customizable implementation of a genetic algorithm based on natural selection.</h4>
+        </div>
+        <div className={styles.item}>
+          <h2>kokoro</h2>
+          <h4>A personal-wellness / social app focused on the 'mind-body-soul' lifestyle.</h4>
+        </div>
+        <div className={styles.item}>
+          <h2>Tesla Now</h2>
+          <h4>Real-time stock charts, news, and analytics for Tesla Inc.</h4>
+        </div>
+        <div className={styles.item}>
+          <h2>Password Manager</h2>
+          <h4>A CLI for encrypting and storing your personal passwords.</h4>
+        </div>
       </div>
     </div>
-    
   )
 }
 
