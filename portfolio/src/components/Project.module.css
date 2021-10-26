@@ -8,14 +8,35 @@
 
 .project-image {
   width: 100%;
-  max-width: 250px;
-  height: 300px;
-  background-color: blue;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 24px;
+
+  /* these could be props? */
+  background-color: lightgreen;
+  font-size: 140px;
+  
+  /* can remove, just to position text in center of screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-text {
   width: 100%;
   max-width: 250px;
-  height: 300px;
-  background-color: red;
+  height: 1000px; /* try to remove when done */
+  /* border: 2px solid black; */
+}
+
+.project-title {
+  margin: .75rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.project-description {
+  margin: .5rem 0;
+  font-size: 20px;
 }
