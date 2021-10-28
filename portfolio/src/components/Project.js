@@ -24,9 +24,9 @@ const Project = () => {
           <li>toggleable 'dark theme' for users that don't prefer the light theme</li>
         </ul>
       </div>
-      <div>
-        Here, I will provide logos of the technologies used for each project.
-      </div>
+      {/* <div>
+        Here, I will provide logos of the technologies used for each project. (do after dynamic)
+      </div> */}
     </div>
   )
 }

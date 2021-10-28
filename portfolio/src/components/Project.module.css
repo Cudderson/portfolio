@@ -1,6 +1,5 @@
 /* need to clean this file when project component complete / refactor */
 
-
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -9,14 +8,11 @@
   margin: 0 auto;
 }
 
-/* .project > * {
-  width: 50%;
-} */
-
 .project-image-container {
-  width: 30%;
-  min-width: 250px;
-  border: 2px solid black;
+  /* testing */
+  width: 100%;
+  max-width: 400px;
+  /* border: 2px solid black; */
 }
 
 .project-image {
@@ -43,20 +39,13 @@
 /* determine if needed */
 .project-text {
   width: 100%;
-
-  /* i dont like this rule but it's solving the problem (desktop/mobile)*/
-  max-width: 500px;
-
-  height: 1000px; /* try to remove when done */
-  border: 2px solid black;
+  max-width: 400px;
+  height: 500px; /* try to remove when done */
+  /* border: 2px solid black; */
 }
 
 .project-title {
   margin: 1rem 0;
-
-  /* looks good centered and on left, could go either way (mobile) */
-  /* text-align: center;  */
-
   font-size: 50px;
   font-weight: 700;
 }
@@ -64,18 +53,15 @@
 .project-description {
   margin: 1.5rem 0;
   font-size: 21px;
-  /* text-align: center; */
 }
 
 ul {
-  padding-left: 1.25rem;
+  padding-left: 1rem;
   font-size: 18px;
   list-style-type: '- ';
   line-height: 1.25rem;
-  /* text-align: center; */
 }
 
 ul li {
-  /* text-align: center; */
   margin-top: 15px;
 }
