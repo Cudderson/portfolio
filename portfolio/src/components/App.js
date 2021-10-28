@@ -9,7 +9,8 @@ const App = () => {
 
   return (
     <div>
-      <Header />
+      {/* removing header for now while unresponsive */}
+      {/* <Header /> */}
       <main>
         <Hero />
         <ProjectsList />

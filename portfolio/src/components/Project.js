@@ -16,7 +16,6 @@ const Project = () => {
         <p className={styles['project-description']}>
           Personal wellness app and social space focused on balancing the mind, body and soul.
         </p>
-        {/* TODO: <ul> className */}
         <ul>
           <li>'find balance' by recording daily mind, body, and soul activities</li>
           <li>establish friendships with other kokoro users</li>
