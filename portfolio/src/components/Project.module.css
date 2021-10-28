@@ -1,0 +1,81 @@
+/* need to clean this file when project component complete / refactor */
+
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between;  (this would be better for desktop, space-evenly better for mobile)*/
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+/* .project > * {
+  width: 50%;
+} */
+
+.project-image-container {
+  width: 30%;
+  min-width: 250px;
+  border: 2px solid black;
+}
+
+.project-image {
+  /* project image sizes should be uniform */
+  /* also, size may change */
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  border-radius: 24px;
+
+  /* reconsider if needed */
+  margin: 4rem auto;
+
+  /* these could be props? */
+  background-color: lightgreen;
+  font-size: 140px;
+  
+  /* can remove, just to position 'k' text in center of box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* determine if needed */
+.project-text {
+  width: 100%;
+
+  /* i dont like this rule but it's solving the problem (desktop/mobile)*/
+  max-width: 500px;
+
+  height: 1000px; /* try to remove when done */
+  border: 2px solid black;
+}
+
+.project-title {
+  margin: 1rem 0;
+
+  /* looks good centered and on left, could go either way (mobile) */
+  /* text-align: center;  */
+
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.project-description {
+  margin: 1.5rem 0;
+  font-size: 21px;
+  /* text-align: center; */
+}
+
+ul {
+  padding-left: 1.25rem;
+  font-size: 18px;
+  list-style-type: '- ';
+  line-height: 1.25rem;
+  /* text-align: center; */
+}
+
+ul li {
+  /* text-align: center; */
+  margin-top: 15px;
+}
