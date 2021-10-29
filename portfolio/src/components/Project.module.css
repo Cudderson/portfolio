@@ -3,15 +3,21 @@
 .project {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between;  (this would be better for desktop, space-evenly better for mobile)*/
-  justify-content: space-evenly;
+
+  /* saving just in case */
+  /* justify-content: space-evenly; */
+
+  /* this works well */
+  justify-content: space-around; 
+
   margin: 0 auto 20rem auto;
+  /* border: 2px solid black; */
 }
 
 .project-image-container {
   /* testing */
   width: 100%;
-  max-width: 250px;
+  max-width: 400px;
   /* border: 2px solid black; */
 }
 
@@ -19,12 +25,14 @@
   /* project image sizes should be uniform */
   /* also, size may change */
   width: 100%;
-  max-width: 250px;
+  min-width: 250px;
+  /* max-width: 250px; */
   height: 250px;
   border-radius: 20px;
 
   /* reconsider if needed */
-  margin: 4rem auto;
+  /* margin: 4rem auto; */
+  margin: 2rem auto;
 
   /* these could be props? */
   background-color: lightgreen;
