@@ -11,7 +11,7 @@
 .project-image-container {
   /* testing */
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   /* border: 2px solid black; */
 }
 
@@ -19,9 +19,9 @@
   /* project image sizes should be uniform */
   /* also, size may change */
   width: 100%;
-  max-width: 200px;
-  height: 200px;
-  border-radius: 24px;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 20px;
 
   /* reconsider if needed */
   margin: 4rem auto;
@@ -44,6 +44,10 @@
   /* border: 2px solid black; */
 }
 
+.project-text > h2 {
+  margin: 0;
+}
+
 .project-title {
   margin: 1rem 0;
   font-size: 50px;
@@ -51,7 +55,7 @@
 }
 
 .project-description {
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
   font-size: 21px;
 }
 

@@ -2,21 +2,22 @@
 
 import styles from './Project.module.css';
 
-const Project = () => {
+const Project = (props) => {
   return (
     // consider using element selectors in css rather than many classes //
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
         <div className={styles['project-image']}>
           k
+          {/* maybe each Project's first image could be an app-style logo? (we could pass in a text prop here then) */}
         </div>
       </div>
       <div className={styles['project-text']}>
         <h2 className={styles['project-title']}>
-          kokoro
+          {props.name}
         </h2>
         <p className={styles['project-description']}>
-          Personal wellness app and social space focused on balancing the mind, body and soul.
+          {props.description}
         </p>
         <ul>
           <li>'find balance' by recording daily mind, body, and soul activities</li>
