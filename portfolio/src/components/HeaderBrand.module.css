@@ -1,0 +1,14 @@
+.header-brand {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-brand > img {
+  border-radius: 50%;
+  margin-right: .5rem;
+}
+
+.header-brand > span {
+  font-size: 18px;
+}
