@@ -2,6 +2,8 @@ import Header from './Header';
 import Hero from './Hero';
 import ProjectsList from './ProjectsList';
 
+import styles from './App.module.css';
+
 const App = () => {
 
   // probably do this better in future (use/add class)
@@ -11,7 +13,7 @@ const App = () => {
     <div>
       {/* removing header for now while unresponsive */}
       {/* <Header /> */}
-      <main>
+      <main className={styles['app-main']}>
         <Hero />
         <ProjectsList />
       </main>
