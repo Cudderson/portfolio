@@ -11,8 +11,8 @@ const App = () => {
 
   return (
     <div>
-      {/* removing header for now while unresponsive */}
-      {/* <Header /> */}
+      {/* header should cover 100% width, but inner container should be capped to 90% / 1200px (same as '.app-main') */}
+      <Header />
       <main className={styles['app-main']}>
         <Hero />
         <ProjectsList />

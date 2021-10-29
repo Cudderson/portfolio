@@ -5,8 +5,10 @@ import HeaderNav from './HeaderNav';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <HeaderBrand />
-      <HeaderNav />
+      <div>
+        <HeaderBrand />
+        <HeaderNav />
+      </div>
     </header>
   )
 }

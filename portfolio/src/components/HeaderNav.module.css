@@ -5,16 +5,30 @@
 /* this should be a global */
 .header-nav > ul {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; 
 
   /* make this a global for ol, ul */
   margin: 0;
   padding: 0;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
-/* this selector is auto-applied on import */
 .header-nav > ul > li {
-  color: blue;
+  color: gold;
   padding: .75rem 1.25rem;
+  font-size: 18px;
+  cursor: default;
+}
+
+.header-nav > ul > li:hover {
+  color: black;
+}
+
+/* this is my current method for switching between navbar displays */
+@media (max-width: 700px) {
+  .header-nav > ul {
+    display: none
+  }
 }
