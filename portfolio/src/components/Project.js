@@ -8,7 +8,7 @@ const Project = (props) => {
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
         <div className={styles['project-image']}>
-          k
+          {props.symbol}
           {/* maybe each Project's first image could be an app-style logo? (we could pass in a text prop here then) */}
         </div>
       </div>
