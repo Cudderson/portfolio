@@ -22,8 +22,6 @@
 }
 
 .project-image {
-  /* project image sizes should be uniform */
-  /* also, size may change */
   width: 100%;
   min-width: 250px;
   /* max-width: 250px; */
@@ -31,14 +29,13 @@
   border-radius: 20px;
 
   /* reconsider if needed */
-  /* margin: 4rem auto; */
   margin: 2rem auto;
 
   /* these could be props? */
   background-color: lightgreen;
   font-size: 140px;
   
-  /* can remove, just to position 'k' text in center of box */
+  /* can remove, just to position symbol text in center of box */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +45,7 @@
 .project-text {
   width: 100%;
   max-width: 400px;
-  height: 500px; /* try to remove when done */
+  /* height: 500px; try to remove when done */
   /* border: 2px solid black; */
 }
 
@@ -68,13 +65,46 @@
   font-size: 21px;
 }
 
-ul {
+.project-text > ul {
   padding-left: 1rem;
   font-size: 18px;
   list-style-type: '- ';
   line-height: 1.25rem;
 }
 
-ul li {
+.project-text > ul li {
   margin-top: 15px;
+}
+
+/* maybe the tech is only shown on desktop? */
+.project-tech {
+  margin-top: 30px;
+  width: 100%;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+
+/* consider using an element selector when final to reduce amount of class names */
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+
+  /* reset <ul> */
+  margin: 0;
+  padding: 0;
+
+  margin-top: 10px;
+}
+
+.tech-box-test {
+  margin-bottom: 5px;
+
+  /* maybe make dynamic squares in future (all items will be congruent squares) */
+  width: 100px;
+  height: 100px;
+  background-color: lavender;
+  border: 2px solid black;
+  border-radius: 4px;
 }

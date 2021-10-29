@@ -25,9 +25,17 @@ const Project = (props) => {
           <li>toggleable 'dark theme' for users that don't prefer the light theme</li>
         </ul>
       </div>
-      {/* <div>
-        Here, I will provide logos of the technologies used for each project. (do after dynamic)
-      </div> */}
+      <div className={styles['project-tech']}>
+        Technologies Used:
+        <ul className={styles['project-tech-list']}>
+          {/* this could be another flexbox that displays the technologies */}
+          <li className={styles['tech-box-test']}></li>
+          <li className={styles['tech-box-test']}></li>
+          <li className={styles['tech-box-test']}></li>
+          <li className={styles['tech-box-test']}></li>
+          <li className={styles['tech-box-test']}></li>
+        </ul>
+      </div>
     </div>
   )
 }
