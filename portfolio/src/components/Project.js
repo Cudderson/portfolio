@@ -1,7 +1,9 @@
-// this will define a single Project for ProjectsList
-
 import styles from './Project.module.css';
 
+// proper way to reference a file one directory up
+import javascript_svg from './../assets/badges/javascript.svg';
+
+// a single Project for ProjectsList
 const Project = (props) => {
   return (
     // consider using element selectors in css rather than many classes //
@@ -28,8 +30,9 @@ const Project = (props) => {
       <div className={styles['project-tech']}>
         Technologies Used:
         <ul className={styles['project-tech-list']}>
-          {/* this could be another flexbox that displays the technologies */}
-          <li className={styles['tech-box-test']}></li>
+          <li className={styles['tech-box-test']}>
+            <img src={javascript_svg}></img>
+          </li>
           <li className={styles['tech-box-test']}></li>
           <li className={styles['tech-box-test']}></li>
           <li className={styles['tech-box-test']}></li>
