@@ -1,8 +1,10 @@
 import styles from './Project.module.css';
-import badges from './../assets/badges/badges.js';
 
 // a single Project for ProjectsList
 const Project = (props) => {
+
+  // before implementing state, remember to lift state up to the highest relavant component
+
   return (
     // consider using element selectors in css rather than many classes //
     <div className={styles.project}>
@@ -27,13 +29,11 @@ const Project = (props) => {
       <div className={styles['project-tech']}>
         Technologies Used:
         <ul className={styles['project-tech-list']}>
-          <li className={styles['tech-box-test']}>
-            <img src={badges.git}></img>
-          </li>
-          <li className={styles['tech-box-test']}></li>
-          <li className={styles['tech-box-test']}></li>
-          <li className={styles['tech-box-test']}></li>
-          <li className={styles['tech-box-test']}></li>
+          {props.badges.map((badge) => (
+            <li className={styles['tech-box-test']} key={badge.toString()}>
+              <img src={badge}></img>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
