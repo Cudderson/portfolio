@@ -1,7 +1,5 @@
 import styles from './Project.module.css';
-
-// proper way to reference a file one directory up
-import javascript_svg from './../assets/badges/javascript.svg';
+import badges from './../assets/badges/badges.js';
 
 // a single Project for ProjectsList
 const Project = (props) => {
@@ -11,7 +9,6 @@ const Project = (props) => {
       <div className={styles['project-image-container']}>
         <div className={styles['project-image']}>
           {props.symbol}
-          {/* maybe each Project's first image could be an app-style logo? (we could pass in a text prop here then) */}
         </div>
       </div>
       <div className={styles['project-text']}>
@@ -31,7 +28,7 @@ const Project = (props) => {
         Technologies Used:
         <ul className={styles['project-tech-list']}>
           <li className={styles['tech-box-test']}>
-            <img src={javascript_svg}></img>
+            <img src={badges.git}></img>
           </li>
           <li className={styles['tech-box-test']}></li>
           <li className={styles['tech-box-test']}></li>

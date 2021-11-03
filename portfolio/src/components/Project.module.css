@@ -86,6 +86,10 @@
 
 /* consider using an element selector when final to reduce amount of class names */
 .project-tech-list {
+  /* reset <ul> */
+  margin: 0;
+  padding: 0;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -93,11 +97,6 @@
   justify-content: space-around;
 
   list-style: none;
-
-  /* reset <ul> */
-  margin: 0;
-  padding: 0;
-
   margin-top: 10px;
 }
 
@@ -107,9 +106,11 @@
   /* maybe make dynamic squares in future (all items will be congruent squares) */
   width: 75px;
   height: 75px;
-  background-color: lavender;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid black;
-  /* border-radius: 4px; */
+}
 
-  object-fit: fill;
+.tech-box-test > img {
+  max-width: 100%;
+  max-height: 100%;
 }
