@@ -1,0 +1,32 @@
+footer {
+  border-top: 2px solid lightgray;
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* initial size */
+.footer-inner > p {
+  /* reset <p> defaults (make global) */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+
+  /* set initial size to 50% */
+  flex-basis: 50%;
+}
+
+@media (min-width: 700px) {
+  .footer-inner > p {
+    flex-basis: auto;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+

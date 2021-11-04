@@ -1,6 +1,9 @@
 import styles from './HeaderNav.module.css';
 
+import { useEffect } from 'react';
+
 const HeaderNav = () => {
+
   return (
     <div className={styles['header-nav']}>
       <ul>

@@ -1,22 +1,25 @@
-// this will define a single Project for ProjectsList
-
 import styles from './Project.module.css';
 
-const Project = () => {
+// a single Project for ProjectsList
+const Project = (props) => {
+
+  // before implementing state, remember to lift state up to the highest relavant component
+
   return (
-    // consider using element selectors in css rather than many classes //
+    // consider using element selectors in css rather than many classes
+    // consider extracting smaller components (getting deep)
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
         <div className={styles['project-image']}>
-          k
+          {props.symbol}
         </div>
       </div>
       <div className={styles['project-text']}>
         <h2 className={styles['project-title']}>
-          kokoro
+          {props.name}
         </h2>
         <p className={styles['project-description']}>
-          Personal wellness app and social space focused on balancing the mind, body and soul.
+          {props.description}
         </p>
         <ul>
           <li>'find balance' by recording daily mind, body, and soul activities</li>
@@ -24,8 +27,15 @@ const Project = () => {
           <li>toggleable 'dark theme' for users that don't prefer the light theme</li>
         </ul>
       </div>
-      <div>
-        Here, I will provide logos of the technologies used for each project.
+      <div className={styles['project-tech']}>
+        Technologies Used:
+        <ul className={styles['project-tech-list']}>
+          {props.badges.map((badge) => (
+            <li className={styles['tech-box-test']} key={badge.toString()}>
+              <img src={badge}></img>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )
