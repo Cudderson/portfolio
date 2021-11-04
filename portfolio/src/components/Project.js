@@ -6,7 +6,8 @@ const Project = (props) => {
   // before implementing state, remember to lift state up to the highest relavant component
 
   return (
-    // consider using element selectors in css rather than many classes //
+    // consider using element selectors in css rather than many classes
+    // consider extracting smaller components (getting deep)
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
         <div className={styles['project-image']}>
