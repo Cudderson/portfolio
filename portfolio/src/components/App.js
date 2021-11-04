@@ -1,6 +1,7 @@
 import Header from './Header';
 import Hero from './Hero';
 import ProjectsList from './ProjectsList';
+import Footer from './Footer.js';
 
 import styles from './App.module.css';
 
@@ -17,6 +18,7 @@ const App = () => {
         <Hero />
         <ProjectsList />
       </main>
+      <Footer />
     </div>
   )
 }
