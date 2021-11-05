@@ -1,0 +1,32 @@
+.image-slider {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-slider > img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* this is how the original component was layed out before <ImageSlider /> */
+/* .project-image {
+  width: 100%;
+  min-width: 250px;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 20px;
+
+  /* reconsider if needed */
+  /* margin: 2rem auto; */
+
+  /* these could be props? */
+  /* background-color: lightgreen; */
+  /* font-size: 140px; */
+  
+  /* can remove, just to position symbol text in center of box */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+/* } */

@@ -45,13 +45,13 @@ const ProjectsList = () => {
             badges.html5,
             badges.css3
           ]}
-        />
+        /> */}
+        
         <Project
           name="Tesla Now"
           description={`
             Real-time analysis, charts and news for Tesla Inc.
           `}
-          symbol="TN"
           badges={[
             badges.django_square_1,
             badges.plotly,
@@ -60,18 +60,19 @@ const ProjectsList = () => {
             badges.html5,
             badges.css3
           ]}
+          images={slider_images.tesla_now}
         />
         <Project
           name="password manager"
           description={`
             CLI tool to encrypt/decrypt and store personal passwords. 
           `}
-          symbol="pm"
           badges={[
             badges.python,
             badges.sql
           ]}
-        /> */}
+          images={slider_images.password_manager}
+        />
       </div>
       <div style={{height: '100px'}}>(delete later)</div>
     </div>
