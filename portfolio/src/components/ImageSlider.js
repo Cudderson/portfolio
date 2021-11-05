@@ -2,10 +2,11 @@ import DummyImage from "./DummyImage";
 
 import { useState } from "react";
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
 
   const [display_index, setDisplayIndex] = useState(0);
 
+  // this will be passed as props to each <Project />'s <ImageSlider />
   const bg_colors = [
     'red',
     'green',
@@ -24,7 +25,9 @@ const ImageSlider = () => {
 
   return (
     <div style={{width: '100%', margin: '0 auto', textAlign: 'center'}}>
-      <DummyImage bg_color={bg_colors[display_index]} />
+      {/* could extract this into 'ImageSliderContent' or similar */}
+      {/* <DummyImage bg_color={bg_colors[display_index]} /> */}
+      <img src={props.testImage} style={{maxWidth: '100%', display: 'block'}} />
       <button onClick={() => calcDisplayIndex('prev')}>Previous</button>
       <button onClick={() => calcDisplayIndex('next')}>Next</button>
     </div>
