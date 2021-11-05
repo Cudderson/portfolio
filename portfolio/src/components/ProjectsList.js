@@ -7,6 +7,8 @@ import badges from './../assets/badges/badges.js';
 // currently unused svgs:
 // git, github, linkedin, react, node
 
+import slider_images from './../assets/images/slider_images.js';
+
 const ProjectsList = () => {
 
   return (
@@ -21,7 +23,6 @@ const ProjectsList = () => {
           description={`
             Personal wellness app and social space focused on balancing the mind, body and soul.
           `}
-          symbol="k"
           badges={[
             badges.django_square_1,
             badges.python,
@@ -30,8 +31,10 @@ const ProjectsList = () => {
             badges.css3,
             badges.sql
           ]}
+          images={slider_images.kokoro}
         />
-        <Project
+        {/* uncomment when images added */}
+        {/* <Project
           name="Natural Selection Simulator"
           description={`
             A customizable implementation of a genetic algorithm based on natural selection.
@@ -68,7 +71,7 @@ const ProjectsList = () => {
             badges.python,
             badges.sql
           ]}
-        />
+        /> */}
       </div>
       <div style={{height: '100px'}}>(delete later)</div>
     </div>

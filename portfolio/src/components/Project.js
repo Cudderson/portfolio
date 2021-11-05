@@ -8,6 +8,8 @@ import ImageSlider from './ImageSlider';
 // a single Project for ProjectsList
 const Project = (props) => {
 
+  console.log(props.images);
+
   // before implementing state, remember to lift state up to the highest relavant component
 
   // let's start with the kokoro images
@@ -18,10 +20,11 @@ const Project = (props) => {
     // consider extracting smaller components (getting deep)
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
+        {/* KEEPING: remember to use styles.project-image */}
         {/* <div className={styles['project-image']}>
           {props.symbol}
         </div> */}
-        <ImageSlider testImage={kokoro_image_test} />
+        <ImageSlider images={props.images} />
       </div>
       <div className={styles['project-text']}>
         <h2 className={styles['project-title']}>
