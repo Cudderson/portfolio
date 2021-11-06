@@ -7,6 +7,7 @@
 .header-brand > img {
   border-radius: 50%;
   margin-right: .5rem;
+  max-width: 50px;
 }
 
 .header-brand > span {

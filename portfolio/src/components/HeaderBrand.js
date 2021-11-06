@@ -9,12 +9,10 @@ const HeaderBrand = () => {
   const [avatar, setAvatar] = useState(null);
 
   // using a placeholder image until ready for final image
-  let url = `https://picsum.photos/50`;
+  let avatar_url = `https://avatars.githubusercontent.com/u/74884805?s=96&v=4`;
 
-  const getAvatar = async () => {
-    const res = await fetch(url);
-    const image = res.url;
-    setAvatar(image);
+  const getAvatar = () => {
+    setAvatar(avatar_url);
   }
 
   useEffect(() => {
