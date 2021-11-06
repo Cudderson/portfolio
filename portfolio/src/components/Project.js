@@ -1,14 +1,10 @@
 import styles from './Project.module.css';
 
-import kokoro_image_test from './../assets/images/kokoro-1.png';
-
 // testing
 import ImageSlider from './ImageSlider';
 
 // a single Project for ProjectsList
 const Project = (props) => {
-
-  console.log(props.images);
 
   // before implementing state, remember to lift state up to the highest relavant component
 

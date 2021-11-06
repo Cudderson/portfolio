@@ -34,19 +34,18 @@ const ProjectsList = () => {
           images={slider_images.kokoro}
         />
         {/* uncomment when images added */}
-        {/* <Project
+        <Project
           name="Natural Selection Simulator"
           description={`
             A customizable implementation of a genetic algorithm based on natural selection.
           `}
-          symbol="NSS"
           badges={[
             badges.js,
             badges.html5,
             badges.css3
           ]}
-        /> */}
-        
+          images={slider_images.nss}
+        />
         <Project
           name="Tesla Now"
           description={`
