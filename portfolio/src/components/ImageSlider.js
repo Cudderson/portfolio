@@ -20,8 +20,8 @@ const ImageSlider = (props) => {
       {/* could extract this into 'ImageSliderContent' or similar (after working) */}
       <img src={props.images[display_index]} />
       {/* buttons should remaian in-place regardless of photo size */}
-      <button onClick={() => calcDisplayIndex('prev')}>Previous</button>
-      <button onClick={() => calcDisplayIndex('next')}>Next</button>
+      <button className={styles.prev} onClick={() => calcDisplayIndex('prev')}>Previous</button>
+      <button className={styles.next} onClick={() => calcDisplayIndex('next')}>Next</button>
     </div>
   )
 }

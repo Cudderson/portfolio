@@ -9,6 +9,9 @@ const App = () => {
 
   // probably do this better in future (use/add class)
   document.querySelector('body').style.margin = 0;
+  document.querySelector('html').style.margin = 0;
+  document.querySelector('body').style.padding = 0;
+  document.querySelector('html').style.padding = 0;
 
   return (
     <div>
