@@ -18,11 +18,13 @@
 
 .prev, .next {
   position: absolute;
-  bottom: 20px;
+  bottom: 16px;
   border: none;
-  padding: .5rem;
-  font-size: 20px;
-  background-color: black;
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, .1);
   color: white;
 }
 
@@ -32,9 +34,9 @@
 }
 
 .prev {
-  left: 0;
+  left: 30%;
 }
 
 .next {
-  right: 0;
+  right: 30%;
 }

@@ -19,11 +19,6 @@ const ImageSlider = (props) => {
     <div className={styles['image-slider']}>
       {/* could extract this into 'ImageSliderContent' or similar (after working) */}
       <img src={props.images[display_index]} />
-      {/* buttons should remaian in-place regardless of photo size */}
-
-      {/* testing font-awesome arrows */}
-      
-
       <button className={styles.prev} onClick={() => calcDisplayIndex('prev')}><i class="fas fa-caret-left"></i></button>
       <button className={styles.next} onClick={() => calcDisplayIndex('next')}><i class="fas fa-caret-right"></i></button>
     </div>
