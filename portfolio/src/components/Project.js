@@ -1,15 +1,7 @@
 import styles from './Project.module.css';
-
-// testing
 import ImageSlider from './ImageSlider';
 
-// a single Project for ProjectsList
 const Project = (props) => {
-
-  // before implementing state, remember to lift state up to the highest relavant component
-
-  // let's start with the kokoro images
-  // importing on top, will eventually do like I did with badges
 
   return (
     // consider using element selectors in css rather than many classes
@@ -27,9 +19,11 @@ const Project = (props) => {
           {props.description}
         </p>
         <ul>
-          <li>'find balance' by recording daily mind, body, and soul activities</li>
-          <li>customize your profile page, write 'posts' and establish friendships with other kokoro users</li>
-          <li>toggleable 'dark theme' for users that don't prefer the light theme</li>
+          {props.features.map((feature) => (
+            <li key={feature.substring(0, 20).toString()}>
+              {feature}
+            </li>
+          ))}
         </ul>
       </div>
       <div className={styles['project-tech']}>

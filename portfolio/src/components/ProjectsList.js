@@ -8,6 +8,7 @@ import badges from './../assets/badges/badges.js';
 // git, github, linkedin, react, node
 
 import slider_images from './../assets/images/slider_images.js';
+import { project_features } from '../utilities/project_features';
 
 const ProjectsList = () => {
 
@@ -17,12 +18,12 @@ const ProjectsList = () => {
       <h3>All projects built entirely by me!</h3>
       <div style={{height: '100px'}}>(delete later)</div>
       <div>
-        {/* the 'symbol' prop will be replaced with proper images in future */}
         <Project 
           name="kokoro"
           description={`
             Personal wellness app and social space focused on balancing the mind, body and soul.
           `}
+          features={project_features.kokoro}
           badges={[
             badges.django_square_1,
             badges.python,
@@ -33,12 +34,12 @@ const ProjectsList = () => {
           ]}
           images={slider_images.kokoro}
         />
-        {/* uncomment when images added */}
         <Project
           name="Natural Selection Simulator"
           description={`
             A customizable implementation of a genetic algorithm based on natural selection.
           `}
+          features={project_features.nss}
           badges={[
             badges.js,
             badges.html5,
@@ -49,8 +50,9 @@ const ProjectsList = () => {
         <Project
           name="Tesla Now"
           description={`
-            Real-time analysis, charts and news for Tesla Inc.
+            Analysis tool and central location for Tesla Inc
           `}
+          features={project_features.tesla_now}
           badges={[
             badges.django_square_1,
             badges.plotly,
@@ -66,6 +68,7 @@ const ProjectsList = () => {
           description={`
             CLI tool to encrypt/decrypt and store personal passwords. 
           `}
+          features={project_features.password_manager}
           badges={[
             badges.python,
             badges.sql
