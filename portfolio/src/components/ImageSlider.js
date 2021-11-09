@@ -1,32 +1,26 @@
-import DummyImage from "./DummyImage";
-
 import { useState } from "react";
+import styles from './ImageSlider.module.css';
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
 
+  // this state could perhaps be lifted to <Project />
   const [display_index, setDisplayIndex] = useState(0);
 
-  const bg_colors = [
-    'red',
-    'green',
-    'blue'
-  ];
-
   const calcDisplayIndex = (button_pressed) => {
-    console.log(display_index)
     if (button_pressed === 'prev') {
-      setDisplayIndex(display_index === 0 ? bg_colors.length - 1 : display_index - 1);
+      setDisplayIndex(display_index === 0 ? props.images.length - 1 : display_index - 1);
     }
     else if (button_pressed === 'next') {
-      setDisplayIndex(display_index === bg_colors.length - 1 ? 0 : display_index + 1);
+      setDisplayIndex(display_index === props.images.length - 1 ? 0 : display_index + 1);
     }
   }
 
   return (
-    <div style={{width: '100%', margin: '0 auto', textAlign: 'center'}}>
-      <DummyImage bg_color={bg_colors[display_index]} />
-      <button onClick={() => calcDisplayIndex('prev')}>Previous</button>
-      <button onClick={() => calcDisplayIndex('next')}>Next</button>
+    <div className={styles['image-slider']}>
+      {/* could extract this into 'ImageSliderContent' or similar (after working) */}
+      <img src={props.images[display_index]} />
+      <button className={styles.prev} onClick={() => calcDisplayIndex('prev')}><i class="fas fa-caret-left"></i></button>
+      <button className={styles.next} onClick={() => calcDisplayIndex('next')}><i class="fas fa-caret-right"></i></button>
     </div>
   )
 }

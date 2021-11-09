@@ -1,6 +1,6 @@
-.header-nav {
+/* .header-nav {
   border: 2px solid black;
-}
+} */
 
 /* this should be a global */
 .header-nav > ul {
@@ -16,14 +16,14 @@
 }
 
 .header-nav > ul > li {
-  color: gold;
+  color: black;
   padding: .75rem 1.25rem;
   font-size: 18px;
   cursor: default;
 }
 
 .header-nav > ul > li:hover {
-  color: black;
+  color: goldenrod;
 }
 
 /* this is my current method for switching between navbar displays */
