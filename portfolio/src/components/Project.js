@@ -1,4 +1,7 @@
 import styles from './Project.module.css';
+
+// sub-components
+import ProjectFeatures from './ProjectFeatures.js';
 import ImageSlider from './ImageSlider';
 
 const Project = (props) => {
@@ -6,6 +9,8 @@ const Project = (props) => {
   return (
     // consider using element selectors in css rather than many classes
     // consider extracting smaller components (getting deep)
+    // ** be aware of extra wrapper divs **
+
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
         {/* remember to use styles.project-image */}
@@ -18,13 +23,7 @@ const Project = (props) => {
         <p className={styles['project-description']}>
           {props.description}
         </p>
-        <ul>
-          {props.features.map((feature) => (
-            <li key={feature.substring(0, 20).toString()}>
-              {feature}
-            </li>
-          ))}
-        </ul>
+        <ProjectFeatures features={props.features} />
       </div>
       <div className={styles['project-tech']}>
         Technologies Used:
