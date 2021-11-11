@@ -8,7 +8,7 @@ import badges from './../assets/badges/badges.js';
 // git, github, linkedin, react, node
 
 import slider_images from './../assets/images/slider_images.js';
-import { project_features } from '../utilities/project_features';
+import { project_features } from '../utilities/project_features_util.js';
 
 const ProjectsList = () => {
 

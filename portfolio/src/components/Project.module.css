@@ -5,14 +5,14 @@
   flex-wrap: wrap;
 
   /* saving just in case */
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 
   /* this works well */
   /* justify-content: space-around; */
 
   /* this prevents centering on mobile! */
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
   
 
   margin: 0 auto 20rem auto;
@@ -25,9 +25,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
-  max-width: 475px;
+  max-width: 500px;
   /* border: 2px solid black; */
 }
 
