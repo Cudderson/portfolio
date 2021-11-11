@@ -13,7 +13,6 @@ const Project = (props) => {
 
     <div className={styles.project}>
       <div className={styles['project-image-container']}>
-        {/* remember to use styles.project-image */}
         <ImageSlider images={props.images} />
       </div>
       <div className={styles['project-text']}>
@@ -23,9 +22,16 @@ const Project = (props) => {
         <p className={styles['project-description']}>
           {props.description}
         </p>
-        <ProjectFeatures features={props.features} />
+
+        {/*
+          here, I'm thinking of placing links to github/live
+
+          additionally, I will place the "Made With" section here
+        */}
+
+        {/* <ProjectFeatures features={props.features} /> */}
       </div>
-      <div className={styles['project-tech']}>
+      {/* <div className={styles['project-tech']}>
         Technologies Used:
         <ul className={styles['project-tech-list']}>
           {props.badges.map((badge) => (
@@ -34,7 +40,7 @@ const Project = (props) => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }
