@@ -1,0 +1,16 @@
+.project-tech-icon {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 5px;
+  width: 75px;
+  font-size: 20px;
+  align-items: center;
+  color: black;
+}
+
+.project-tech-icon > span {
+  padding-left: 5px;
+  font-size: 16px;
+  color: black;
+}

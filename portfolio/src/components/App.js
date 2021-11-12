@@ -5,6 +5,9 @@ import Footer from './Footer.js';
 
 import styles from './App.module.css';
 
+// testing
+import ProjectTechIcon from './ProjectTechIcon';
+
 const App = () => {
 
   // probably do this better in future (use/add class)
@@ -21,6 +24,10 @@ const App = () => {
         <Hero />
         <ProjectsList />
       </main>
+
+      {/* testing */}
+      <ProjectTechIcon />
+      
       <Footer />
     </div>
   )
