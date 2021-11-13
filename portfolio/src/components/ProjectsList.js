@@ -16,6 +16,7 @@ import custom_icons from './../assets/badges/badges.js';
 
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectsList = () => {
 
@@ -33,8 +34,12 @@ const ProjectsList = () => {
           features={project_features.kokoro}
           icons={
             [
+              {family: null, icon: custom_icons.django, text: 'Django'},
+              {family: 'fab', icon: 'python', text: 'Python'},
               {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'}
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fas', icon: 'database', text: 'SQL'}
             ]
           }
           images={slider_images.kokoro}
@@ -48,7 +53,9 @@ const ProjectsList = () => {
           icons={
             [
               {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'}
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'node-js', text: 'Node'}
             ]
           }
           images={slider_images.nss}
@@ -61,8 +68,11 @@ const ProjectsList = () => {
           features={project_features.tesla_now}
           icons={
             [
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'}
+              {family: null, icon: custom_icons.django, text: 'Django'},
+              {family: null, icon: custom_icons.plotly, text: 'Plotly'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'bootstrap', text: 'Bootstrap'}
             ]
           }
           images={slider_images.tesla_now}
@@ -75,8 +85,8 @@ const ProjectsList = () => {
           features={project_features.password_manager}
           icons={
             [
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'}
+              {family: 'fab', icon: 'python', text: 'Python'},
+              {family: 'fas', icon: 'database', text: 'SQL'}
             ]
           }
           images={slider_images.password_manager}
