@@ -1,4 +1,3 @@
-// fontawesome icons that will be used in project
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faHtml5,

@@ -1,22 +1,12 @@
-import { useState, useEffect } from 'react';
-
 import Project from './Project';
 import styles from './ProjectsList.module.css';
-// import badges from './../assets/badges/badges.js';
 
-// testing font awesome icons (plus django/plotly)
-
-// get django/plotly
+// get django/plotly (change location)
 // rest of icons imported into <App /> globally
 import custom_icons from './../assets/badges/badges.js';
 
-
-// currently unused svgs:
-// git, github, linkedin, react, node
-
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectsList = () => {
 

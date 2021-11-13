@@ -6,7 +6,6 @@ import ImageSlider from './ImageSlider.js';
 
 // tesing fa icons (this will be extracted to sub component)
 import ProjectTechIcon from './ProjectTechIcon.js';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Project = (props) => {
 
@@ -61,21 +60,7 @@ const Project = (props) => {
           </div>
 
         </div>
-
-        {/* keep this component around until Project component final */}
-        {/* <ProjectFeatures features={props.features} /> */}
       </div>
-      {/* keeping this original sub-component in-tact until Project component final */}
-      {/* <div className={styles['project-tech']}>
-        Technologies Used:
-        <ul className={styles['project-tech-list']}>
-          {props.badges.map((badge) => (
-            <li className={styles['tech-box-test']} key={badge.toString()}>
-              <img src={badge}></img>
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </div>
   )
 }

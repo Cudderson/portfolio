@@ -5,7 +5,7 @@ import Footer from './Footer.js';
 
 import styles from './App.module.css';
 
-// testing font awesome library
+// fa library
 import './../utilities/fa_library.js';
 
 const App = () => {
