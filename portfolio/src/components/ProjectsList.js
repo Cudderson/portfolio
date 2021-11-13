@@ -1,11 +1,9 @@
-import { useState, useEffect } from 'react';
-
 import Project from './Project';
 import styles from './ProjectsList.module.css';
-import badges from './../assets/badges/badges.js';
 
-// currently unused svgs:
-// git, github, linkedin, react, node
+// get django/plotly (change location)
+// rest of icons imported into <App /> globally
+import custom_icons from './../assets/badges/badges.js';
 
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
@@ -24,14 +22,16 @@ const ProjectsList = () => {
             Personal wellness app and social space focused on balancing the mind, body and soul.
           `}
           features={project_features.kokoro}
-          badges={[
-            badges.django_square_1,
-            badges.python,
-            badges.js,
-            badges.html5,
-            badges.css3,
-            badges.sql
-          ]}
+          icons={
+            [
+              {family: null, icon: custom_icons.django, text: 'Django'},
+              {family: 'fab', icon: 'python', text: 'Python'},
+              {family: 'fab', icon: 'js', text: 'Javascript'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fas', icon: 'database', text: 'SQL'}
+            ]
+          }
           images={slider_images.kokoro}
         />
         <Project
@@ -40,11 +40,14 @@ const ProjectsList = () => {
             A customizable implementation of a genetic algorithm based on natural selection.
           `}
           features={project_features.nss}
-          badges={[
-            badges.js,
-            badges.html5,
-            badges.css3
-          ]}
+          icons={
+            [
+              {family: 'fab', icon: 'js', text: 'Javascript'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'node-js', text: 'Node'}
+            ]
+          }
           images={slider_images.nss}
         />
         <Project
@@ -53,14 +56,15 @@ const ProjectsList = () => {
             Analysis tool and central location for Tesla Inc
           `}
           features={project_features.tesla_now}
-          badges={[
-            badges.django_square_1,
-            badges.plotly,
-            // actually, isn't bootstrap removed? (can keep to show you can understand it)
-            badges.bootstrap,
-            badges.html5,
-            badges.css3
-          ]}
+          icons={
+            [
+              {family: null, icon: custom_icons.django, text: 'Django'},
+              {family: null, icon: custom_icons.plotly, text: 'Plotly'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'bootstrap', text: 'Bootstrap'}
+            ]
+          }
           images={slider_images.tesla_now}
         />
         <Project
@@ -69,10 +73,12 @@ const ProjectsList = () => {
             CLI tool to encrypt/decrypt and store personal passwords. 
           `}
           features={project_features.password_manager}
-          badges={[
-            badges.python,
-            badges.sql
-          ]}
+          icons={
+            [
+              {family: 'fab', icon: 'python', text: 'Python'},
+              {family: 'fas', icon: 'database', text: 'SQL'}
+            ]
+          }
           images={slider_images.password_manager}
         />
       </div>

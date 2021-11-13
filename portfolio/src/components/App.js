@@ -5,6 +5,9 @@ import Footer from './Footer.js';
 
 import styles from './App.module.css';
 
+// fa library
+import './../utilities/fa_library.js';
+
 const App = () => {
 
   // probably do this better in future (use/add class)

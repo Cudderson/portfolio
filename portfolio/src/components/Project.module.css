@@ -5,36 +5,29 @@
   flex-wrap: wrap;
 
   /* saving just in case */
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
   /* this works well */
-  /* justify-content: space-around; */
+  justify-content: space-around;
 
   /* this prevents centering on mobile! */
   /* justify-content: space-between; */
-  /* align-items: center; */
-  
 
+  /* align-items: center; */
   margin: 0 auto 20rem auto;
   /* border: 2px solid black; */
 }
-
-/* !!! .project-image-container and .project-text should have same width */
 
 .project-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 500px;
-  /* border: 2px solid black; */
 }
 
 .project-text {
   display: block;
-  width: 100%;
   max-width: 475px;
-  /* border: 2px solid black; */
 }
 
 .project-text > h2 {
@@ -64,14 +57,6 @@
   margin-top: 15px;
 }
 
-/* maybe the tech is only shown on desktop? */
-.project-tech {
-  margin-top: 30px;
-  width: 100%;
-  /* border: 2px solid black; */
-  text-align: center;
-}
-
 /* consider using an element selector when final to reduce amount of class names */
 .project-tech-list {
   /* reset <ul> */
@@ -81,18 +66,13 @@
   display: flex;
   flex-wrap: wrap;
 
-  /* consider other attributes for this property */
-  /* justify-content: space-around; */
-  justify-content: center;
-
   list-style: none;
-  margin-top: 10px;
 }
 
 .tech-box-test {
-  margin: 0 10px 5px 10px;
-  width: 40px;
-  height: 40px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
   background-color: rgba(0, 0, 0, 0);
 }
 

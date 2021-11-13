@@ -1,8 +1,11 @@
 import styles from './Project.module.css';
 
 // sub-components
-import ProjectFeatures from './ProjectFeatures.js';
-import ImageSlider from './ImageSlider';
+// import ProjectFeatures from './ProjectFeatures.js'; // keep until <Project /> final
+import ImageSlider from './ImageSlider.js';
+
+// tesing fa icons (this will be extracted to sub component)
+import ProjectTechIcon from './ProjectTechIcon.js';
 
 const Project = (props) => {
 
@@ -23,24 +26,41 @@ const Project = (props) => {
           {props.description}
         </p>
 
-        {/*
-          here, I'm thinking of placing links to github/live
+        {/* this will be the link section */}
+        <div>
+          <h4 style={{marginBottom: '.25rem'}}>Links</h4>
+          <a href="##" style={{textDecoration: 0, fontSize: '18px'}}>Live Site</a>
+          <a href="##" style={{textDecoration: 0, fontSize: '18px', marginLeft: '20px'}}>Github Repo</a>
+        </div>
 
-          additionally, I will place the "Made With" section here
-        */}
+        {/* this will be the "Made With" section */}
+        <div>
+          <h4 style={{marginBottom: '.25rem'}}>Made With</h4>
 
-        {/* <ProjectFeatures features={props.features} /> */}
+          {/* old */}
+          {/* <div className={styles['project-tech']}>
+            <ul className={styles['project-tech-list']}>
+              {props.badges.map((badge) => (
+                <li className={styles['tech-box-test']} key={badge.toString()}>
+                  <img src={badge}></img>
+                </li>
+              ))}
+            </ul>
+          </div> */}
+
+          {/* new (extract after working) */}
+          <div className={styles['project-tech']}>
+            <ul className={styles['project-tech-list']}>
+              {props.icons.map((icon) => (
+                <li key={icon.icon.toString()}>
+                  <ProjectTechIcon family={icon.family} icon={icon.icon} text={icon.text} />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
       </div>
-      {/* <div className={styles['project-tech']}>
-        Technologies Used:
-        <ul className={styles['project-tech-list']}>
-          {props.badges.map((badge) => (
-            <li className={styles['tech-box-test']} key={badge.toString()}>
-              <img src={badge}></img>
-            </li>
-          ))}
-        </ul>
-      </div> */}
     </div>
   )
 }
