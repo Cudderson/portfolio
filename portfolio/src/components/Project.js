@@ -1,8 +1,12 @@
 import styles from './Project.module.css';
 
 // sub-components
-import ProjectFeatures from './ProjectFeatures.js'; // keep until <Project /> final
-import ImageSlider from './ImageSlider';
+// import ProjectFeatures from './ProjectFeatures.js'; // keep until <Project /> final
+import ImageSlider from './ImageSlider.js';
+
+// tesing fa icons (this will be extracted to sub component)
+import ProjectTechIcon from './ProjectTechIcon.js';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Project = (props) => {
 
@@ -34,12 +38,23 @@ const Project = (props) => {
         <div>
           <h4 style={{marginBottom: '.25rem'}}>Made With</h4>
 
-          {/* going to put a modified version of project-tech here for now until fa-icons */}
-          <div className={styles['project-tech']}>
+          {/* old */}
+          {/* <div className={styles['project-tech']}>
             <ul className={styles['project-tech-list']}>
               {props.badges.map((badge) => (
                 <li className={styles['tech-box-test']} key={badge.toString()}>
                   <img src={badge}></img>
+                </li>
+              ))}
+            </ul>
+          </div> */}
+
+          {/* new (extract after working) */}
+          <div className={styles['project-tech']}>
+            <ul className={styles['project-tech-list']}>
+              {props.icons.map((icon) => (
+                <li key={icon.icon.toString()}>
+                  <ProjectTechIcon family={icon.family} icon={icon.icon} text={icon.text} />
                 </li>
               ))}
             </ul>

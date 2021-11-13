@@ -7,11 +7,14 @@ import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 import styles from './ProjectTechIcon.module.css';
 
-const ProjectTechIcon = () => {
+const ProjectTechIcon = (props) => {
+  console.log(props);
+
   return (
     <div className={styles['project-tech-icon']}>
-      <FontAwesomeIcon icon={faGithub} />
-      <span>Github</span>
+      {/* <FontAwesomeIcon icon={['fab', 'js']} /> */}
+      <FontAwesomeIcon icon={[props.family, props.icon]} />
+      <span>{props.text}</span>
     </div>
   )
 }

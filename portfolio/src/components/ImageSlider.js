@@ -19,8 +19,8 @@ const ImageSlider = (props) => {
     <div className={styles['image-slider']}>
       {/* could extract this into 'ImageSliderContent' or similar (after working) */}
       <img src={props.images[display_index]} />
-      <button className={styles.prev} onClick={() => calcDisplayIndex('prev')}><i class="fas fa-caret-left"></i></button>
-      <button className={styles.next} onClick={() => calcDisplayIndex('next')}><i class="fas fa-caret-right"></i></button>
+      <button className={styles.prev} onClick={() => calcDisplayIndex('prev')}><i className="fas fa-caret-left"></i></button>
+      <button className={styles.next} onClick={() => calcDisplayIndex('next')}><i className="fas fa-caret-right"></i></button>
     </div>
   )
 }

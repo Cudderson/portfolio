@@ -5,8 +5,8 @@ import Footer from './Footer.js';
 
 import styles from './App.module.css';
 
-// testing
-import ProjectTechIcon from './ProjectTechIcon';
+// testing font awesome library
+import './../utilities/fa_library.js';
 
 const App = () => {
 
@@ -24,10 +24,6 @@ const App = () => {
         <Hero />
         <ProjectsList />
       </main>
-
-      {/* testing */}
-      <ProjectTechIcon />
-      
       <Footer />
     </div>
   )
