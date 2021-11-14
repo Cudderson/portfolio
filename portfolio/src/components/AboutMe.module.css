@@ -1,0 +1,6 @@
+.about-me-container {
+  height: 800px;
+  background-color: ghostwhite;
+  border: 2px dashed salmon;
+  border-bottom: none;
+}

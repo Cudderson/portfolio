@@ -1,6 +1,8 @@
 import Header from './Header';
 import Hero from './Hero';
 import ProjectsList from './ProjectsList';
+import AboutMe from './AboutMe.js';
+import ContactForm from './ContactForm.js';
 import Footer from './Footer.js';
 
 import styles from './App.module.css';
@@ -23,6 +25,8 @@ const App = () => {
       <main className={styles['app-main']}>
         <Hero />
         <ProjectsList />
+        <AboutMe />
+        <ContactForm />
       </main>
       <Footer />
     </div>
