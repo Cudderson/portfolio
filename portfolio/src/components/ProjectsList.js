@@ -21,6 +21,8 @@ const ProjectsList = () => {
           description={`
             Personal wellness app and social space focused on balancing the mind, body and soul.
           `}
+          live_url="https://getkokoro.herokuapp.com"
+          repo_url="https://github.com/Cudderson/kokoro-app"
           features={project_features.kokoro}
           icons={
             [
@@ -39,6 +41,8 @@ const ProjectsList = () => {
           description={`
             A customizable implementation of a genetic algorithm based on natural selection.
           `}
+          live_url={null}
+          repo_url="https://github.com/Cudderson/natural-selection"
           features={project_features.nss}
           icons={
             [
@@ -55,6 +59,8 @@ const ProjectsList = () => {
           description={`
             Analysis tool and central location for Tesla Inc
           `}
+          live_url="https://tesla-now.herokuapp.com"
+          repo_url="https://github.com/Cudderson/tesla-now"
           features={project_features.tesla_now}
           icons={
             [
@@ -72,6 +78,8 @@ const ProjectsList = () => {
           description={`
             CLI tool to encrypt/decrypt and store personal passwords. 
           `}
+          live_url={null}
+          repo_url="https://github.com/Cudderson/password-manager"
           features={project_features.password_manager}
           icons={
             [

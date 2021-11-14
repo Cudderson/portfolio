@@ -1,0 +1,11 @@
+/* consider using an element selector when final to reduce amount of class names */
+.project-tech-list {
+  /* reset <ul> */
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
