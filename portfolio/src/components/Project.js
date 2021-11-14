@@ -8,6 +8,8 @@ import ImageSlider from './ImageSlider.js';
 import ProjectTech from './ProjectTech.js';
 // import ProjectTechIcon from './ProjectTechIcon.js';
 
+import ProjectLinks from './ProjectLinks.js';
+
 const Project = (props) => {
 
   return (
@@ -28,13 +30,10 @@ const Project = (props) => {
         </p>
 
         {/* this will be the link section */}
-        <div>
-          <h4 style={{marginBottom: '.25rem'}}>Links</h4>
-          <a href="##" style={{textDecoration: 0, fontSize: '18px'}}>Live Site</a>
-          <a href="##" style={{textDecoration: 0, fontSize: '18px', marginLeft: '20px'}}>Github Repo</a>
-        </div>
+        <ProjectLinks live_url={props.live_url} repo_url={props.repo_url} />
 
         {/* this will be the "Made With" section */}
+        {/* maybe make this entire div part of ProjectTech? */}
         <div>
           <h4 style={{marginBottom: '.25rem'}}>Made With</h4>
           <ProjectTech icons={props.icons} />

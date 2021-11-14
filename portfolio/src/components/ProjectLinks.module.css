@@ -1,0 +1,12 @@
+.project-links > h4 {
+  margin-bottom: .25rem;
+}
+
+.live-link, .repo-link {
+  text-decoration: 0;
+  font-size: 18px;
+}
+
+.live-link {
+  margin-right: 20px;
+}
