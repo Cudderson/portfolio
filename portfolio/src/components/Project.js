@@ -5,7 +5,8 @@ import styles from './Project.module.css';
 import ImageSlider from './ImageSlider.js';
 
 // tesing fa icons (this will be extracted to sub component)
-import ProjectTechIcon from './ProjectTechIcon.js';
+import ProjectTech from './ProjectTech.js';
+// import ProjectTechIcon from './ProjectTechIcon.js';
 
 const Project = (props) => {
 
@@ -36,29 +37,7 @@ const Project = (props) => {
         {/* this will be the "Made With" section */}
         <div>
           <h4 style={{marginBottom: '.25rem'}}>Made With</h4>
-
-          {/* old */}
-          {/* <div className={styles['project-tech']}>
-            <ul className={styles['project-tech-list']}>
-              {props.badges.map((badge) => (
-                <li className={styles['tech-box-test']} key={badge.toString()}>
-                  <img src={badge}></img>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-
-          {/* new (extract after working) */}
-          <div className={styles['project-tech']}>
-            <ul className={styles['project-tech-list']}>
-              {props.icons.map((icon) => (
-                <li key={icon.icon.toString()}>
-                  <ProjectTechIcon family={icon.family} icon={icon.icon} text={icon.text} />
-                </li>
-              ))}
-            </ul>
-          </div>
-
+          <ProjectTech icons={props.icons} />
         </div>
       </div>
     </div>

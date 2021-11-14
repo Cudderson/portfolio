@@ -1,10 +1,8 @@
-// import component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import styles from './ProjectTechIcon.module.css';
 
 const ProjectTechIcon = (props) => {
-  console.log(props);
 
   return (
     <div className={styles['project-tech-icon']}>
