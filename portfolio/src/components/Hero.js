@@ -5,9 +5,11 @@ const Hero = () => {
     <div className={styles.hero}>
       <h2>HELLO, MY NAME IS CODY</h2>
       {/* special effect on 'code' ? */}
-      <h1>I make websites.</h1>
+      <h1>I create with code.</h1>
       <p>
-        I'm an aspiring web developer from the US. I use code to build creative and performant tech solutions on the web.
+        I'm an aspiring software developer from the U.S.
+        <br/>
+        Algorithmically-minded, I deeply enjoy finding clean and efficient solutions to problems.
       </p>
     </div>
   )
