@@ -11,10 +11,10 @@ import { project_features } from '../utilities/project_features_util.js';
 const ProjectsList = () => {
 
   return (
-    <div className={styles['projects-list']}>
-      <h2>Featured Projects</h2>
-      <h3>All projects built entirely by me!</h3>
-      <div>
+    <div className={styles['projects-list-outer']}>
+      <h2 className={styles.featured}>Featured Projects</h2>
+      <h3 className={styles['sub-header']}>All projects built entirely by me!</h3>
+      <div className={styles['projects-list-inner']}>
         <Project 
           name="kokoro"
           description={`

@@ -1,4 +1,28 @@
-.projects-list {
-  /* margin: 0 auto; */
+.projects-list-outer {
+  margin-top: 10rem;
   color: black;
+}
+
+.projects-list-inner {
+  margin-top: 8rem;
+}
+
+.featured {
+  margin: 0;
+
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Noto Sans Display', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Oxygen', sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'PT Serif', serif;
+  /* font-family: 'Zen Antique', serif; */
+  font-size: 40px;
+  /* font-weight: normal; */
+}
+
+.sub-header {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
