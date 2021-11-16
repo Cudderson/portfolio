@@ -35,7 +35,7 @@ const Project = (props) => {
         {/* this will be the "Made With" section */}
         {/* maybe make this entire div part of ProjectTech? */}
         <div>
-          <h4 style={{marginBottom: '.25rem'}}>Made With</h4>
+          <h4 style={{margin: '1.75rem 0 .5rem', fontFamily: 'Verdana', fontSize: "13px"}}>Made With</h4>
           <ProjectTech icons={props.icons} />
         </div>
       </div>
