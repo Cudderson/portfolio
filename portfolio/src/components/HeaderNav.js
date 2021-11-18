@@ -1,16 +1,17 @@
 import styles from './HeaderNav.module.css';
-
-import { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeaderNav = () => {
 
   return (
     <div className={styles['header-nav']}>
       <ul>
-        <li>01 Home</li>
-        <li>02 Writing</li>
-        <li>03 Notes</li>
-        <li>04 About</li>
+        <a href="https://github.com/Cudderson" target="_blank">
+          <FontAwesomeIcon className={styles.icon} icon={['fab', 'github']} />
+        </a>
+        <a href="https://www.linkedin.com/in/cody-weller-a5ba80222/" target="_blank">
+          <FontAwesomeIcon className={styles.icon} icon={['fab', 'linkedin']} />
+        </a>
       </ul>
     </div>
   )

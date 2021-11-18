@@ -15,13 +15,14 @@
   list-style-type: none;
 }
 
-.header-nav > ul > li {
+.icon {
+  font-size: 35px;
+  padding: 0 .25rem;
   color: black;
-  padding: .75rem 1.25rem;
-  font-size: 18px;
-  cursor: default;
 }
 
+
+/* need to update for new links/icons */
 .header-nav > ul > li:hover {
   color: goldenrod;
 }
