@@ -4,3 +4,9 @@
   border: 2px dashed salmon;
   border-bottom: none;
 }
+
+.about-me-container > h2 {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+  font-size: 40px;
+}

@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     // learn more about fragments '<></>' and consider if they'd be better than another wrapper div 
     <div className={styles['about-me-container']}>
-      About Me
+      <h2>About Me</h2>
       <p>
         could mention:
         guitar,
@@ -18,6 +18,13 @@ const AboutMe = () => {
         goals,
         etc
       </p>
+      <p>paragraph 1: tech-related</p>
+      <p>paragraph 2: non-tech related</p>
+      <p> ideas: </p>
+      <p>maybe also include some photos? (lakemen, discing, biking, etc)</p>
+      <p>mention core values / personality traits</p>
+      <p>"daily improvement in my competency as a programmer/developer/engineer"</p>
+
     </div>
   )
 }
