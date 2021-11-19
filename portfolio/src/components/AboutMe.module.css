@@ -1,12 +1,24 @@
+
 .about-me-container {
+  margin: 0 auto;
+  margin-bottom: 200px;
+  padding-bottom: 1.5rem;
+  max-width: 650px;
   height: 800px;
-  background-color: ghostwhite;
-  border: 2px dashed salmon;
-  border-bottom: none;
+  /* background-color: ghostwhite; */
+  /* border: 2px dashed salmon; */
+  border-bottom: 1px solid black;
 }
 
 .about-me-container > h2 {
   margin: 0;
   font-family: 'PT Serif', serif;
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.about-me-container p {
+  line-height: 1.75rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 }
