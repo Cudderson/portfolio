@@ -18,8 +18,9 @@ const Hero = () => {
       <h2>
         {/* too long! 3 lines = perfect */}
         I'm a software developer based in Wisconsin.
-        Focused mostly on the web, I mix my love for technology with my artistic nature to build creative tech solutions.
-        {/* <div className={styles['floating-image']}>this will be some kind of floating image</div> */}
+        <br/>
+        Focused on the web, I build creative and performant tech solutions.
+        <div className={styles['floating-image']}>this will be some kind of floating image</div>
       </h2>
       
     </div>
