@@ -53,3 +53,28 @@
     min-height: 425px;
   }
 }
+
+
+/* new styles */
+
+.hero-container {
+  width: 85%;
+  padding: 5rem 0rem 5rem; 
+}
+
+.hero-container > h2 {
+  position: relative;
+  font-family: "PT Serif", sans-serif;
+  font-size: 50px;
+}
+
+.floating-image {
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: -100px;
+  width: 275px;
+  height: 400px;
+  background-color: crimson;
+  font-size: 14px;
+}

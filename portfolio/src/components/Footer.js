@@ -4,25 +4,21 @@ const Footer = () => {
   return (
     <footer>
       <div className={styles['footer-inner']}>
-        <div>
-          <div>top 1</div>
-          <br />
-          <div>bottom 1</div>
-        </div>
-        <div>
-          <div>top 2</div>
-          <br />
-          <div>bottom 2</div>
-        </div>
-        <div>
-          <div>top 3</div>
-          <br />
-          <div>bottom 3</div>
-        </div>
-        <div>
-          <div>top 4</div>
-          <br />
-          <div>bottom 4</div>
+        <p>
+          <span>c 2021</span>
+          <br/>
+          <span>Cody Weller</span>
+        </p>
+        <p>
+          <span>Social</span>
+          <br/>
+          <span>(Github / LinkedIn)</span>
+        </p>
+        {/*  display this one on far right */}
+        <div className={styles['footer-item-right']}>
+          <span>right  top</span>
+          <br/>
+          <span>right bottom</span>
         </div>
       </div>
     </footer>

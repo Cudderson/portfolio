@@ -16,17 +16,22 @@ footer {
   /* reset <p> defaults (make global) */
   margin: 0;
   padding: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 
   /* set initial size to 50% */
   flex-basis: 50%;
+}
+
+/* this rule requires that this is a block element */
+.footer-item-right {
+  margin-left: auto;
 }
 
 @media (min-width: 700px) {
   .footer-inner > p {
     flex-basis: auto;
     margin-bottom: 0;
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 }
 
