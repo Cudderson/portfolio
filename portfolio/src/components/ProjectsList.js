@@ -15,6 +15,24 @@ const ProjectsList = () => {
       <h2 className={styles.featured}>Featured Projects</h2>
       <h3 className={styles['sub-header']}>All projects built entirely by me!</h3>
       <div className={styles['projects-list-inner']}>
+        <Project
+          name="Natural Selection Simulator"
+          description={`
+            A customizable implementation of a genetic algorithm based on natural selection.
+          `}
+          live_url={null}
+          repo_url="https://github.com/Cudderson/natural-selection"
+          features={project_features.nss}
+          icons={
+            [
+              {family: 'fab', icon: 'js', text: 'Javascript'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'node-js', text: 'Node'}
+            ]
+          }
+          images={slider_images.nss}
+        />
         <Project 
           name="kokoro"
           description={`
@@ -34,24 +52,6 @@ const ProjectsList = () => {
             ]
           }
           images={slider_images.kokoro}
-        />
-        <Project
-          name="Natural Selection Simulator"
-          description={`
-            A customizable implementation of a genetic algorithm based on natural selection.
-          `}
-          live_url={null}
-          repo_url="https://github.com/Cudderson/natural-selection"
-          features={project_features.nss}
-          icons={
-            [
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-              {family: 'fab', icon: 'node-js', text: 'Node'}
-            ]
-          }
-          images={slider_images.nss}
         />
         <Project
           name="Tesla Now"

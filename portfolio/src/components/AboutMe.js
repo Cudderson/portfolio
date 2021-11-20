@@ -7,23 +7,6 @@ const AboutMe = () => {
     // learn more about fragments '<></>' and consider if they'd be better than another wrapper div 
     <div className={styles['about-me-container']}>
       <h2>About Me</h2>
-      {/* <p>
-        could mention:
-        guitar,
-        biking,
-        discing,
-        tech background,
-        reading, 
-        writing,
-        goals,
-        etc
-      </p>
-      <p>paragraph 1: tech-related</p>
-      <p>paragraph 2: non-tech related</p>
-      <p> ideas: </p>
-      <p>maybe also include some photos? (lakemen, discing, biking, etc)</p>
-      <p>mention core values / personality traits</p>
-      <p>"daily improvement in my competency as a programmer/developer/engineer"</p> */}
       <p>
         Since taking my first programming class in high school,
         my love and passion for technology has only grown.
@@ -52,8 +35,6 @@ const AboutMe = () => {
         <br/>
         When I'm not at my computer, I like to play guitar, read, write, go for a bike ride, play baseball and play disc golf. 
       </p>
-
-
     </div>
   )
 }

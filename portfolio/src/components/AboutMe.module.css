@@ -1,12 +1,9 @@
 
 .about-me-container {
   margin: 0 auto;
-  margin-bottom: 200px;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   max-width: 650px;
-  height: 800px;
-  /* background-color: ghostwhite; */
-  /* border: 2px dashed salmon; */
   border-bottom: 1px solid black;
 }
 

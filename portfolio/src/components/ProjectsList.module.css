@@ -1,6 +1,7 @@
 .projects-list-outer {
   margin-top: 10rem;
   color: black;
+  border-bottom: 1px solid black;
 }
 
 .projects-list-inner {
