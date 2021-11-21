@@ -1,16 +1,11 @@
 .contact-form-container {
   margin: 0 auto;
   max-width: 650px;
-  /* height: 600px; */
-  /* background-color: rgb(240, 240, 240); */
-  /* border: 2px dashed hotpink; */
   padding-bottom: 6rem;
 }
 
 .contact-image-container {
-  /* height: 100px; */
   padding: 3rem 0 1rem;
-  /* background-color: cornflowerblue; */
 }
 
 .contact-image-container > img {

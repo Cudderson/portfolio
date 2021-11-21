@@ -23,6 +23,7 @@ footer {
 }
 
 /* this rule requires that this is a block element */
+/* needs mobile fix */
 .footer-item-right {
   margin-left: auto;
 }

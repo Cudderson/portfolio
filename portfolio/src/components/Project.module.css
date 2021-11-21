@@ -1,14 +1,5 @@
 /* need to clean this file when project component complete / refactor */
 
-/* font-family: 'Lato', sans-serif;
-font-family: 'Noto Sans Display', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Oxygen', sans-serif;
-font-family: 'Roboto', sans-serif;
-headers:
-font-family: 'PT Serif', serif;
-font-family: 'Zen Antique', serif; */
-
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -46,18 +37,15 @@ font-family: 'Zen Antique', serif; */
 
 .project-title {
   margin: 1rem 0;
-  font-size: 55px;
-  /* font-weight: 700; */
   font-family: 'PT Serif', serif;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .project-description {
   margin: 1.5rem 0;
   font-size: 21px;
-  /* font-weight: 600; */
-  /* both look good */
   font-family: 'Roboto', sans-serif;
-  /* font-family: 'PT Serif', serif; */
 }
 
 .project-text > ul {
