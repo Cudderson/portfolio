@@ -8,6 +8,9 @@ import custom_icons from './../assets/badges/badges.js';
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
 
+// for all-work
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const ProjectsList = () => {
 
   return (
@@ -33,6 +36,8 @@ const ProjectsList = () => {
           }
           images={slider_images.nss}
         />
+        {/* prevents collapsing margins */}
+        <br/>
         <Project 
           name="kokoro"
           description={`
@@ -53,6 +58,7 @@ const ProjectsList = () => {
           }
           images={slider_images.kokoro}
         />
+        <br/>
         <Project
           name="Tesla Now"
           description={`
@@ -72,6 +78,7 @@ const ProjectsList = () => {
           }
           images={slider_images.tesla_now}
         />
+        <br/>
         <Project
           name="password manager"
           description={`
@@ -88,6 +95,15 @@ const ProjectsList = () => {
           }
           images={slider_images.password_manager}
         />
+      </div>
+      <div className={styles['all-work']}>
+          <strong>Check out my Github profile to view all of my projects, including what I'm working on now:</strong>
+          <button>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            <a href="https://github.com/Cudderson">
+              View Profile
+            </a>
+          </button>
       </div>
     </div>
   )
