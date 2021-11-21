@@ -10,8 +10,8 @@
 
 .hero > h2 {
   margin: 0 0 .75rem;
-  /* font-family: 'PT Serif', serif; */
-  font-family: "Verdana";
+  font-family: 'PT Serif', serif;
+  /* font-family: "Verdana"; */
   font-size: 1rem;
 }
 
