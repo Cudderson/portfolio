@@ -1,6 +1,7 @@
 .projects-list-outer {
   margin-top: 10rem;
   color: black;
+  border-bottom: 1px solid black;
 }
 
 .projects-list-inner {
@@ -9,20 +10,48 @@
 
 .featured {
   margin: 0;
-
-  /* font-family: 'Lato', sans-serif; */
-  /* font-family: 'Noto Sans Display', sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Oxygen', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'PT Serif', serif;
-  /* font-family: 'Zen Antique', serif; */
   font-size: 40px;
-  /* font-weight: normal; */
+  font-weight: 700;
 }
 
 .sub-header {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
+}
+
+.all-work {
+  margin: 0 auto;
+  padding: 4rem 0 10rem 0;
+  /* border: 1px solid black; */
+  max-width: 500px;
+}
+
+.all-work > strong {
+  display: block;
+  padding-bottom: 2.5rem;
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  text-align: center;
+}
+
+.all-work > button {
+  display: block;
+  margin: 0 auto;
+  padding: .5rem 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  background-color: white;
+}
+
+.all-work > button:hover {
+  background-color: white;
+}
+
+/* probably should make general <button> or <a> class */
+.all-work > button > a {
+  margin-left: 8px;
+  text-decoration: none;
+  color: black;
 }

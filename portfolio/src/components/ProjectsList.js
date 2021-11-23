@@ -8,6 +8,9 @@ import custom_icons from './../assets/badges/badges.js';
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
 
+// for all-work
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const ProjectsList = () => {
 
   return (
@@ -15,6 +18,26 @@ const ProjectsList = () => {
       <h2 className={styles.featured}>Featured Projects</h2>
       <h3 className={styles['sub-header']}>All projects built entirely by me!</h3>
       <div className={styles['projects-list-inner']}>
+        <Project
+          name="Natural Selection Simulator"
+          description={`
+            A customizable implementation of a genetic algorithm based on natural selection.
+          `}
+          live_url={null}
+          repo_url="https://github.com/Cudderson/natural-selection"
+          features={project_features.nss}
+          icons={
+            [
+              {family: 'fab', icon: 'js', text: 'Javascript'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+              {family: 'fab', icon: 'node-js', text: 'Node'}
+            ]
+          }
+          images={slider_images.nss}
+        />
+        {/* prevents collapsing margins */}
+        <br/>
         <Project 
           name="kokoro"
           description={`
@@ -35,24 +58,7 @@ const ProjectsList = () => {
           }
           images={slider_images.kokoro}
         />
-        <Project
-          name="Natural Selection Simulator"
-          description={`
-            A customizable implementation of a genetic algorithm based on natural selection.
-          `}
-          live_url={null}
-          repo_url="https://github.com/Cudderson/natural-selection"
-          features={project_features.nss}
-          icons={
-            [
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-              {family: 'fab', icon: 'node-js', text: 'Node'}
-            ]
-          }
-          images={slider_images.nss}
-        />
+        <br/>
         <Project
           name="Tesla Now"
           description={`
@@ -72,6 +78,7 @@ const ProjectsList = () => {
           }
           images={slider_images.tesla_now}
         />
+        <br/>
         <Project
           name="password manager"
           description={`
@@ -88,6 +95,15 @@ const ProjectsList = () => {
           }
           images={slider_images.password_manager}
         />
+      </div>
+      <div className={styles['all-work']}>
+          <strong>Check out my Github profile to view all of my projects, including what I'm working on now:</strong>
+          <button>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            <a href="https://github.com/Cudderson">
+              View Profile
+            </a>
+          </button>
       </div>
     </div>
   )

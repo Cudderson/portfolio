@@ -20,7 +20,7 @@ const Hero = () => {
         I'm a software developer based in Wisconsin.
         <br/>
         Focused on the web, I build creative and performant tech solutions.
-        <div className={styles['floating-image']}>this will be some kind of floating image</div>
+        <div className={styles['floating-image']}></div>
       </h2>
       
     </div>
