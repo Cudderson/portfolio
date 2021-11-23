@@ -42,6 +42,12 @@
   font-weight: 700;
 }
 
+/* testing scroll animation */
+.highlight {
+  color: crimson;
+  transition: 2s;
+}
+
 .project-description {
   margin: 1.5rem 0;
   font-size: 21px;
