@@ -13,9 +13,7 @@
   /* this prevents centering on mobile! */
   /* justify-content: space-between; */
 
-  /* align-items: center; */
   margin: 10rem auto;
-  /* border: 2px solid black; */
 }
 
 .project-image-container {
@@ -23,12 +21,57 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
+
+  /* scroll animation increases opacity */
+  opacity: 0;
 }
 
 .project-text {
   display: block;
   max-width: 475px;
+
+  /* scroll animation increases opacity*/
+  opacity: 0;
 }
+
+/* testing scroll animation */
+.slidein-image, .slidein-text {
+  animation-duration: 750ms;
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: .75s;
+}
+
+.slidein-image {
+  animation-name: slidein-image;
+}
+
+.slidein-text {
+  animation-name: slidein-text;
+}
+
+@keyframes slidein-image {
+  from {
+    right: 50px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes slidein-text {
+  from {
+    left: 50px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+/* end scroll testing */
 
 .project-text > h2 {
   margin: 0;
@@ -40,12 +83,6 @@
   font-family: 'PT Serif', serif;
   font-size: 55px;
   font-weight: 700;
-}
-
-/* testing scroll animation */
-.highlight {
-  color: crimson;
-  transition: 2s;
 }
 
 .project-description {
