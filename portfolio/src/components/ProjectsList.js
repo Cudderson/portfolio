@@ -98,12 +98,10 @@ const ProjectsList = () => {
       </div>
       <div className={styles['all-work']}>
           <strong>Check out my Github profile to view all of my projects, including what I'm working on now:</strong>
-          <button>
-            <FontAwesomeIcon icon={['fab', 'github']} />
-            <a href="https://github.com/Cudderson">
-              View Profile
-            </a>
-          </button>
+          <a href="https://github.com/Cudderson">
+            <FontAwesomeIcon icon={['fab', 'github']} className={styles['all-work-icon']} />
+            View Profile
+          </a>
       </div>
     </div>
   )
