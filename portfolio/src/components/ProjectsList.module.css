@@ -24,8 +24,8 @@
 .all-work {
   margin: 0 auto;
   padding: 4rem 0 10rem 0;
-  /* border: 1px solid black; */
   max-width: 500px;
+  text-align: center;
 }
 
 .all-work > strong {
@@ -33,25 +33,24 @@
   padding-bottom: 2.5rem;
   font-family: "PT Serif", serif;
   font-size: 22px;
-  text-align: center;
 }
 
-.all-work > button {
-  display: block;
-  margin: 0 auto;
+.all-work-icon {
+  margin-right: 5px;
+}
+
+.all-work > a {
+  /* display: inline-block; */
+  /* margin: 0 auto; */
+  border: 2px solid black;
   padding: .5rem 1.25rem;
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 28px;
   background-color: white;
-}
-
-.all-work > button:hover {
-  background-color: white;
-}
-
-/* probably should make general <button> or <a> class */
-.all-work > button > a {
-  margin-left: 8px;
-  text-decoration: none;
   color: black;
+}
+
+.all-work > a:hover {
+  background-color: darkorange;
 }

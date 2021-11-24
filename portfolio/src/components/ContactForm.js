@@ -12,21 +12,15 @@ const ContactForm = () => {
         Let's get in touch!
       </p>
       <div className={styles['contact-form']}>
-        <button>
-          <a href="https://github.com/Cudderson">
-            Github Profile
-          </a>
-        </button>
-        <button>
-          <a href="mailto:codered1227@gmail.com">
-            Contact By Email
-          </a>
-        </button>
-        <button>
-          <a href="https://www.linkedin.com/in/cody-weller-a5ba80222">
-            LinkedIn Profile
-          </a>
-        </button>
+        <a href="https://github.com/Cudderson">
+          Github Profile
+        </a>
+        <a href="mailto:codered1227@gmail.com">
+          Contact By Email
+        </a>
+        <a href="https://www.linkedin.com/in/cody-weller-a5ba80222">
+          LinkedIn Profile
+        </a>
       </div>
     </div>
   )
