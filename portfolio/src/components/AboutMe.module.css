@@ -19,3 +19,29 @@
   font-family: 'Roboto', sans-serif;
   font-size: 19px;
 }
+
+.harvard {
+  padding: 0 .25rem;
+  text-decoration: none;
+  /* color: crimson; */
+  color: rgb(165, 28, 48);
+}
+
+.harvard:hover {
+  text-decoration: underline;
+}
+
+.certificate {
+  font-style: italic;
+  color: darkgray;
+}
+
+.certificate:hover {
+  color: black;
+}
+
+/* 
+  harvard crimson vs css crimson
+  color: rgb(165, 28, 48); 
+  color: crimson;
+*/
