@@ -8,6 +8,9 @@ import custom_icons from './../assets/badges/badges.js';
 import slider_images from './../assets/images/slider_images.js';
 import { project_features } from '../utilities/project_features_util.js';
 
+// for <h3> header
+import ProjectTechIcon from './ProjectTechIcon.js';
+
 // for all-work
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -15,8 +18,11 @@ const ProjectsList = () => {
 
   return (
     <div className={styles['projects-list-outer']}>
-      <h2 className={styles.featured}>Featured Projects</h2>
-      <h3 className={styles['sub-header']}>All projects built entirely by me!</h3>
+      <h2 className={styles['projects-list-header']}>Featured Projects</h2>
+      <div className={styles['projects-list-sub-header']}>
+        <h3>All projects built solely by me using</h3>
+        <ProjectTechIcon family='fab' icon='git-alt' text='Git' />
+      </div>
       <div className={styles['projects-list-inner']}>
         <Project
           name="Natural Selection Simulator"
