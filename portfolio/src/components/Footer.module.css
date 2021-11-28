@@ -1,6 +1,7 @@
 footer {
   border-top: 2px solid lightgray;
   padding: 2rem 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-inner {
@@ -16,16 +17,29 @@ footer {
   /* reset <p> defaults (make global) */
   margin: 0;
   padding: 0;
-  margin-bottom: 0rem;
 
   /* set initial size to 50% */
   flex-basis: 50%;
 }
 
-/* this rule requires that this is a block element */
-/* needs mobile fix */
-.footer-item-right {
-  margin-left: auto;
+.footer-inner strong {
+  display: block;
+  font-family: "PT Serif", serif;
+  padding-bottom: .4rem;
+}
+
+.footer-social > a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-social > a:hover {
+  color: lightseagreen
+}
+
+.footer-social > span {
+  margin: 0 .5rem;
+  pointer-events: none;
 }
 
 @media (min-width: 700px) {
@@ -33,6 +47,12 @@ footer {
     flex-basis: auto;
     margin-bottom: 0;
     margin-right: 3rem;
+  }
+
+  /* this rule requires that this is a block element */
+  /* needs mobile fix */
+  .footer-item-right {
+    margin-left: auto;
   }
 }
 

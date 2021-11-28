@@ -13,9 +13,7 @@
   /* this prevents centering on mobile! */
   /* justify-content: space-between; */
 
-  /* align-items: center; */
   margin: 10rem auto;
-  /* border: 2px solid black; */
 }
 
 .project-image-container {
@@ -23,34 +21,79 @@
   justify-content: center;
   align-items: center;
   max-width: 500px;
+
+  /* scroll animation increases opacity */
+  opacity: 0;
 }
 
 .project-text {
   display: block;
-  max-width: 475px;
+  /* max-width: 475px; <- original */
+  max-width: 500px;
+
+  /* scroll animation increases opacity*/
+  opacity: 0;
 }
+
+/* testing scroll animation */
+.slidein-image, .slidein-text {
+  animation-duration: 750ms;
+  position: relative;
+  top: 0;
+  opacity: 1;
+  transition: .75s;
+}
+
+.slidein-image {
+  animation-name: slidein-image;
+}
+
+.slidein-text {
+  animation-name: slidein-text;
+}
+
+@keyframes slidein-image {
+  from {
+    right: 50px;
+  }
+
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes slidein-text {
+  from {
+    left: 50px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+
+/* end scroll testing */
 
 .project-text > h2 {
   margin: 0;
   line-height: 3rem;
 }
 
-.project-title {
+.project-title, .project-title-lg {
   margin: 1rem 0;
   font-family: 'PT Serif', serif;
-  font-size: 55px;
+  /* font-size: 55px; <- original */
+  font-size: 48px;
   font-weight: 700;
 }
 
-/* testing scroll animation */
-.highlight {
-  color: crimson;
-  transition: 2s;
+.project-title-long {
+  font-size: 37px;
 }
 
 .project-description {
   margin: 1.5rem 0;
-  font-size: 21px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -64,3 +107,15 @@
 .project-text > ul li {
   margin-top: 15px;
 }
+
+/* testing project features integration */
+/* .project-features {
+  border: none;
+  border-radius: 9999px;
+  padding: .3rem .65rem;
+
+  background-color: rgb(245, 245, 245);
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+} */

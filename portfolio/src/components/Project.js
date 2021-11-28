@@ -9,38 +9,64 @@ import ProjectLinks from './ProjectLinks.js';
 import { useEffect, useRef } from 'react';
 
 const Project = (props) => {
-
-  // testing scroll animations with test useRef and dummy state
-  const test_ref = useRef(null);
+  const image_ref = useRef(null);
+  const text_ref = useRef(null);
 
   // this should only appear on initial project renders (4 times)
   console.log('rerendered!')
 
-  // add highlight class when element comes into view
+  console.log(props.name.length);
+
   // we are creating eventListeners on the initial render in useEffect()
+
+  // options for IntersectionObserver
+  // omitted values are default
+  let options = {
+    // root: null,
+    // rootMargin: '0px',
+    threshold: 0.5
+  }
+  // consider extracting this code into their own hooks if possible
+  
+  // intersection observer for project.image-container
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
+    const image_observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(styles['slidein-image'])
+        }
+      });
+    }, options);
+
+    if (image_ref.current) {
+      image_observer.observe(image_ref.current);
+    }
+  }, [image_ref.current]);
+
+  // intersection observer for project.text
+  useEffect(() => {
+    const text_observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           // proper way to add class with current method
-          entry.target.classList.add(styles.highlight);
+          entry.target.classList.add(styles['slidein-text']);
 
           // we don't need to rerender the component, as we're just adding a class
           console.log("class added");
         }
-        else {
-          // remove class when element leaves visibility (make sure you want this)
-          entry.target.classList.remove(styles.highlight);
-          console.log("class removed");
-        }
+        // else {
+        //   // remove class when element leaves visibility (make sure you want this)
+        //   entry.target.classList.remove(styles.fadein);
+        //   console.log("class removed");
+        // }
       })
-    });
+    }, options);
   
     // 'current' refers to the mounted <h2> element
-    if (test_ref.current) {
-      observer.observe(test_ref.current);
+    if (text_ref.current) {
+      text_observer.observe(text_ref.current);
     }
-  }, [test_ref.current]);  // depedency array could be empty, but populating for now
+  }, [text_ref.current]);  // depedency array could be empty, but populating for now
 
   return (
     // consider using element selectors in css rather than many classes
@@ -48,22 +74,25 @@ const Project = (props) => {
     // ** be aware of extra wrapper divs **
 
     <div className={styles.project}>
-      <div className={styles['project-image-container']}>
+      <div className={styles['project-image-container']} ref={image_ref}>
         <ImageSlider images={props.images} />
       </div>
-      <div className={styles['project-text']}>
-        <h2 className={styles['project-title']} ref={test_ref}>
-          {props.name}
-        </h2>
+      <div className={styles['project-text']} ref={text_ref}>
+        {/* shrink long title sizes to smaller font size */}
+        {props.name.length < 20 ?
+          <h2 className={styles['project-title']}>
+            {props.name}
+          </h2>
+          :
+          <h2 className={styles['project-title-long']}>
+            {props.name}
+          </h2>
+        }
         <p className={styles['project-description']}>
           {props.description}
         </p>
-
-        {/* this will be the link section */}
+        {/* <button className={styles['project-features']}>show features</button> */}
         <ProjectLinks live_url={props.live_url} repo_url={props.repo_url} />
-
-        {/* this will be the "Made With" section */}
-        {/* maybe make this entire div part of ProjectTech? */}
         <div>
           <h4 style={{margin: '1.75rem 0 .5rem', fontFamily: 'Verdana', fontSize: "13px"}}>Made With</h4>
           <ProjectTech icons={props.icons} />

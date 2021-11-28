@@ -17,9 +17,9 @@ const Hero = () => {
     <div className={styles['hero-container']}>
       <h2>
         {/* too long! 3 lines = perfect */}
-        I'm a software developer based in Wisconsin.
+        I'm a web developer from Wisconsin. 
         <br/>
-        Focused on the web, I build creative and performant tech solutions.
+        I create efficient tech solutions using passion, persistence, and a positive attitude.
         <div className={styles['floating-image']}></div>
       </h2>
       
