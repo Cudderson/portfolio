@@ -5,19 +5,19 @@ const Footer = () => {
     <footer>
       <div className={styles['footer-inner']}>
         <p>
-          <span>c 2021</span>
-          <br/>
+          <strong>&copy; 2021</strong>
           <span>Cody Weller</span>
         </p>
-        <p>
-          <span>Social</span>
-          <br/>
-          <span>(Github / LinkedIn)</span>
+        <p className={styles['footer-social']}>
+          <strong>Social</strong>
+          <a href='https://github.com/Cudderson'>Github</a>
+          <span>-</span>
+          <a href='https://www.linkedin.com/in/cody-weller-a5ba80222'>LinkedIn</a>
+          <span>-</span>
+          <a href='mailto:codered1227@gmail.com'>Email</a>
         </p>
-        {/*  display this one on far right */}
         <div className={styles['footer-item-right']}>
-          <span>right  top</span>
-          <br/>
+          <strong>right  top</strong>
           <span>right bottom</span>
         </div>
       </div>
