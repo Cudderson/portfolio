@@ -15,6 +15,8 @@ const Project = (props) => {
   // this should only appear on initial project renders (4 times)
   console.log('rerendered!')
 
+  console.log(props.name.length);
+
   // we are creating eventListeners on the initial render in useEffect()
 
   // options for IntersectionObserver
@@ -76,12 +78,20 @@ const Project = (props) => {
         <ImageSlider images={props.images} />
       </div>
       <div className={styles['project-text']} ref={text_ref}>
-        <h2 className={styles['project-title']}>
-          {props.name}
-        </h2>
+        {/* shrink long title sizes to smaller font size */}
+        {props.name.length < 20 ?
+          <h2 className={styles['project-title']}>
+            {props.name}
+          </h2>
+          :
+          <h2 className={styles['project-title-long']}>
+            {props.name}
+          </h2>
+        }
         <p className={styles['project-description']}>
           {props.description}
         </p>
+        {/* <button className={styles['project-features']}>show features</button> */}
         <ProjectLinks live_url={props.live_url} repo_url={props.repo_url} />
         <div>
           <h4 style={{margin: '1.75rem 0 .5rem', fontFamily: 'Verdana', fontSize: "13px"}}>Made With</h4>

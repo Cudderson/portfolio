@@ -27,7 +27,9 @@ const ProjectsList = () => {
         <Project
           name="Natural Selection Simulator"
           description={`
-            A customizable implementation of a genetic algorithm based on natural selection.
+            A customizable implementation of a genetic algorithm that runs in the browser.
+            Configure your own species of organisms and watch them traverse the user-drawn path 
+            and attempt to reach the goal!
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/natural-selection"
@@ -48,6 +50,7 @@ const ProjectsList = () => {
           name="kokoro"
           description={`
             Personal wellness app and social space focused on balancing the mind, body and soul.
+            Complete daily activities, add friends, write posts, and more!
           `}
           live_url="https://getkokoro.herokuapp.com"
           repo_url="https://github.com/Cudderson/kokoro-app"
@@ -68,7 +71,8 @@ const ProjectsList = () => {
         <Project
           name="Tesla Now"
           description={`
-            Analysis tool and central location for Tesla Inc
+            Charts, analysis, and news for Tesla Inc.
+            Built with real-time data via the Finnhub Stock API.
           `}
           live_url="https://tesla-now.herokuapp.com"
           repo_url="https://github.com/Cudderson/tesla-now"
@@ -88,7 +92,8 @@ const ProjectsList = () => {
         <Project
           name="password manager"
           description={`
-            CLI tool to encrypt/decrypt and store personal passwords. 
+            CLI tool to encrypt/decrypt and store personal passwords.
+            Supports basic CRUD operations with a MySQL database.
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/password-manager"
@@ -103,7 +108,7 @@ const ProjectsList = () => {
         />
       </div>
       <div className={styles['all-work']}>
-          <strong>Check out my Github profile to view all of my projects, including what I'm working on now:</strong>
+          <strong>View code and documentation for each project on Github, including what I'm working on now:</strong>
           <a href="https://github.com/Cudderson">
             <FontAwesomeIcon icon={['fab', 'github']} className={styles['all-work-icon']} />
             View Profile

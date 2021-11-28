@@ -28,7 +28,8 @@
 
 .project-text {
   display: block;
-  max-width: 475px;
+  /* max-width: 475px; <- original */
+  max-width: 500px;
 
   /* scroll animation increases opacity*/
   opacity: 0;
@@ -78,11 +79,16 @@
   line-height: 3rem;
 }
 
-.project-title {
+.project-title, .project-title-lg {
   margin: 1rem 0;
   font-family: 'PT Serif', serif;
-  font-size: 55px;
+  /* font-size: 55px; <- original */
+  font-size: 48px;
   font-weight: 700;
+}
+
+.project-title-long {
+  font-size: 37px;
 }
 
 .project-description {
@@ -101,3 +107,15 @@
 .project-text > ul li {
   margin-top: 15px;
 }
+
+/* testing project features integration */
+/* .project-features {
+  border: none;
+  border-radius: 9999px;
+  padding: .3rem .65rem;
+
+  background-color: rgb(245, 245, 245);
+  
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+} */
