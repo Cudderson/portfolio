@@ -1,5 +1,22 @@
 /* need to clean this file when project component complete / refactor */
 
+/* making <Project/> responsive */
+/* 
+  [*]: concise as possible, don't fight the css
+
+  TOFIX (mobile)
+  (^ == mobile && desktop)
+  (these will all probably be default styles that will push current to media query)
+  (or find dynamic solution)
+
+   [x]: "Featured Projects" font size
+  ^[ ]: description line height   
+   [ ]: spacing between image and header
+   [ ]: header size
+   [ ]: sub-header size
+   [ ]: decide if want animations removed or not
+*/
+
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -82,13 +99,12 @@
 .project-title, .project-title-long {
   margin: 1rem 0;
   font-family: 'PT Serif', serif;
-  /* font-size: 55px; <- original */
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 700;
 }
 
 .project-title-long {
-  font-size: 37px;
+  font-size: 21px;
 }
 
 .project-description {
@@ -119,3 +135,16 @@
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 } */
+
+/* *** left off working on header && header spacing */
+
+@media (min-width: 500px) {
+  .project-title, .project-title-long {
+    margin: 1rem 0;
+    font-size: 48px;
+  }
+  
+  .project-title-long {
+    font-size: 33px;
+  }
+}
