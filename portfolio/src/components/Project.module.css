@@ -1,36 +1,13 @@
-/* need to clean this file when project component complete / refactor */
-
-/* making <Project/> responsive */
-/* 
-  [*]: concise as possible, don't fight the css
-
-  TOFIX (mobile)
-  (^ == mobile && desktop)
-  (these will all probably be default styles that will push current to media query)
-  (or find dynamic solution)
-
-   [x]: "Featured Projects" font size
-  ^[ ]: description line height   
-   [ ]: spacing between image and header
-   [ ]: header size
-   [ ]: sub-header size
-   [ ]: decide if want animations removed or not
-*/
-
 .project {
   display: flex;
   flex-wrap: wrap;
+  margin: 10rem auto;
 
-  /* saving just in case */
-  /* justify-content: space-evenly; */
+  /* creates space between imageslider and project text when collapsing to 2 rows */
+  gap: 2rem 0px;
 
   /* this works well */
   justify-content: space-around;
-
-  /* this prevents centering on mobile! */
-  /* justify-content: space-between; */
-
-  margin: 10rem auto;
 }
 
 .project-image-container {
@@ -45,14 +22,12 @@
 
 .project-text {
   display: block;
-  /* max-width: 475px; <- original */
   max-width: 500px;
 
   /* scroll animation increases opacity*/
   opacity: 0;
 }
 
-/* testing scroll animation */
 .slidein-image, .slidein-text {
   animation-duration: 750ms;
   position: relative;
@@ -89,15 +64,8 @@
   }
 }
 
-/* end scroll testing */
-
-.project-text > h2 {
-  margin: 0;
-  line-height: 3rem;
-}
-
 .project-title, .project-title-long {
-  margin: 1rem 0;
+  margin: 0;
   font-family: 'PT Serif', serif;
   font-size: 28px;
   font-weight: 700;
@@ -108,9 +76,10 @@
 }
 
 .project-description {
-  margin: 1.5rem 0;
-  font-size: 20px;
+  margin: .5rem 0;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.55rem;
 }
 
 .project-text > ul {
@@ -124,27 +93,17 @@
   margin-top: 15px;
 }
 
-/* testing project features integration */
-/* .project-features {
-  border: none;
-  border-radius: 9999px;
-  padding: .3rem .65rem;
-
-  background-color: rgb(245, 245, 245);
-  
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-} */
-
-/* *** left off working on header && header spacing */
-
 @media (min-width: 500px) {
-  .project-title, .project-title-long {
-    margin: 1rem 0;
+  .project-title {
     font-size: 48px;
   }
   
   .project-title-long {
     font-size: 33px;
+  }
+
+  .project-description {
+    margin: .8rem 0;
+    font-size: 20px;
   }
 }
