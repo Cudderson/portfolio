@@ -11,19 +11,22 @@
 .projects-list-header {
   margin: .1rem 0;
   font-family: 'PT Serif', serif;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 700;
 }
+
 
 .projects-list-sub-header {
   display: flex;
   align-items: center;
 }
 
+/* change ProjectTechIcon media query to match this h3 */
 .projects-list-sub-header > h3 {
   margin: 0 5px 0 0;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
+  font-size: 14px;
 }
 
 .all-work {
@@ -58,4 +61,16 @@
 
 .all-work > a:hover {
   background-color: darkorange;
+}
+
+/* media queries */
+@media (min-width: 500px) {
+  .projects-list-header {
+    margin: .1rem 0;
+    font-size: 44px;
+  }
+
+  .projects-list-sub-header > h3 {
+    font-size: 18px;
+  }
 }

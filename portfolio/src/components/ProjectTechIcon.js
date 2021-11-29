@@ -9,7 +9,7 @@ const ProjectTechIcon = (props) => {
       {/* conditional for custom icons */}
       {props.family !== null ? 
         <FontAwesomeIcon icon={[props.family, props.icon]} /> :
-        <img src={props.icon} style={{width: '16px', height: '16px'}}></img>
+        <img src={props.icon}></img>
       }
       <span>{props.text}</span>
     </div>
