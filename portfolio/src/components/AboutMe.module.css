@@ -10,14 +10,19 @@
 .about-me-container > h2 {
   margin: 0;
   font-family: 'PT Serif', serif;
-  font-size: 80px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: normal;
 }
 
-.about-me-container p {
-  line-height: 1.75rem;
+.about-me-container > h3, .about-me-container p {
+  margin: 1.5rem 0;
+  line-height: 1.7rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+  font-size: 18px;
+}
+
+.about-me-container > h3 {
+  color: green;
 }
 
 .harvard {
@@ -45,3 +50,14 @@
   color: rgb(165, 28, 48); 
   color: crimson;
 */
+
+/* media queries */
+@media (min-width: 500px) {
+  .about-me-container > h2 {
+    font-size: 75px;
+  }
+
+  .about-me-container > h3, .about-me-container p {
+    font-size: 19px;
+  }
+}

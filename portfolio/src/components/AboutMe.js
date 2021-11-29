@@ -7,9 +7,9 @@ const AboutMe = () => {
     // learn more about fragments '<></>' and consider if they'd be better than another wrapper div 
     <div className={styles['about-me-container']}>
       <h2>About Me</h2>
-      <p style={{fontWeight: 700, padding: '.5rem 0 1rem'}}>
+      <h3>
         I'm a self-taught developer with passion, persistence, and a positive attitude. 
-      </p>
+      </h3>
       <p>
         I wrote my first line of code in high school,
         where I had the opportunity to take multiple introductory programming courses.
@@ -41,8 +41,8 @@ const AboutMe = () => {
         Using daily learning, building, and curiosity, I've dedicated much of the 
         last ~2 years of my life to improving my competency as a developer.
       </p>
+      <br />
       <p>
-        <br/>
         {/* consider emojis here? */}
         When I'm not on my computer, I enjoy reading, writing, and playing guitar.
         In the short Wisconsin summertime, I love to play baseball, disc golf, and take long bike rides. 
