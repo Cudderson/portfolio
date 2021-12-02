@@ -1,10 +1,10 @@
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin: 10rem auto;
+  margin: 4rem auto;
 
   /* creates space between imageslider and project text when collapsing to 2 rows */
-  gap: 2rem 0px;
+  gap: 2rem; /* row-gap / column-gap */
 
   /* this works well */
   justify-content: space-around;
@@ -29,11 +29,11 @@
 }
 
 .slidein-image, .slidein-text {
-  animation-duration: 750ms;
+  animation-duration: 750ms; /* controls slide-in duration */
   position: relative;
   top: 0;
   opacity: 1;
-  transition: .75s;
+  transition: 750ms; /* controls opacity change */
 }
 
 .slidein-image {
@@ -82,18 +82,17 @@
   line-height: 1.55rem;
 }
 
-.project-text > ul {
-  padding-left: 1rem;
-  font-size: 18px;
-  list-style-type: '- ';
-  line-height: 1.25rem;
-}
-
-.project-text > ul li {
-  margin-top: 15px;
+.made-with {
+  margin: 1.75rem 0 .5rem;
+  font-family: 'Verdana';
+  font-size: 13px;
 }
 
 @media (min-width: 500px) {
+  .project {
+    margin: 10rem auto;
+  }
+
   .project-title {
     font-size: 48px;
   }
