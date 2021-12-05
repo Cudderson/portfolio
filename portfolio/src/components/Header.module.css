@@ -1,18 +1,5 @@
-/* keeping for reference */
-/* @media (max-width: 1000px) {
-  .header {
-    margin: 0 auto;
-    border: 2px solid black;
-    width: 90%;
-    max-width: 1200px;
-    padding: 3rem;
-    font-size: 1rem;
-    color: goldenrod;
-  }
-} */
-
 .header {
-  padding: 3rem 0;
+  padding: 1rem 0;
   color: black;
   border-bottom: 1px solid rgb(240, 240, 240);
 }
@@ -24,4 +11,10 @@
   margin: 0 auto;
   width: 90%;
   max-width: 1200px;
+}
+
+@media (min-width: 500px) {
+  .header {
+    padding: 3rem 0;
+  }
 }

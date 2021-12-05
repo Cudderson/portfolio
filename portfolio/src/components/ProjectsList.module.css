@@ -1,37 +1,30 @@
 .projects-list-outer {
-  margin-top: 12rem;
   color: black;
   border-bottom: 1px solid black;
 }
 
-.projects-list-inner {
-  margin-top: 8rem;
-}
-
 .projects-list-header {
-  margin: .1rem 0;
+  margin: 0 0 .1rem;
   font-family: 'PT Serif', serif;
-  font-size: 30px;
+  font-size: clamp(20px, 2.5vw, 34px);
   font-weight: 700;
 }
-
 
 .projects-list-sub-header {
   display: flex;
   align-items: center;
 }
 
-/* change ProjectTechIcon media query to match this h3 */
 .projects-list-sub-header > h3 {
   margin: 0 5px 0 0;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: clamp(13px, 1.5vw, 16px);
 }
 
 .all-work {
   margin: 0 auto;
-  padding: 4rem 0 6rem 0;
+  padding: 0rem 0 6rem 0;
   max-width: 500px;
   text-align: center;
 }
@@ -48,8 +41,6 @@
 }
 
 .all-work > a {
-  /* display: inline-block; */
-  /* margin: 0 auto; */
   border: 2px solid black;
   padding: .3em 1em;
   text-decoration: none;
@@ -66,12 +57,7 @@
 /* media queries */
 @media (min-width: 500px) {
   .projects-list-header {
-    margin: .1rem 0;
-    font-size: 40px;
-  }
-
-  .projects-list-sub-header > h3 {
-    font-size: 16px;
+    margin: 0 0 .1rem;
   }
 
   .all-work {
@@ -85,5 +71,12 @@
   .all-work > a {
     padding: .5rem 1.25rem;
     font-size: 28px;
+  }
+}
+
+/* match with when project joins to one row */
+@media (min-width: 1150px) {
+  .projects-list-inner {
+    margin-top: 8rem;
   }
 }

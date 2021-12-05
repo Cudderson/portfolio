@@ -1,12 +1,10 @@
 .project {
   display: flex;
   flex-wrap: wrap;
-  margin: 4rem auto;
+  margin: 2rem auto 6rem;
 
   /* creates space between imageslider and project text when collapsing to 2 rows */
   gap: 2rem; /* row-gap / column-gap */
-
-  /* this works well */
   justify-content: space-around;
 }
 
@@ -89,10 +87,6 @@
 }
 
 @media (min-width: 500px) {
-  .project {
-    margin: 10rem auto;
-  }
-
   .project-title {
     font-size: 48px;
   }
@@ -104,5 +98,12 @@
   .project-description {
     margin: .8rem 0;
     font-size: 20px;
+  }
+}
+
+/* match with when project joins to one row */
+@media (min-width: 1150px) {
+  .project {
+    margin: 10rem auto;
   }
 }
