@@ -1,8 +1,3 @@
-/* .header-nav {
-  border: 2px solid black;
-} */
-
-/* this should be a global */
 .header-nav > ul {
   display: flex;
   flex-direction: row;
@@ -21,15 +16,7 @@
   color: black;
 }
 
-
 /* need to update for new links/icons */
 .header-nav > ul > li:hover {
   color: goldenrod;
-}
-
-/* this is my current method for switching between navbar displays */
-@media (max-width: 700px) {
-  .header-nav > ul {
-    display: none
-  }
 }

@@ -1,75 +1,22 @@
-/* in future, we'll have a breakpoint for font-sizes/etc */
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 2rem 0 4rem;
-}
-
-.hero > h2 {
-  margin: 0 0 .75rem;
-  font-family: 'PT Serif', serif;
-  /* font-family: "Verdana"; */
-  font-size: 1rem;
-}
-
-.hero > h1 {
-  /* make sure this rule carries to media query */
-  font-family: 'PT Serif', serif;
-
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-.hero > p {
-  margin-top: .75rem;
-
-  /* font-family: 'Lato', sans-serif; */
-  /* font-family: 'Noto Sans Display', sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Oxygen', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'PT Serif', serif;
-  /* font-family: 'Zen Antique', serif; */
-  font-weight: 400;
-  font-size: 32px;
-}
-
-@media (min-width: 700px) {
-  .hero > h1 {
-    font-size: 5.875rem;
-  }
-
-  .hero > p {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 950px) {
-  .hero {
-    /* adds spacing between header and hero */
-    min-height: 425px;
-  }
-}
-
-
-/* new styles */
-
 .hero-container {
-  width: 85%;
-  padding: 5rem 0rem 5rem; 
+  padding: 8rem 0rem 10rem; 
 }
 
 .hero-container > h2 {
+  display: inline;
+  margin: 0;
   position: relative;
   font-family: "PT Serif", sans-serif;
-  font-size: 48px;
+  font-size: clamp(24px, 3.5vw, 48px);
   font-weight: 700;
 }
 
-.floating-image {
+.hero-container > h2:nth-child(2),
+.hero-container > h2:nth-child(3) {
+  padding-left: 5px;
+}
+
+/* .floating-image {
   position: absolute;
   z-index: -1;
   top: -50px;
@@ -79,4 +26,24 @@
   height: 375px;
   background-color: crimson;
   font-size: 14px;
+} */
+
+/* use multiple media queries if needed to get hero font-size correct */
+@media (min-width: 570px) {
+  /* to solve: make text scale so that new lines arent created on shrink */
+  /* new lines = push down featured projects */
+  .hero-container > h2:nth-child(1),
+  .hero-container > h2:nth-child(2),
+  .hero-container > h2:nth-child(3) {
+    display: block;
+    padding: 0;
+  }
+  
+}
+
+@media (min-width: 1000px) {
+  .hero-container {
+    width: 85%;
+    padding: 7rem 0rem 17em; 
+  }
 }

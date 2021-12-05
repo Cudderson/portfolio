@@ -13,9 +13,7 @@ const Project = (props) => {
   const text_ref = useRef(null);
 
   // this should only appear on initial project renders (4 times)
-  console.log('rerendered!')
-
-  console.log(props.name.length);
+  console.log('rerendered!');
 
   // we are creating eventListeners on the initial render in useEffect()
 
@@ -24,7 +22,7 @@ const Project = (props) => {
   let options = {
     // root: null,
     // rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.6
   }
   // consider extracting this code into their own hooks if possible
   
@@ -91,10 +89,9 @@ const Project = (props) => {
         <p className={styles['project-description']}>
           {props.description}
         </p>
-        {/* <button className={styles['project-features']}>show features</button> */}
         <ProjectLinks live_url={props.live_url} repo_url={props.repo_url} />
         <div>
-          <h4 style={{margin: '1.75rem 0 .5rem', fontFamily: 'Verdana', fontSize: "13px"}}>Made With</h4>
+          <h4 className={styles['made-with']}>Made With</h4>
           <ProjectTech icons={props.icons} />
         </div>
       </div>
