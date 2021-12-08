@@ -33,28 +33,31 @@
   display: block;
   padding-bottom: 2.5em;
   font-family: "PT Serif", serif;
-  font-size: 14px;
+  font-size: clamp(14px, 3.5vw, 22px);
 }
 
 .all-work-icon {
-  margin-right: 5px;
+  margin-right: .3em;
 }
 
 .all-work > a {
-  border: 2px solid black;
-  padding: .3em 1em;
-  text-decoration: none;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding: .3em .6em;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  background-color: white;
+  font-size: clamp(16px, 4vw, 26px);
   color: black;
+  text-decoration: none;
+  transition: .25s;
 }
 
 .all-work > a:hover {
-  background-color: darkorange;
+  border-color: rgb(46, 54, 46);
+  color: rgb(47, 255, 47);
+  background-color: rgb(46, 54, 46);
+  transition: .25s;
 }
 
-/* media queries */
 @media (min-width: 500px) {
   .projects-list-header {
     margin: 0 0 .1rem;
@@ -62,15 +65,6 @@
 
   .all-work {
     padding: 4rem 0 10rem 0;
-  }
-
-  .all-work > strong {
-    font-size: 22px;
-  }
-
-  .all-work > a {
-    padding: .5rem 1.25rem;
-    font-size: 28px;
   }
 }
 
