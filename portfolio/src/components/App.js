@@ -1,5 +1,6 @@
 import Header from './Header';
 import Hero from './Hero';
+import Skills from './Skills';
 import ProjectsList from './ProjectsList';
 import AboutMe from './AboutMe.js';
 import ContactForm from './ContactForm.js';
@@ -26,6 +27,7 @@ const App = () => {
       <Header />
       <main className={styles['app-main']}>
         <Hero />
+        <Skills />
         <ProjectsList />
         <AboutMe />
         <ContactForm />

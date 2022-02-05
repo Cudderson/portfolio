@@ -9,8 +9,9 @@
   padding-top: 4rem;
 
 
-  /* this will be removed */
-  padding-bottom: 300px;
+  /* this will be removed / needs work */
+  /* padding-bottom: calc(130px + 1vw); */
+  /* height: 70vh; */
 }
 
 .avatar-container {
@@ -19,7 +20,7 @@
   align-items: center;
   flex-basis: 50%;
   border: 2px dashed aqua;
-  min-width: 300px;
+  padding: 1.5rem 0;
 }
 
 .avatar-container > img {
@@ -27,8 +28,10 @@
   margin: 0 auto;
   border: 1px dotted black;
   border-radius: 50%;
+  /* this handles mobile/desktop scaling */
+  min-width: 240px;
   width: 50%;
-  min-width: 200px;
+  max-width: 300px;
 }
 
 .hero-content {
@@ -44,7 +47,7 @@
 
 .hero-content > p {
   font-family: "PT Serif", serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   margin: .5rem 0;
 }
