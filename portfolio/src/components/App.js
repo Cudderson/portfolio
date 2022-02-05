@@ -12,6 +12,8 @@ import './../utilities/fa_library.js';
 
 const App = () => {
 
+  // refactoring portfolio sections and finish site
+
   // probably do this better in future (use/add class)
   document.querySelector('body').style.margin = 0;
   document.querySelector('html').style.margin = 0;
