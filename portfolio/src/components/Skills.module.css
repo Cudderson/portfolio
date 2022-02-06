@@ -1,0 +1,25 @@
+.skills-container {
+  border: 1px solid red;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 5rem;
+  justify-content: space-around;
+  list-style-type: none;
+  border: 1px dashed darkslateblue;
+  margin: 0;
+  padding: 2rem;
+}
+
+.skills-list > li > span {
+  font-size: 38px;
+}
+
+.skills-list > li > img {
+  width: 38px;
+  height: 38px;
+}

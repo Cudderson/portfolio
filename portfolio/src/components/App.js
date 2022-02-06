@@ -21,6 +21,7 @@ const App = () => {
   document.querySelector('body').style.padding = 0;
   document.querySelector('html').style.padding = 0;
 
+
   return (
     <div>
       {/* header should cover 100% width, but inner container should be capped to 90% / 1200px (same as '.app-main') */}
