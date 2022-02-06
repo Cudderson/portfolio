@@ -1,6 +1,4 @@
 .skills-outer {
-  /* border: 1px solid red; */
-  /* margin-top: auto; */
   padding-top: 150px;
 }
 
@@ -40,12 +38,35 @@
 }
 
 .skills-list > li > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.skills-list > li > span > svg,
+.skills-list > li > img {
+  transition: .25s;
+}
+
+.skills-list > li > span > svg:hover,
+.skills-list > li > img:hover {
+  transform: translateY(-12px);
+  transition: .25s;
 }
 
 .skills-list > li > img {
+  display: block;
   width: 38px;
   height: 38px;
+  transition: .25s;
+}
+
+.skill-text {
+  display: block;
+  font-size: 16px !important;
+  padding-top: 1rem;
 }
 
 @media (max-width: 400px) {

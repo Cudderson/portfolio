@@ -40,14 +40,16 @@ const Skills = () => {
           {skillsIcons ? (
             skillsIcons.row1.map((skill) => (
               skill.family !== null ? (
-                <li>
+                <li key={skill.text.toString()}>
                   <span>
                     <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                    <span className={styles['skill-text']}>{skill.text}</span>
                   </span>
                 </li>
               ) : (
                 <li>
-                  <img src={skill.icon}></img>
+                  <img src={skill.icon} alt=""></img>
+                  <span className={styles['skill-text']}>{skill.text}</span>
                 </li>
               )
             ))
@@ -57,14 +59,16 @@ const Skills = () => {
           {skillsIcons ? (
             skillsIcons.row2.map((skill) => (
               skill.family !== null ? (
-                <li>
+                <li key={skill.text.toString()}>
                   <span>
                     <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                    <span className={styles['skill-text']}>{skill.text}</span>
                   </span>
                 </li>
               ) : (
-                <li>
-                  <img src={skill.icon}></img>
+                <li key={skill.text.toString()}>
+                  <img src={skill.icon} alt=""></img>
+                  <span className={styles['skill-text']}>{skill.text}</span>
                 </li>
               )
             ))
