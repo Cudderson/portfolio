@@ -10,23 +10,21 @@ import custom_icons from './../assets/badges/badges.js';
 
 console.log('defining skillsIcons...');
 const skillsIcons = {
-  frontend: [
+  row1: [
     {family: 'fab', icon: 'js', text: 'Javascript'},
+    {family: 'fab', icon: 'python', text: 'Python'},
     {family: 'fab', icon: 'html5', text: 'HTML5'},
     {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
     {family: 'fab', icon: 'react', text: 'React'},
   ],
-  backend: [
-    {family: 'fab', icon: 'python', text: 'Python'},
+  row2: [
     {family: null, icon: custom_icons.django, text: 'Django'},
     {family: 'fas', icon: 'database', text: 'SQL'},
     {family: 'fab', icon: 'node-js', text: 'Node'},
-  ],
-  misc: [
     {family: 'fab', icon: 'git-alt', text: 'Git'},
     {family: 'fab', icon: 'github', text: 'Github'},
     {family: null, icon: custom_icons.plotly, text: 'Plotly'},
-  ],
+  ]
 }
 
 const Skills = () => {
@@ -40,7 +38,7 @@ const Skills = () => {
       <div className={styles['skills-inner']}>
         <ul className={styles['skills-list']}>
           {skillsIcons ? (
-            skillsIcons.frontend.map((skill) => (
+            skillsIcons.row1.map((skill) => (
               skill.family !== null ? (
                 <li>
                   <span>
@@ -57,24 +55,7 @@ const Skills = () => {
         </ul>
         <ul className={styles['skills-list']}>
           {skillsIcons ? (
-            skillsIcons.backend.map((skill) => (
-              skill.family !== null ? (
-                <li>
-                  <span>
-                    <FontAwesomeIcon icon={[skill.family, skill.icon]} />
-                  </span>
-                </li>
-              ) : (
-                <li>
-                  <img src={skill.icon}></img>
-                </li>
-              )
-            ))
-          ) : console.log('no skillz.')}
-        </ul>
-        <ul className={styles['skills-list']}>
-          {skillsIcons ? (
-            skillsIcons.misc.map((skill) => (
+            skillsIcons.row2.map((skill) => (
               skill.family !== null ? (
                 <li>
                   <span>

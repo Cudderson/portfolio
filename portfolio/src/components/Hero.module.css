@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 0;
   /* flex-direction: row-reverse; */
   /* border: 1px solid violet; */
   padding-top: 4rem;
@@ -42,12 +43,12 @@
   flex-basis: 50%;
   /* border: 2px dashed hotpink; */
   padding: 0 1rem;
-  width: 100%;
+  min-width: 300px;
 }
 
 .hero-content > p {
   font-family: "PT Serif", serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 400;
   margin: .5rem 0;
 }
