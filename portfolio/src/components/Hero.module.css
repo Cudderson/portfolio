@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: row-reverse; */
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   padding-top: 4rem;
 
 
@@ -19,14 +19,14 @@
   flex-grow: 1;
   align-items: center;
   flex-basis: 50%;
-  border: 2px dashed aqua;
+  /* border: 2px dashed aqua; */
   padding: 1.5rem 0;
 }
 
 .avatar-container > img {
   display: block;
   margin: 0 auto;
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   border-radius: 50%;
   /* this handles mobile/desktop scaling */
   min-width: 240px;
@@ -40,14 +40,14 @@
   flex-grow: 1;
   justify-content: center;
   flex-basis: 50%;
-  border: 2px dashed hotpink;
+  /* border: 2px dashed hotpink; */
   padding: 0 1rem;
   width: 100%;
 }
 
 .hero-content > p {
   font-family: "PT Serif", serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   margin: .5rem 0;
 }

@@ -10,45 +10,89 @@ import custom_icons from './../assets/badges/badges.js';
 
 console.log('defining skillsIcons...');
 const skillsIcons = {
-  skills: [
+  frontend: [
     {family: 'fab', icon: 'js', text: 'Javascript'},
     {family: 'fab', icon: 'html5', text: 'HTML5'},
     {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
+    {family: 'fab', icon: 'react', text: 'React'},
+  ],
+  backend: [
     {family: 'fab', icon: 'python', text: 'Python'},
     {family: null, icon: custom_icons.django, text: 'Django'},
     {family: 'fas', icon: 'database', text: 'SQL'},
     {family: 'fab', icon: 'node-js', text: 'Node'},
+  ],
+  misc: [
+    {family: 'fab', icon: 'git-alt', text: 'Git'},
+    {family: 'fab', icon: 'github', text: 'Github'},
     {family: null, icon: custom_icons.plotly, text: 'Plotly'},
-    {family: 'fab', icon: 'react', text: 'React'},
-    // still need: webpack, mongodb, express ...
-  ]
+  ],
 }
 
 const Skills = () => {
 
   return (
-    <div className={styles['skills-container']}>
-      <h1>Skills</h1>
-      <ul className={styles['skills-list']}>
-        {skillsIcons ? (
-          skillsIcons.skills.map((skill) => (
-            skill.family !== null ? (
-              <li>
-                <span>
-                  <FontAwesomeIcon icon={[skill.family, skill.icon]} />
-                </span>
-              </li>
-            ) : (
-              <li>
-                <img src={skill.icon}></img>
-              </li>
-            )
-          ))
-        ) : console.log('no skillz.')}
-      </ul>
+    <div className={styles['skills-outer']}>
+      <span className={styles['skills-header']}>
+        Skills
+      </span>
+      {/* the next step is to divide the skills into frontend, backend, and misc. */}
+      <div className={styles['skills-inner']}>
+        <ul className={styles['skills-list']}>
+          {skillsIcons ? (
+            skillsIcons.frontend.map((skill) => (
+              skill.family !== null ? (
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                  </span>
+                </li>
+              ) : (
+                <li>
+                  <img src={skill.icon}></img>
+                </li>
+              )
+            ))
+          ) : console.log('no skillz.')}
+        </ul>
+        <ul className={styles['skills-list']}>
+          {skillsIcons ? (
+            skillsIcons.backend.map((skill) => (
+              skill.family !== null ? (
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                  </span>
+                </li>
+              ) : (
+                <li>
+                  <img src={skill.icon}></img>
+                </li>
+              )
+            ))
+          ) : console.log('no skillz.')}
+        </ul>
+        <ul className={styles['skills-list']}>
+          {skillsIcons ? (
+            skillsIcons.misc.map((skill) => (
+              skill.family !== null ? (
+                <li>
+                  <span>
+                    <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                  </span>
+                </li>
+              ) : (
+                <li>
+                  <img src={skill.icon}></img>
+                </li>
+              )
+            ))
+          ) : console.log('no skillz.')}
+        </ul>
+      </div>
       
       
-      <div style={{paddingBottom: '200px', backgroundColor: 'teal'}}></div>
+      <div style={{paddingBottom: '200px', backgroundColor: 'white'}}></div>
     </div>
   )
 }
