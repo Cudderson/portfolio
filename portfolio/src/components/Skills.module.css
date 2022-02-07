@@ -86,8 +86,23 @@
   padding-top: 1rem;
 }
 
-@media (max-width: 400px) {
+/* mobile styles */
+@media (max-width: 450px) {
   .skills-list {
     min-width: auto;
+    width: 100%;
+  }
+
+  .skills-list > li > span {
+    font-size: 30px;
+  }
+
+  .skills-list > li > img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .skill-text {
+    font-size: 14px !important;
   }
 }
