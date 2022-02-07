@@ -31,9 +31,11 @@ const Skills = () => {
 
   return (
     <div className={styles['skills-outer']}>
-      <span className={styles['skills-header']}>
-        Skills
-      </span>
+      <div className={styles['skills-header']}>
+        <span>Skills</span>
+        <div className={styles['separator']}></div>
+      </div>
+
       {/* <span className={styles['skills-description']}>
         Languages, technologies and tools that I'm most familiar with
       </span> */}
@@ -80,7 +82,7 @@ const Skills = () => {
       </div>
       
       
-      <div style={{paddingBottom: '200px', backgroundColor: 'white'}}></div>
+      <div style={{paddingBottom: '150px', backgroundColor: 'white'}}></div>
     </div>
   )
 }
