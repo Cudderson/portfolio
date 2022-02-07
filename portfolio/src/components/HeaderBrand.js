@@ -11,6 +11,7 @@ const HeaderBrand = () => {
   // using a placeholder image until ready for final image
   let avatar_url = `https://avatars.githubusercontent.com/u/74884805?s=96&v=4`;
 
+  // need to address this method of adding state
   const getAvatar = () => {
     setAvatar(avatar_url);
   }
@@ -22,7 +23,7 @@ const HeaderBrand = () => {
   return (
     // might need to make inline
     <div className={styles['header-brand']}>
-      <img src={avatar} />
+      <img src={avatar} alt="my_avatar" />
       <span>Cody Weller</span>
     </div>
   )

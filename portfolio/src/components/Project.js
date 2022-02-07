@@ -19,6 +19,7 @@ const Project = (props) => {
 
   // options for IntersectionObserver
   // omitted values are default
+  // *** consider setting this to state??
   let options = {
     // root: null,
     // rootMargin: '0px',

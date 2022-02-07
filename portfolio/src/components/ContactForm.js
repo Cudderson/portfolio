@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div className={styles['contact-form-container']}>
       <div className={styles['contact-image-container']}>
         {/* need to change */}
-        <img src="https://avatars.githubusercontent.com/u/74884805?v=4"></img>
+        <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt="my_avatar"></img>
       </div>
       <p>
         Let's get in touch!

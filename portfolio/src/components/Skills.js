@@ -34,6 +34,9 @@ const Skills = () => {
       <span className={styles['skills-header']}>
         Skills
       </span>
+      {/* <span className={styles['skills-description']}>
+        Languages, technologies and tools that I'm most familiar with
+      </span> */}
       {/* the next step is to divide the skills into frontend, backend, and misc. */}
       <div className={styles['skills-inner']}>
         <ul className={styles['skills-list']}>
