@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 0;
+  row-gap: 2rem;
   /* flex-direction: row-reverse; */
   /* border: 1px solid violet; */
   padding-top: 4rem;
