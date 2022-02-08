@@ -110,6 +110,7 @@ const ProjectsList = () => {
           images={slider_images.password_manager}
         />
       </div>
+      <hr />
       <div className={styles['all-work']}>
           <strong>View code and documentation for each project on Github, including what I'm working on now:</strong>
           <a href="https://github.com/Cudderson">

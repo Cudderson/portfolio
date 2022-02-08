@@ -34,7 +34,8 @@
 .contact-form > a {
   display: block;
   border: 2px solid darkgray;
-  border-radius: 9999px;
+  border-radius: 8px;
+  /* border-radius: 9999px; */
   padding: .33em 1.1em;
   width: 40%;
   font-family: "Roboto", sans-serif;

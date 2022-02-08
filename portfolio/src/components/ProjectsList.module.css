@@ -45,7 +45,7 @@
 
 .all-work {
   margin: 0 auto;
-  padding: 0rem 0 6rem 0;
+  padding: 6rem 0;
   max-width: 500px;
   text-align: center;
 }
@@ -54,7 +54,7 @@
   display: block;
   padding-bottom: 2.5em;
   font-family: "PT Serif", serif;
-  font-size: clamp(14px, 3.5vw, 22px);
+  font-size: clamp(14px, 3.5vw, 20px);
 }
 
 .all-work-icon {
@@ -62,11 +62,14 @@
 }
 
 .all-work > a {
+  display: block;
+  margin: 0 auto;
   border: 2px solid gray;
   border-radius: 4px;
   padding: .3em .6em;
+  width: 50%;
   font-family: "Roboto", sans-serif;
-  font-size: clamp(16px, 4vw, 26px);
+  font-size: clamp(16px, 4vw, 22px);
   color: black;
   text-decoration: none;
   transition: .25s;
@@ -85,7 +88,7 @@
   }
 
   .all-work {
-    padding: 4rem 0 10rem 0;
+    padding: 4rem 0;
   }
 }
 
