@@ -2,6 +2,7 @@ footer {
   border-top: 2px solid lightgray;
   padding: 2rem 0;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .footer-inner {

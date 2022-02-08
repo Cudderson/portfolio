@@ -1,31 +1,32 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Contact.module.css';
-import Hero from './Hero';
 
-// if this becomes too similar to Hero, try to make a reusable component
 const Contact = () => {
   return (
     // image images on either side of this container
     <div className={styles['contact-form-container']}>
-      <div className={styles['contact-image-container']}>
-        {/* need to change */}
+      {/* <div className={styles['contact-image-container']}>
         <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt="my_avatar"></img>
-      </div>
+      </div> */}
       <p>
-        Let's get in touch!
+        Contact Me
+        {/* Let's get in touch! */}
       </p>
       <div className={styles['contact-form']}>
         <a href="https://github.com/Cudderson">
-          Github Profile
+          <FontAwesomeIcon icon={['fab', 'github']} />
+          Github
         </a>
         <a href="mailto:codered1227@gmail.com">
-          Contact By Email
+          <FontAwesomeIcon icon={['fas', 'envelope']} />
+          Email
         </a>
         <a href="https://www.linkedin.com/in/cody-weller-a5ba80222">
-          LinkedIn Profile
+          <FontAwesomeIcon icon={['fab', 'linkedin']} />
+          LinkedIn
         </a>
       </div>
     </div>
-    // <Hero />
   );
 }
 

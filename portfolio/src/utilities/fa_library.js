@@ -11,7 +11,7 @@ import {
   faLinkedin,
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   faHtml5,
@@ -24,6 +24,7 @@ library.add(
   faBootstrap,
   faLinkedin,
   faNodeJs,
+  faEnvelope,
   faDatabase
 );
 

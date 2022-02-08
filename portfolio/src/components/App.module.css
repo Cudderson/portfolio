@@ -3,13 +3,10 @@
 }
 
 hr {
-  /* border: none;
-  color: blue;
-  border-top: 1px black;
-  border-style: solid; */
   border: 0;
   background-color: lightgray;
   height: 1px;
+  margin: 0;
 }
 
 .app-main {

@@ -6,13 +6,9 @@
   column-gap: 0;
   row-gap: 2rem;
   /* border: 1px solid violet; */
-  padding-top: 10rem;
+  padding: 8rem 0;
   width: 80%;
   margin: 0 auto;
-
-  /* temp-padding until component finished */
-  /* padding-bottom: 300px; */
-  padding-bottom: 10rem;
 }
 
 .about-avatar {
