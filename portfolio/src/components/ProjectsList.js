@@ -18,7 +18,10 @@ const ProjectsList = () => {
 
   return (
     <div className={styles['projects-list-outer']}>
-      <h2 className={styles['projects-list-header']}>Featured Projects</h2>
+      <div className={styles['projects-list-header']}>
+        <h2>Featured Projects</h2>
+        <div className={styles['separator']}></div>
+      </div>
       <div className={styles['projects-list-sub-header']}>
         <h3>All projects built solely by me using</h3>
         <ProjectTechIcon family='fab' icon='git-alt' text='Git' />

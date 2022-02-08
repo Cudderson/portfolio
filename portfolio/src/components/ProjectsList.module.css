@@ -4,15 +4,36 @@
 }
 
 .projects-list-header {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  margin-top: 50px;
+  padding: 0 0 .2rem;
+}
+
+.projects-list-header > h2 {
   margin: 0 0 .1rem;
   font-family: 'PT Serif', serif;
-  font-size: clamp(20px, 2.5vw, 34px);
-  font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-weight: bold;
+  word-break: keep-all;
+}
+
+/* this is identical to the separator style in Skills.module.css */
+/* if used again, consider extracting a global header flex class */
+.separator {
+  display: inline-block;
+  border-top: 2px solid lightgray;
+  margin-top: 10px;
+  /* width: 50%; */
+  height: 1px;
+  flex-grow: 1;
 }
 
 .projects-list-sub-header {
   display: flex;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
 .projects-list-sub-header > h3 {
