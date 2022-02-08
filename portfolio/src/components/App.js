@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Skills from './Skills';
 import ProjectsList from './ProjectsList';
 import AboutMe from './AboutMe.js';
-import ContactForm from './ContactForm.js';
+import Contact from './Contact.js';
 import Footer from './Footer.js';
 
 import styles from './App.module.css';
@@ -30,8 +30,8 @@ const App = () => {
         <Hero />
         <Skills />
         <ProjectsList />
-        <AboutMe />
-        <ContactForm />
+        {/* <AboutMe /> */}
+        <Contact />
       </main>
       <Footer />
     </div>
