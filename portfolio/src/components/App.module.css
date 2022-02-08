@@ -4,8 +4,7 @@
 
 hr {
   border: 0;
-  background-color: lightgray;
-  height: 1px;
+  border-top: thin solid lightgray;
   margin: 0;
 }
 
