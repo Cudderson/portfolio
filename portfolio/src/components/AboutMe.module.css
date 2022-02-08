@@ -11,7 +11,8 @@
   margin: 0 auto;
 
   /* temp-padding until component finished */
-  padding-bottom: 300px;
+  /* padding-bottom: 300px; */
+  padding-bottom: 10rem;
 }
 
 .about-avatar {
