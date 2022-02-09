@@ -2,9 +2,42 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* --primary-black: rgb(27, 27, 27); */
+  --bg-black: #121212;
+
+  /* both of these look good, but isn't the right green */
+  /* --primary-green: #54ECC4; */
+  /* --primary-green: #00be89; */
+
+  /* this is spotifys */
+  --primary-green: #1DB954;
+  
+  /* we also need a gray accent color (could add extra green to it) */
+  /* not final */
+  --primary-gray: #151814;
+
+  --primary-white: rgb(224, 224, 224);
+
+}
+
+html, div {
+  background-color: var(--bg-black) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-green) !important;
+}
+
+p, strong, div, a, button{
+  color: rgb(224, 224, 224) !important;
+}
+
 hr {
   border: 0;
-  border-top: thin solid lightgray;
+  /* border-top: thin solid lightgray; og */
+
+  border-top: thin solid gray;
   margin: 0;
 }
 

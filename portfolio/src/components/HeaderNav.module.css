@@ -1,4 +1,4 @@
-.header-nav > ul {
+.header-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -11,12 +11,14 @@
 }
 
 .icon {
-  font-size: 35px;
+  font-size: 40px;
   padding: 0 .25rem;
-  color: black;
+  /* color: black; */
+  transition: .5s;
+  color: var(--primary-white);
 }
 
-/* need to update for new links/icons */
-.header-nav > ul > li:hover {
-  color: goldenrod;
+.icon:hover {
+  transition: .5s;
+  color: var(--primary-green);
 }
