@@ -67,6 +67,7 @@
   font-family: 'PT Serif', serif;
   font-size: 28px;
   font-weight: 700;
+  color: var(--primary-green);
 }
 
 .project-title-long {
@@ -78,12 +79,15 @@
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.55rem;
+  color: lightgray;
 }
 
 .made-with {
   margin: 1.75rem 0 .5rem;
   font-family: 'Verdana';
   font-size: 13px;
+  /* color: var(--primary-green); */
+  color: green;
 }
 
 @media (min-width: 500px) {

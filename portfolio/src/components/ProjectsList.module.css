@@ -16,6 +16,7 @@
   font-size: clamp(20px, 2.5vw, 32px);
   font-weight: bold;
   word-break: keep-all;
+  color: var(--primary-green);
 }
 
 /* this is identical to the separator style in Skills.module.css */

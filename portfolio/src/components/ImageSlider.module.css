@@ -6,7 +6,7 @@
 
 .image-slider > img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 2px;
   margin: auto;
   /* horizontal, vertical, blur, color */
   box-shadow: -4px 6px 12px rgba(0, 0, 0, .5);

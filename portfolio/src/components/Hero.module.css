@@ -28,7 +28,8 @@
 .avatar-container > img {
   display: block;
   margin: 0 auto;
-  /* border: 1px dotted black; */
+  /* likely won't keep border */
+  border: 4px solid var(--primary-green);
   border-radius: 50%;
   /* this handles mobile/desktop scaling */
   min-width: 240px;
@@ -52,6 +53,7 @@
   font-size: 19px;
   font-weight: 400;
   margin: .5rem 0;
+  color: var(--primary-white);
 }
 
 /* old styles below this line */

@@ -1,5 +1,5 @@
 .skills-outer {
-  padding-top: 150px;
+  padding: 150px 0;
 }
 
 .skills-header {
@@ -66,7 +66,7 @@
 
 .skills-list > li {
   transition: .25s;
-  color: rgb(175, 190, 177);
+  color: rgb(131, 138, 132);
 }
 
 .skills-list > li:hover {
@@ -94,6 +94,7 @@
 .skills-list svg path {
   display: block;
   fill: var(--primary-white);
+  transition: .25s;
 }
 
 .skills-list svg:hover,

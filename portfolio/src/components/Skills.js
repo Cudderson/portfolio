@@ -79,9 +79,6 @@ const Skills = () => {
           ) : console.log('no skillz.')}
         </ul>
       </div>
-      
-      
-      <div style={{paddingBottom: '150px', backgroundColor: 'white'}}></div>
     </div>
   )
 }

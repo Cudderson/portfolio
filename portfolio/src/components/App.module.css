@@ -27,16 +27,8 @@
 
 }
 
-html, div {
+html {
   background-color: var(--bg-black) !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-green) !important;
-}
-
-strong, a, button{
-  color: rgb(224, 224, 224) !important;
 }
 
 hr {
