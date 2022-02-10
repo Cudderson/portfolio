@@ -33,7 +33,11 @@
 }
 
 html {
-  background-color: var(--bg-black) !important;
+  /* background-color: var(--bg-black) !important; */
+  background-image: linear-gradient(to top, #1db954, #009d79, #007d86, #005c77, #1c3c53, #232f3f, #21232b, #191919, #171717, #161616, #141414, #121212);
+
+  height: 100vh;
+  background-attachment: fixed;
 }
 
 hr {
