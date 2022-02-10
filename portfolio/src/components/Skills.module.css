@@ -8,9 +8,18 @@
   column-gap: .75rem;
   margin-top: 50px;
   padding: 0 0 8rem;
-  font-family: "PT Serif", serif;
+}
+
+/* identical to ProjectsList header(h2)
+    consider global h2 style
+*/
+.skills-header > h2 {
+  margin: 0;
+  font-family: 'PT Serif', serif;
   font-size: clamp(20px, 2.5vw, 32px);
   font-weight: bold;
+  word-break: keep-all;
+  color: blue;
 }
 
 .separator {
@@ -55,6 +64,16 @@
   flex-grow: 1;
 }
 
+.skills-list > li {
+  color: red;
+}
+
+.skills-list > li:hover {
+  color: var(--primary-white);
+  transition: .25s;
+  color: blue;
+}
+
 .skills-list > li > span {
   display: flex;
   flex-direction: column;
@@ -65,6 +84,7 @@
 
 .skills-list > li > span > svg,
 .skills-list > li > img {
+  display: block;
   width: 38px;
   height: 38px;
   transition: .25s;
@@ -74,13 +94,7 @@
 .skills-list > li > img:hover {
   transform: translateY(-12px);
   transition: .25s;
-}
-
-.skills-list > li > img {
-  display: block;
-  width: 38px;
-  height: 38px;
-  transition: .25s;
+  color: var(--primary-green);
 }
 
 .skill-text {

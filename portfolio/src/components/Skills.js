@@ -32,14 +32,13 @@ const Skills = () => {
   return (
     <div className={styles['skills-outer']}>
       <div className={styles['skills-header']}>
-        <span>Skills</span>
+        <h2>Skills</h2>
         <div className={styles['separator']}></div>
       </div>
 
       {/* <span className={styles['skills-description']}>
         Languages, technologies and tools that I'm most familiar with
       </span> */}
-      {/* the next step is to divide the skills into frontend, backend, and misc. */}
       <div className={styles['skills-inner']}>
         <ul className={styles['skills-list']}>
           {skillsIcons ? (
