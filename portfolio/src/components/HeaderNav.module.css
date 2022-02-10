@@ -15,7 +15,8 @@
   padding: 0 .25rem;
   /* color: black; */
   transition: .5s;
-  color: var(--primary-white);
+  /* color: var(--primary-white); */
+  color: var(--primary-cream)
 }
 
 .icon:hover {

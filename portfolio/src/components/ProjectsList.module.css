@@ -23,7 +23,7 @@
 /* if used again, consider extracting a global header flex class */
 .separator {
   display: inline-block;
-  border-top: 2px solid gray;
+  border-top: 2px solid var(--primary-gray);
   margin-top: 10px;
   /* width: 50%; */
   height: 1px;

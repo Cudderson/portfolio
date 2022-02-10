@@ -79,7 +79,8 @@
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.55rem;
-  color: lightgray;
+  /* color: lightgray; */
+  color: var(--primary-cream);  
 }
 
 .made-with {

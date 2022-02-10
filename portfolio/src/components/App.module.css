@@ -21,9 +21,11 @@
   
   /* we also need a gray accent color (could add extra green to it) */
   /* not final */
-  --primary-gray: #151814;
+  --primary-gray: rgb(68, 68, 68);
 
   --primary-white: rgb(224, 224, 224);
+
+  --primary-cream: rgb(240, 235, 210);
 
 }
 
