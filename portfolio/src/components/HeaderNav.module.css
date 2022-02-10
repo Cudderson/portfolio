@@ -11,12 +11,12 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 36px;
   padding: 0 .25rem;
   /* color: black; */
   transition: .5s;
   /* color: var(--primary-white); */
-  color: var(--primary-cream)
+  color: var(--primary-cream);
 }
 
 .icon:hover {

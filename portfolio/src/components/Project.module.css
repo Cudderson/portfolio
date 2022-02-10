@@ -86,8 +86,9 @@
 .made-with {
   margin: 1.75rem 0 .5rem;
   font-family: 'Verdana';
-  font-size: 13px;
+  font-size: 12px;
   color: var(--primary-green);
+  opacity: .75;
 }
 
 @media (min-width: 500px) {
@@ -101,7 +102,7 @@
 
   .project-description {
     margin: .8rem 0;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 

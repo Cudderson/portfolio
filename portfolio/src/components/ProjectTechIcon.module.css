@@ -2,19 +2,20 @@
   display: inline-flex;
   border-radius: 9999px;
   padding: 7px 14px;
-  font-size: 20px;
+  font-size: 13px;
   align-items: center;
   /* background-color: rgb(240, 240, 240); */
   background-color: rgb(37, 36, 36);
-  color: rgb(187, 187, 187);
+  color: var(--primary-cream);
+  opacity: .75;
 }
 
 .project-tech-icon > span {
   padding-left: 5px;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
   font-weight: 500;
-  color: gray;
+  color: var(--primary-cream);
+  /* opacity: .75; */
 }
 
 .project-tech-icon > img {
@@ -23,9 +24,9 @@
 }
 
 @media (min-width: 500px) {
-  .project-tech-icon > span {
+  /* .project-tech-icon > span {
     font-size: 15px;
-  }
+  } */
   
   .project-tech-icon > img {
     width: 16px;

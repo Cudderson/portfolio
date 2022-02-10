@@ -1,8 +1,9 @@
 .project-links > h4 {
   margin-bottom: .25rem;
   font-family: "Verdana";
-  font-size: 13px;
+  font-size: 12px;
   color: var(--primary-green);
+  opacity: .8;
 }
 
 .live-link, .repo-link {
@@ -18,13 +19,15 @@
   font-size: 15px;
   color: var(--primary-cream);
   transition: .5s;
+  opacity: .7;
 }
 
 .live-link:hover, .repo-link:hover {
-  background-color: var(--primary-green);
-  color: black;
+  background-color: var(--primary-cream);
+  color: var(--bg-black);
   transition: .5s;
-  border-color: darkgreen;
+  border-color: var(--bg-black);
+  opacity: 1;
 }
 
 @media (min-width: 500px) {

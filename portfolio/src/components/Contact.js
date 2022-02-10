@@ -8,10 +8,9 @@ const Contact = () => {
       {/* <div className={styles['contact-image-container']}>
         <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt="my_avatar"></img>
       </div> */}
-      <p>
+      <h3>
         Contact Me
-        {/* Let's get in touch! */}
-      </p>
+      </h3>
       <div className={styles['contact-form']}>
         <a href="https://github.com/Cudderson">
           <FontAwesomeIcon icon={['fab', 'github']} />
