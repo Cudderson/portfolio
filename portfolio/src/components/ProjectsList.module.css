@@ -57,6 +57,8 @@
   padding-bottom: 2.5em;
   font-family: "PT Serif", serif;
   font-size: clamp(14px, 3.5vw, 20px);
+  font-weight: normal;
+  color: var(--primary-cream);
 }
 
 .all-work-icon {
@@ -66,22 +68,23 @@
 .all-work > a {
   display: block;
   margin: 0 auto;
-  border: 2px solid gray;
+  border: 1px solid var(--primary-cream);
   border-radius: 4px;
   padding: .3em .6em;
   width: 50%;
+  background-color: var(--bg-black);
   font-family: "Roboto", sans-serif;
   font-size: clamp(16px, 4vw, 22px);
-  color: black;
+  color: var(--primary-cream);
   text-decoration: none;
   transition: .25s;
 }
 
 .all-work > a:hover {
-  border-color: rgb(46, 54, 46);
-  color: rgb(47, 255, 47);
-  background-color: rgb(46, 54, 46);
-  transition: .25s;
+  border-color: var(--bg-black);
+  color: var(--bg-black);
+  background-color: var(--primary-cream);
+  transition: .5s;
 }
 
 @media (min-width: 500px) {
