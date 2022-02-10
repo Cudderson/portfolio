@@ -23,7 +23,7 @@ const ProjectsList = () => {
         <div className={styles['separator']}></div>
       </div>
       <div className={styles['projects-list-sub-header']}>
-        <h3>All projects built solely by me using</h3>
+        <p>All projects built solely by me using</p>
         <ProjectTechIcon family='fab' icon='git-alt' text='Git' />
       </div>
       <div className={styles['projects-list-inner']}>

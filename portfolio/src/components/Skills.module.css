@@ -19,12 +19,12 @@
   font-size: clamp(20px, 2.5vw, 32px);
   font-weight: bold;
   word-break: keep-all;
-  color: blue;
+  color: var(--primary-green);
 }
 
 .separator {
   display: inline-block;
-  border-top: 2px solid lightgray;
+  border-top: 2px solid gray;
   margin-top: 10px;
   width: 100%;
   height: 1px;
@@ -65,13 +65,13 @@
 }
 
 .skills-list > li {
-  color: red;
+  transition: .25s;
+  color: rgb(175, 190, 177);
 }
 
 .skills-list > li:hover {
-  color: var(--primary-white);
   transition: .25s;
-  color: blue;
+  color: var(--primary-white);
 }
 
 .skills-list > li > span {
@@ -90,11 +90,22 @@
   transition: .25s;
 }
 
-.skills-list > li > span > svg:hover,
+/* set initial color for svgs */
+.skills-list svg path {
+  display: block;
+  fill: var(--primary-white);
+}
+
+.skills-list svg:hover,
 .skills-list > li > img:hover {
   transform: translateY(-12px);
   transition: .25s;
   color: var(--primary-green);
+}
+
+/* set path color here, cannot transform path in above selector while targeting 'fill' */
+.skills-list svg:hover path {
+  fill: var(--primary-green);
 }
 
 .skill-text {
@@ -114,7 +125,8 @@
     font-size: 30px;
   }
 
-  .skills-list > li > img {
+  .skills-list > li > img,
+  .skills-list > li > span > svg {
     margin: 0 auto;
     width: 30px;
     height: 30px;

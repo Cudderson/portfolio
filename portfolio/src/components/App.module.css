@@ -3,8 +3,14 @@
 }
 
 :root {
-  /* --primary-black: rgb(27, 27, 27); */
-  --bg-black: #121212;
+
+
+  /* this one is black/purple, works really well! */
+  /* --bg-black: rgb(9, 0, 27); */
+  
+  /* true blacks */
+  --bg-black: rgb(27, 27, 27);
+  /* --bg-black: #121212; */
 
   /* both of these look good, but isn't the right green */
   /* --primary-green: #54ECC4; */
@@ -29,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-green) !important;
 }
 
-p, strong, div, a, button{
+strong, a, button{
   color: rgb(224, 224, 224) !important;
 }
 

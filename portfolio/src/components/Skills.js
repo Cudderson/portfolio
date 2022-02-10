@@ -65,7 +65,7 @@ const Skills = () => {
               skill.family !== null ? (
                 <li key={skill.text.toString()}>
                   <span>
-                    <FontAwesomeIcon icon={[skill.family, skill.icon]} />
+                    <FontAwesomeIcon icon={[skill.family, skill.icon]} fill="#334455" />
                     <span className={styles['skill-text']}>{skill.text}</span>
                   </span>
                 </li>
