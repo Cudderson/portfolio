@@ -11,6 +11,9 @@ const HeaderNav = () => {
         <a href="https://www.linkedin.com/in/cody-weller-a5ba80222/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon className={styles.icon} icon={['fab', 'linkedin']} />
         </a>
+        <button>
+          <FontAwesomeIcon className={styles.icon} icon={['fa', 'moon']} />
+        </button>
     </div>
   )
 }
