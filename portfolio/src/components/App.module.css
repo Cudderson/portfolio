@@ -37,7 +37,7 @@
 
   /* this one's good too! */
   --bg-gradient: linear-gradient(
-    to bottom,
+    to top,
     #f6f4e8,
     #f5f2e4,
     #f3f1df,
@@ -52,11 +52,11 @@
     #f0ebd2
   );
 
-  --bg-offset: rgb(230, 223, 199);
+  --bg-offset: #e7e4d3;
   --primary: #1db954;
-  --secondary: rgb(62, 73, 62);
+  --secondary: rgb(30, 32, 30);
   /* --secondary: rgb(240, 235, 210); */
-  --border: rgb(204, 203, 203);
+  --border: rgb(155, 155, 155);
   /* --primary-white: rgb(156, 40, 40); */
 }
 
@@ -120,8 +120,6 @@ body {
 
 hr {
   border: 0;
-  /* border-top: thin solid lightgray; og */
-
   border-top: thin solid var(--border);
   margin: 0;
 }
@@ -131,5 +129,3 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* put top-level styles below here when done */

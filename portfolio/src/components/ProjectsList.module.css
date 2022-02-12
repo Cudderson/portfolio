@@ -19,8 +19,6 @@
   color: var(--primary);
 }
 
-/* this is identical to the separator style in Skills.module.css */
-/* if used again, consider extracting a global header flex class */
 .separator {
   display: inline-block;
   border-top: 2px solid var(--border);
@@ -58,9 +56,9 @@
   padding-bottom: 2.5em;
   font-family: "PT Serif", serif;
   font-size: clamp(14px, 3.5vw, 20px);
-  font-weight: normal;
+  font-weight: 400;
   color: var(--secondary);
-  opacity: .75;
+  opacity: .9;
 }
 
 .all-work-icon {
