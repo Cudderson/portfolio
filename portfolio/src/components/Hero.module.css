@@ -5,6 +5,9 @@
   column-gap: 0;
   row-gap: 2rem;
   padding-top: 4rem;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: .5s;
 }
 
 .avatar-container {
@@ -45,4 +48,11 @@
   margin: .5rem 0;
   /* color: var(--primary-white); */
   color: var(--secondary);
+  transition: .5s;
+}
+
+.fade-in {
+  transform: translateX(-15px);
+  opacity: 1;
+  transition: .75s;
 }

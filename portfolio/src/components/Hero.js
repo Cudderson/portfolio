@@ -1,26 +1,32 @@
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
+import { useEffect } from "react";
 
 // recreate hero section
 const Hero = () => {
+  useEffect(() => {
+    document.getElementsByClassName(styles['hero-container'])[0].classList.add(styles['fade-in']);
+  }, []);
+
   return (
-    <div className={styles['hero-container']}>
+    <div className={styles["hero-container"]}>
       {/* this should contain my avatar, as well as "about" text */}
-      <div className={styles['avatar-container']}>
-        <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt=''></img>
+      <div className={styles["avatar-container"]}>
+        <img
+          src="https://avatars.githubusercontent.com/u/74884805?v=4"
+          alt=""
+        ></img>
       </div>
-      <div className={styles['hero-content']}>
+      <div className={styles["hero-content"]}>
         <p>Hello, my name is Cody</p>
+        <p>I'm a full-stack developer with a passion for the modern web.</p>
         <p>
-           I'm a full-stack developer with a passion for the modern web. 
-        </p>
-        <p>
-          Deeply committed to life-long learning,
-          I dedicate much of my free time to improving my competency as a developer.
+          Deeply committed to life-long learning, I dedicate much of my free
+          time to improving my competency as a developer.
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 // const Hero = () => {
 //   return (

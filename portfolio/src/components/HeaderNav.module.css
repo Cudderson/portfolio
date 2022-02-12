@@ -15,6 +15,7 @@
   padding: 0 0 0 1rem;
   border: none;
   background-color: transparent;
+  transition: .5s;
 }
 
 .header-nav > button > .icon:hover {
@@ -24,14 +25,11 @@
 .icon {
   font-size: 36px;
   padding: 0 .25rem;
-  /* color: black; */
   transition: .5s;
-  /* color: var(--primary-white); */
   color: var(--secondary);
 }
 
 .icon:hover {
   transition: .5s;
   color: var(--primary);
-  /* color: white; */
 }
