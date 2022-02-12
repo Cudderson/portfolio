@@ -2,51 +2,57 @@
   box-sizing: border-box;
 }
 
-:root {
+.blah {
+  padding: 10rem;
+}
+
+[data-theme='light'] {
   --bg-gradient: linear-gradient(
     to top,
-    /* #21232b,  */
+    #1db954,
+    #009d79,
+    #007d86,
+    #005c77,
+    #1c3c53,
+    #232f3f
+  );
+
+  --primary-green: #045330;
+  --primary-gray: rgb(16, 36, 90);
+  --primary-white: rgb(156, 40, 40);
+  --primary-cream: rgb(199, 171, 33);
+}
+
+[data-theme='dark'] {
+    /* this one is black/purple, works really well! */
+    /* --bg-black: rgb(9, 0, 27); */
+
+  --bg-gradient: linear-gradient(
+    to top,
     #121212,
     #141414,
     #161616,
     #171717,
-    /* #191919, */
     #171717,
     #161616,
     #141414,
     #121212
   );
-
-  /* this one is black/purple, works really well! */
-  /* --bg-black: rgb(9, 0, 27); */
-
-  /* true blacks */
+  /* not currently used */
   --bg-black: rgb(27, 27, 27);
-  /* --bg-black: #121212; */
 
-  /* both of these look good, but isn't the right green */
-  /* --primary-green: #54ECC4; */
-  /* --primary-green: #00be89; */
-
-  /* this is spotifys */
   --primary-green: #1db954;
-
-  /* testing */
-  /* --primary-green: rgb(21, 131, 63); */
-
-  /* we also need a gray accent color (could add extra green to it) */
-  /* not final */
   --primary-gray: rgb(68, 68, 68);
-
   --primary-white: rgb(224, 224, 224);
-
   --primary-cream: rgb(240, 235, 210);
 }
+
+
 
 html {
   /* background-color: var(--bg-black) !important; */
 
-  /* full gradient */
+  /* full gradient, save for now */
   /* background-image: linear-gradient(
     to top,
     #1db954,
@@ -68,6 +74,13 @@ html {
 
   height: 100vh;
   background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 hr {

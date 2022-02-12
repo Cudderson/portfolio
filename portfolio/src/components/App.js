@@ -11,22 +11,30 @@ import styles from './App.module.css';
 // fa library
 import './../utilities/fa_library.js';
 
+import { useState } from 'react';
+
 const App = () => {
+  const [theme, setTheme] = useState('dark');
 
-  // refactoring portfolio sections and finish site
-
-  // probably do this better in future (use/add class)
-  document.querySelector('body').style.margin = 0;
-  document.querySelector('html').style.margin = 0;
-  document.querySelector('body').style.padding = 0;
-  document.querySelector('html').style.padding = 0;
-
+  const switchTheme = function() {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      setTheme('light');
+    }
+    else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      setTheme('dark');
+    }
+  }
 
   return (
     <div>
       {/* header should cover 100% width, but inner container should be capped to 90% / 1200px (same as '.app-main') */}
       <Header />
       <main className={styles['app-main']}>
+        <div className={styles['blah']}>
+          <button onClick={switchTheme}>SWITCH COLOR THEME</button>
+        </div>
         <Hero />
         <Skills />
         <ProjectsList />
