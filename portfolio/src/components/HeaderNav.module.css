@@ -27,11 +27,11 @@
   /* color: black; */
   transition: .5s;
   /* color: var(--primary-white); */
-  color: var(--primary-cream);
+  color: var(--secondary);
 }
 
 .icon:hover {
   transition: .5s;
-  color: var(--primary-green);
+  color: var(--primary);
   /* color: white; */
 }

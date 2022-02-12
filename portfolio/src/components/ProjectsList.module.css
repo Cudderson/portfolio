@@ -16,14 +16,14 @@
   font-size: clamp(20px, 2.5vw, 32px);
   font-weight: bold;
   word-break: keep-all;
-  color: var(--primary-green);
+  color: var(--primary);
 }
 
 /* this is identical to the separator style in Skills.module.css */
 /* if used again, consider extracting a global header flex class */
 .separator {
   display: inline-block;
-  border-top: 2px solid var(--primary-gray);
+  border-top: 2px solid var(--border);
   margin-top: 10px;
   /* width: 50%; */
   height: 1px;
@@ -42,7 +42,7 @@
   font-weight: normal;
   font-style: italic;
   font-size: clamp(13px, 1.5vw, 15px);
-  color: var(--primary-cream);
+  color: var(--secondary);
   opacity: .75;
 }
 
@@ -59,7 +59,7 @@
   font-family: "PT Serif", serif;
   font-size: clamp(14px, 3.5vw, 20px);
   font-weight: normal;
-  color: var(--primary-cream);
+  color: var(--secondary);
   opacity: .75;
 }
 
@@ -70,23 +70,23 @@
 .all-work > a {
   display: block;
   margin: 0 auto;
-  border: 1px solid var(--primary-cream);
+  border: 1px solid var(--secondary);
   border-radius: 4px;
   padding: .3em .6em;
   width: 50%;
-  background-color: var(--bg-black);
+  background-color: var(--bg-offset);
   font-family: "Roboto", sans-serif;
   font-size: clamp(16px, 4vw, 22px);
-  color: var(--primary-cream);
+  color: var(--secondary);
   text-decoration: none;
   transition: .25s;
   opacity: .8;
 }
 
 .all-work > a:hover {
-  border-color: var(--bg-black);
-  color: var(--bg-black);
-  background-color: var(--primary-cream);
+  border-color: var(--bg-offset);
+  color: var(--bg-offset);
+  background-color: var(--secondary);
   transition: .5s;
   opacity: 1;
 }

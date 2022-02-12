@@ -2,31 +2,31 @@
   margin-bottom: .25rem;
   font-family: "Verdana";
   font-size: 12px;
-  color: var(--primary-green);
+  color: var(--primary);
   opacity: .8;
 }
 
 .live-link, .repo-link {
   display: inline-block;
   margin-right: 20px;
-  border: 1px solid var(--primary-cream);
+  border: 1px solid var(--secondary);
   border-radius: 4px;
   padding: .3rem .65rem;
 
-  background-color: var(--bg-black);
+  background-color: var(--bg-offset);
   text-decoration: 0;
   font-family: "Roboto", serif;
   font-size: 15px;
-  color: var(--primary-cream);
+  color: var(--secondary);
   transition: .5s;
   opacity: .7;
 }
 
 .live-link:hover, .repo-link:hover {
-  background-color: var(--primary-cream);
-  color: var(--bg-black);
+  background-color: var(--secondary);
+  color: var(--bg-offset);
   transition: .5s;
-  border-color: var(--bg-black);
+  border-color: var(--bg-offset);
   opacity: 1;
 }
 

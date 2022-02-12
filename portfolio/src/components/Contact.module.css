@@ -26,7 +26,7 @@
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  color: var(--primary-cream);
+  color: var(--secondary);
   opacity: .75;
 }
 
@@ -57,7 +57,7 @@
   flex-basis: 1%;
   flex-grow: 1;
   text-decoration: none;
-  color: var(--primary-cream);
+  color: var(--secondary);
   text-align: center;
 
   transition: .5s;
@@ -67,8 +67,8 @@
 .contact-form > a:hover {
   transition: .5s;
   /* border: 2px solid lawngreen; */
-  color: var(--bg-black);
-  background-color: var(--primary-cream);
+  color: var(--bg-offset);
+  background-color: var(--secondary);
   opacity: 1;
 }
 
