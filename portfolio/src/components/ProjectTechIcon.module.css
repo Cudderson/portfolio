@@ -6,7 +6,7 @@
   align-items: center;
   background-color: var(--bg-offset);
   color: var(--secondary);
-  opacity: .85;
+  /* opacity: .85; */
 }
 
 .project-tech-icon > span {

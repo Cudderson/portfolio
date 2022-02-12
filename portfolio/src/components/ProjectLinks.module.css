@@ -19,7 +19,7 @@
   font-size: 15px;
   color: var(--secondary);
   transition: .5s;
-  opacity: .7;
+  opacity: .85;
 }
 
 .live-link:hover, .repo-link:hover {

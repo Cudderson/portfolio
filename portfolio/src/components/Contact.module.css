@@ -27,7 +27,7 @@
   text-decoration: underline;
   text-decoration-thickness: 2px;
   color: var(--secondary);
-  opacity: .75;
+  opacity: .85;
 }
 
 .contact-form {

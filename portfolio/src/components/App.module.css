@@ -7,7 +7,7 @@
   padding: 10rem;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   /* --bg-gradient: linear-gradient(
     to top,
     #1db954,
@@ -18,23 +18,34 @@
     #232f3f
   ); */
 
-  /* this is a good white color */
+  /* do not alter */
   --bg-gradient: linear-gradient(
     to top,
-    #eeeeee,
-    #cacaca,
+    #f0f9f3,
+    #edf7ed,
+    #ecf5e7,
+    #ecf2e1,
+    #edefda,
+    #ebeed2,
+    #e9edca,
+    #e7ecc2,
+    #daeeb9,
+    #c9f1b4,
+    #b2f5b3,
+    #93f8b7
   );
 
-  --bg-offset: rgb(204, 204, 204);
-  --primary: rgb(0, 71, 27);
-  --secondary: rgb(0, 0, 0);
-  --border: lightgray;
+  --bg-offset: rgb(230, 223, 199);
+  --primary: #1db954;
+  --secondary: rgb(62, 73, 62);
+  /* --secondary: rgb(240, 235, 210); */
+  --border: rgb(204, 203, 203);
   /* --primary-white: rgb(156, 40, 40); */
 }
 
-[data-theme='dark'] {
-    /* this one is black/purple, works really well! */
-    /* --bg-offset: rgb(9, 0, 27); */
+[data-theme="dark"] {
+  /* this one is black/purple, works really well! */
+  /* --bg-offset: rgb(9, 0, 27); */
 
   --bg-gradient: linear-gradient(
     to top,
@@ -48,15 +59,13 @@
     #121212
   );
   /* not currently used */
-  
+
   --bg-offset: rgb(37, 37, 37);
   --primary: #1db954;
   --secondary: rgb(240, 235, 210);
   --border: rgb(68, 68, 68);
   /* --primary-white: rgb(224, 224, 224); */
 }
-
-
 
 html {
   /* background-color: var(--bg-offset) !important; */

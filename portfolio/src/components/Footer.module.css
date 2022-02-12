@@ -27,7 +27,7 @@ footer {
 .footer-inner > p > span,
 .footer-inner > div > span {
   color: var(--secondary);
-  opacity: .5
+  opacity: .75;
 }
 
 .footer-inner strong {
@@ -41,7 +41,7 @@ footer {
 .footer-social > a {
   text-decoration: none;
   color: var(--secondary);
-  opacity: .5;
+  opacity: .75;
 }
 
 .footer-social > a:hover {
