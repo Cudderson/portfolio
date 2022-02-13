@@ -50,6 +50,7 @@
   font-weight: 400;
   margin: .5rem 0;
   color: var(--secondary);
+  white-space: pre-wrap;
 }
 
 /* 
