@@ -92,10 +92,18 @@
   transition: .25s;
 }
 
+.skills-list > li > img {
+  filter: var(--icon-filter);
+}
+
+/* filter works for both themes */
+.skills-list > li > img:hover {
+  filter: invert(59%) sepia(14%) saturate(2345%) hue-rotate(88deg) brightness(94%) contrast(91%);
+}
+
 /* set initial color for svgs */
 .skills-list svg path {
   display: block;
-  /* fill: var(--primary-white); */
   fill: var(--secondary);
   transition: .25s;
 }

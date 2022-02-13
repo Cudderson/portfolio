@@ -1,10 +1,5 @@
 * {
   box-sizing: border-box;
-  transition: background-image 0.2s ease-in-out;
-}
-
-.blah {
-  padding: 10rem;
 }
 
 [data-theme="light"] {
@@ -63,6 +58,7 @@
   --primary: #1db954;
   --secondary: rgb(30, 32, 30);
   --border: rgb(155, 155, 155);
+  --icon-filter: none;
 }
 
 [data-theme="dark"] {
@@ -80,13 +76,12 @@
     #141414,
     #121212
   );
-  /* not currently used */
 
   --bg-offset: rgb(37, 37, 37);
   --primary: #1db954;
-  --secondary: rgb(240, 235, 210);
+  --secondary: #f0ebd2;
   --border: rgb(68, 68, 68);
-  /* --primary-white: rgb(224, 224, 224); */
+  --icon-filter: invert(96%) sepia(8%) saturate(507%) hue-rotate(1deg) brightness(97%) contrast(94%);
 }
 
 html {
