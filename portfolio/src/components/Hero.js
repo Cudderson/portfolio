@@ -1,5 +1,6 @@
 import styles from "./Hero.module.css";
 import { useEffect } from "react";
+import pk from './../assets/badges/pk_draw2.png';
 
 // recreate hero section
 const Hero = () => {
@@ -11,10 +12,11 @@ const Hero = () => {
     <div className={styles["hero-container"]}>
       {/* this should contain my avatar, as well as "about" text */}
       <div className={styles["avatar-container"]}>
-        <img
+        {/* <img
           src="https://avatars.githubusercontent.com/u/74884805?v=4"
           alt=""
-        ></img>
+        ></img> */}
+        <img src={pk}></img>
       </div>
       <div className={styles["hero-content"]}>
         <p>Hello, my name is Cody</p>
