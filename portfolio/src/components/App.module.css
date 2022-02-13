@@ -36,7 +36,7 @@
   ); */
 
   /* this one's good too! */
-  --bg-gradient: linear-gradient(
+  /* --bg-gradient: linear-gradient(
     to top,
     #f6f4e8,
     #f5f2e4,
@@ -50,14 +50,19 @@
     #f0ebd2,
     #f0ebd2,
     #f0ebd2
+  ); */
+
+  --bg-gradient: linear-gradient(
+    to top,
+    #f2f2f2,
+    #ffffff,
+    #f2f2f2
   );
 
   --bg-offset: #e7e4d3;
   --primary: #1db954;
   --secondary: rgb(30, 32, 30);
-  /* --secondary: rgb(240, 235, 210); */
   --border: rgb(155, 155, 155);
-  /* --primary-white: rgb(156, 40, 40); */
 }
 
 [data-theme="dark"] {
