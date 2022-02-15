@@ -1,6 +1,6 @@
 import styles from "./Hero.module.css";
 import { useEffect } from "react";
-import pk from './../assets/badges/pk_draw2.png';
+import avatar from './../assets/images/avatar.jpg';
 
 // recreate hero section
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
           src="https://avatars.githubusercontent.com/u/74884805?v=4"
           alt=""
         ></img> */}
-        <img src={pk}></img>
+        <img src={avatar}></img>
       </div>
       <div className={styles["hero-content"]}>
         <p>Hello, my name is Cody</p>

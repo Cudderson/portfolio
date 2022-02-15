@@ -1,13 +1,14 @@
 // This is the high-level component that will contain the About Me section of the page
 
 import styles from './AboutMe.module.css';
+import avatar from './../assets/images/avatar.jpg';
 
 const AboutMe = () => {
   return (
     // design similar to Hero component
     <div className={styles['about-container']}>
       <div className={styles['about-avatar']}>
-        <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt=''></img>
+        <img src={avatar} alt=''></img>
       </div>
       <div className={styles['about-content']}>
         {/* <p>
