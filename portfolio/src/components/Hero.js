@@ -1,9 +1,8 @@
 import styles from "./Hero.module.css";
 import { useEffect } from "react";
-import avatar from './../assets/images/avatar.jpg';
 
 // recreate hero section
-const Hero = () => {
+const Hero = ({ avatar }) => {
   useEffect(() => {
     document.getElementsByClassName(styles['hero-container'])[0].classList.add(styles['fade-in']);
   }, []);
