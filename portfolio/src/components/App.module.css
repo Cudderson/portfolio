@@ -5,11 +5,13 @@
 @font-face {
   font-family: "PT Serif";
   src: url('./../assets/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
   src: url('./../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -17,34 +19,6 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 [data-theme="light"] {
-  /* --bg-gradient: linear-gradient(
-    to top,
-    #1db954,
-    #009d79,
-    #007d86,
-    #005c77,
-    #1c3c53,
-    #232f3f
-  ); */
-
-  /* do not alter */
-  /* --bg-gradient: linear-gradient(
-    to top,
-    #f0f9f3,
-    #edf7ed,
-    #ecf5e7,
-    #ecf2e1,
-    #edefda,
-    #ebeed2,
-    #e9edca,
-    #e7ecc2,
-    #daeeb9,
-    #c9f1b4,
-    #b2f5b3,
-    #93f8b7
-  ); */
-
-  /* this one's good too! */
   --bg-gradient: linear-gradient(
     to top,
     #f6f4e8,
@@ -61,24 +35,15 @@ h1, h2, h3, h4, h5, h6, strong {
     #f0ebd2
   );
 
-  /* --bg-gradient: linear-gradient(
-    to top,
-    #f2f2f2,
-    #ffffff,
-    #f2f2f2
-  ); */
-
   --bg-offset: #e7e4d3;
-  --primary: #1db954;
+  /* --primary: #1db954; og */
+  --primary: #15853c;
   --secondary: rgb(30, 32, 30);
   --border: rgb(155, 155, 155);
   --icon-filter: none;
 }
 
 [data-theme="dark"] {
-  /* this one is black/purple, works really well! */
-  /* --bg-offset: rgb(9, 0, 27); */
-
   --bg-gradient: linear-gradient(
     to top,
     #121212,
@@ -99,28 +64,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 html {
-  /* background-color: var(--bg-offset) !important; */
-
-  /* full gradient, save for now */
-  /* background-image: linear-gradient(
-    to top,
-    #1db954,
-    #009d79,
-    #007d86,
-    #005c77,
-    #1c3c53,
-    #232f3f,
-    #21232b,
-    #191919,
-    #171717,
-    #161616,
-    #141414,
-    #121212
-  ); */
-
-  /* dark gradient */
   background-image: var(--bg-gradient);
-
   height: 100vh;
   background-attachment: fixed;
   margin: 0;
