@@ -15,7 +15,7 @@ const Hero = ({ avatar }) => {
           src="https://avatars.githubusercontent.com/u/74884805?v=4"
           alt=""
         ></img> */}
-        <img src={avatar}></img>
+        <img src={avatar} alt="hand-drawn avatar"></img>
       </div>
       <div className={styles["hero-content"]}>
         <p>Hello, my name is Cody</p>

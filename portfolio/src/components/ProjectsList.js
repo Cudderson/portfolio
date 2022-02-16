@@ -16,6 +16,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectsList = () => {
 
+  // REMOVE FEATURES FROM PROJECTS
+
   return (
     <div className={styles['projects-list-outer']}>
       <div className={styles['projects-list-header']}>
@@ -80,6 +82,7 @@ const ProjectsList = () => {
           live_url="https://tesla-now.herokuapp.com"
           repo_url="https://github.com/Cudderson/tesla-now"
           features={project_features.tesla_now}
+          // add react to icons!!!
           icons={
             [
               {family: null, icon: custom_icons.django, text: 'Django'},
@@ -90,6 +93,26 @@ const ProjectsList = () => {
             ]
           }
           images={slider_images.tesla_now}
+        />
+        <br/>
+        <Project
+          name="Portfolio"
+          description={`
+            My personal portfolio; the site you're currently browsing.
+            Displays a short biography, featured programming projects, social links and contact info.
+          `}
+          live_url={null}
+          repo_url="https://github.com/Cudderson/portfolio"
+          features={project_features.nss}
+          icons={
+            [
+              {family: 'fab', icon: 'react', text: 'React'},
+              {family: 'fab', icon: 'js', text: 'Javascript'},
+              {family: 'fab', icon: 'html5', text: 'HTML5'},
+              {family: 'fab', icon: 'css3-alt', text: 'CSS3'}
+            ]
+          }
+          images={slider_images.portfolio}
         />
         <br/>
         <Project
