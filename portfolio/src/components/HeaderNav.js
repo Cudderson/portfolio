@@ -2,7 +2,6 @@ import styles from "./HeaderNav.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HeaderNav = ({ theme, setTheme }) => {
-  console.log(theme);
   const handleSetTheme = function () {
     if (theme === "dark") {
       document.documentElement.setAttribute("data-theme", "light");

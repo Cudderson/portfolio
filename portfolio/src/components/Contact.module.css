@@ -18,10 +18,8 @@
 .contact-form-container > h3 {
   padding-bottom: 1rem;
   margin: 0;
-  /* font-family: "Roboto", sans-serif; */
   font-family: "PT Serif", serif;
   font-size: clamp(22px, 3.5vw, 24px);
-  /* font-weight: bold; */
   font-weight: normal;
   text-align: center;
   text-decoration: underline;
@@ -48,10 +46,8 @@
   align-items: center;
   justify-content: center;
   column-gap: .3em;
-  /* border: 2px solid darkgray; */
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
-  /* border-radius: 9999px; */
   padding: .4em 1.2em;
   min-width: 200px;
   flex-basis: 1%;
@@ -66,17 +62,12 @@
 
 .contact-form > a:hover {
   transition: .5s;
-  /* border: 2px solid lawngreen; */
   color: var(--bg-offset);
   background-color: var(--secondary);
   opacity: 1;
 }
 
 @media (min-width: 715px) {
-  /* .contact-form-container {
-    padding-bottom: 6rem;
-  } */
-  
   .contact-form-container > h3 {
     padding-bottom: 2.5rem;
   }

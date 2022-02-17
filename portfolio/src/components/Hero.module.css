@@ -21,8 +21,6 @@
 .avatar-container > img {
   display: block;
   margin: 0 auto;
-  /* likely won't keep border */
-  /* border: 4px solid var(--primary); */
   border-radius: 50%;
   /* this handles mobile/desktop scaling */
   min-width: 240px;
@@ -36,7 +34,6 @@
   flex-grow: 1;
   justify-content: center;
   flex-basis: 50%;
-  /* border: 2px dashed hotpink; */
   padding: 0 1rem;
   min-width: 300px;
 }
@@ -46,7 +43,6 @@
   font-size: 19px;
   font-weight: 400;
   margin: .5rem 0;
-  /* color: var(--primary-white); */
   color: var(--secondary);
   transition: .5s;
 }

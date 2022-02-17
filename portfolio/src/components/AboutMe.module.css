@@ -5,7 +5,6 @@
   justify-content: center;
   column-gap: 0;
   row-gap: 2rem;
-  /* border: 1px solid violet; */
   padding: 8rem 0;
   width: 80%;
   margin: 0 auto;
@@ -16,7 +15,6 @@
   flex-grow: 1;
   align-items: center;
   flex-basis: 40%;
-  /* border: 2px dashed aqua; */
   padding: 1.5rem 0;
   min-width: 320px;
 }
@@ -24,7 +22,6 @@
 .about-avatar > img {
   display: block;
   margin: 0 auto;
-  /* border: 1px dotted black; */
   border-radius: 50%;
   /* this handles mobile/desktop scaling */
   min-width: 240px;
@@ -38,10 +35,8 @@
   flex-grow: 1;
   justify-content: center;
   flex-basis: 40%;
-  /* border: 2px dashed hotpink; */
   padding: 0 1rem;
   min-width: 300px;
-  /* text-align: right; */
 }
 
 .about-content > p {
@@ -52,66 +47,3 @@
   color: var(--secondary);
   white-space: pre-wrap;
 }
-
-/* 
-.about-me-container {
-  margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  max-width: 650px;
-  border-bottom: 1px solid black;
-}
-
-.about-me-container > h2 {
-  margin: 0;
-  font-family: 'PT Serif', serif;
-  font-size: 50px;
-  font-weight: normal;
-}
-
-.about-me-container > h3, .about-me-container p {
-  margin: 1.5rem 0;
-  line-height: 1.7rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-}
-
-.about-me-container > h3 {
-  color: green;
-}
-
-.harvard {
-  padding: 0 .25rem;
-  text-decoration: none;
-  color: rgb(165, 28, 48);
-}
-
-.harvard:hover {
-  text-decoration: underline;
-}
-
-.certificate {
-  font-style: italic;
-  color: darkgray;
-}
-
-.certificate:hover {
-  color: black;
-} */
-
-/* 
-  harvard crimson vs css crimson
-  color: rgb(165, 28, 48); 
-  color: crimson;
-*/
-
-/* media queries */
-/* @media (min-width: 500px) {
-  .about-me-container > h2 {
-    font-size: 75px;
-  }
-
-  .about-me-container > h3, .about-me-container p {
-    font-size: 19px;
-  }
-} */

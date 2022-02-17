@@ -6,7 +6,6 @@
   align-items: center;
   background-color: var(--bg-offset);
   color: var(--secondary);
-  /* opacity: .85; */
 }
 
 .project-tech-icon > span {
@@ -14,7 +13,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: var(--secondary);
-  /* opacity: .75; */
 }
 
 .project-tech-icon > img {
