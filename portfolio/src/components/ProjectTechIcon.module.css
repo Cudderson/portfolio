@@ -20,6 +20,8 @@
 .project-tech-icon > img {
   width: 14px;
   height: 14px;
+  background-color: var(--secondary);
+  border-radius: 4px;
 }
 
 @media (min-width: 500px) {

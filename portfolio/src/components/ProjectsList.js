@@ -3,10 +3,9 @@ import styles from './ProjectsList.module.css';
 
 // get django/plotly (change location)
 // rest of icons imported into <App /> globally
-import custom_icons from './../assets/badges/badges.js';
+import custom_icons from '../assets/custom-icons/customIcons.js';
 
 import slider_images from './../assets/images/slider_images.js';
-import { project_features } from '../utilities/project_features_util.js';
 
 // for <h3> header
 import ProjectTechIcon from './ProjectTechIcon.js';
@@ -38,7 +37,6 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/natural-selection"
-          features={project_features.nss}
           icons={
             [
               {family: 'fab', icon: 'js', text: 'Javascript'},
@@ -59,7 +57,6 @@ const ProjectsList = () => {
           `}
           live_url="https://getkokoro.herokuapp.com"
           repo_url="https://github.com/Cudderson/kokoro-app"
-          features={project_features.kokoro}
           icons={
             [
               {family: null, icon: custom_icons.django, text: 'Django'},
@@ -81,15 +78,14 @@ const ProjectsList = () => {
           `}
           live_url="https://tesla-now.herokuapp.com"
           repo_url="https://github.com/Cudderson/tesla-now"
-          features={project_features.tesla_now}
-          // add react to icons!!!
           icons={
             [
               {family: null, icon: custom_icons.django, text: 'Django'},
               {family: null, icon: custom_icons.plotly, text: 'Plotly'},
+              {family: 'fab', icon: 'react', text: 'React'},
+              {family: 'fab', icon: 'js', text: 'Javascript'},
               {family: 'fab', icon: 'html5', text: 'HTML5'},
               {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-              {family: 'fab', icon: 'bootstrap', text: 'Bootstrap'}
             ]
           }
           images={slider_images.tesla_now}
@@ -103,7 +99,6 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/portfolio"
-          features={project_features.nss}
           icons={
             [
               {family: 'fab', icon: 'react', text: 'React'},
@@ -123,7 +118,6 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/password-manager"
-          features={project_features.password_manager}
           icons={
             [
               {family: 'fab', icon: 'python', text: 'Python'},

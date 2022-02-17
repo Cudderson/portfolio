@@ -4,7 +4,7 @@ import styles from "./Skills.module.css";
 
 // get django/plotly (change location)
 // rest of icons imported into <App /> globally
-import custom_icons from "./../assets/badges/badges.js";
+import custom_icons from "./../assets/custom-icons/customIcons.js";
 
 const skillsIcons = {
   row1: [
