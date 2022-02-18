@@ -12,7 +12,11 @@ const Hero = ({ avatar }) => {
   return (
     <div className={styles["hero-container"]}>
       <div className={styles["avatar-container"]}>
-        <img src={avatar} alt="hand-drawn avatar"></img>
+        {avatar ? (
+          <img src={avatar} alt="hand-drawn avatar"></img>
+        ) : (
+          <div className={styles["filler-div"]}></div>
+        )}
       </div>
       <div className={styles["hero-content"]}>
         <p>Hello, my name is Cody</p>

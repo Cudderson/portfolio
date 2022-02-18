@@ -18,7 +18,7 @@
   padding: 1.5rem 0;
 }
 
-.avatar-container > img {
+.avatar-container > img, .filler-div {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
@@ -26,6 +26,10 @@
   min-width: 240px;
   width: 50%;
   max-width: 300px;
+}
+
+.filler-div {
+  background-color: var(--bg-gradient);
 }
 
 .hero-content {
