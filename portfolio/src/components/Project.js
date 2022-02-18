@@ -12,23 +12,22 @@ const Project = (props) => {
   const image_ref = useRef(null);
   const text_ref = useRef(null);
 
-  // we are creating eventListeners on the initial render in useEffect()
-
   // options for IntersectionObserver
   // omitted values are default
-  // *** consider setting this to state??
   let options = {
     // root: null,
     // rootMargin: '0px',
     threshold: 0.6,
   };
-  // consider extracting this code into their own hooks if possible
 
   // intersection observer for project.image-container
   useEffect(() => {
     const image_observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains(styles["slidein-image"])
+        ) {
           entry.target.classList.add(styles["slidein-image"]);
         }
       });
@@ -37,24 +36,26 @@ const Project = (props) => {
     if (image_ref.current) {
       image_observer.observe(image_ref.current);
     }
-  }, [image_ref.current]);
+  });
 
   // intersection observer for project.text
   useEffect(() => {
     const text_observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // proper way to add class with current method
+        if (
+          entry.isIntersecting &&
+          !entry.target.classList.contains(styles["slidein-text"])
+        ) {
           entry.target.classList.add(styles["slidein-text"]);
         }
       });
     }, options);
 
-    // 'current' refers to the mounted <h2> element
+    // 'current' refers to the mounted div element
     if (text_ref.current) {
       text_observer.observe(text_ref.current);
     }
-  }, [text_ref.current]); // depedency array could be empty, but populating for now (FIX)
+  });
 
   return (
     <div className={styles.project}>
