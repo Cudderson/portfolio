@@ -1,33 +1,26 @@
-import Project from './Project';
-import styles from './ProjectsList.module.css';
+import Project from "./Project";
+import styles from "./ProjectsList.module.css";
 
-// get django/plotly (change location)
+// get django/plotly icons 
 // rest of icons imported into <App /> globally
-import custom_icons from '../assets/custom-icons/customIcons.js';
+import custom_icons from "../assets/custom-icons/customIcons.js";
+import slider_images from "./../assets/images/slider_images.js";
 
-import slider_images from './../assets/images/slider_images.js';
-
-// for <h3> header
-import ProjectTechIcon from './ProjectTechIcon.js';
-
-// for all-work
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ProjectTechIcon from "./ProjectTechIcon.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectsList = () => {
-
-  // REMOVE FEATURES FROM PROJECTS
-
   return (
-    <div className={styles['projects-list-outer']}>
-      <div className={styles['projects-list-header']}>
+    <div className={styles["projects-list-outer"]}>
+      <div className={styles["projects-list-header"]}>
         <h2>Featured Projects</h2>
-        <div className={styles['separator']}></div>
+        <div className={styles["separator"]}></div>
       </div>
-      <div className={styles['projects-list-sub-header']}>
+      <div className={styles["projects-list-sub-header"]}>
         <p>All projects built solely by me using</p>
-        <ProjectTechIcon family='fab' icon='git-alt' text='Git' />
+        <ProjectTechIcon family="fab" icon="git-alt" text="Git" />
       </div>
-      <div className={styles['projects-list-inner']}>
+      <div className={styles["projects-list-inner"]}>
         <Project
           name="Natural Selection Simulator"
           description={`
@@ -37,19 +30,16 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/natural-selection"
-          icons={
-            [
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-              {family: 'fab', icon: 'node-js', text: 'Node'}
-            ]
-          }
+          icons={[
+            { family: "fab", icon: "js", text: "Javascript" },
+            { family: "fab", icon: "html5", text: "HTML5" },
+            { family: "fab", icon: "css3-alt", text: "CSS3" },
+            { family: "fab", icon: "node-js", text: "Node" },
+          ]}
           images={slider_images.nss}
         />
-        {/* prevents collapsing margins */}
-        <br/>
-        <Project 
+        <br />
+        <Project
           name="kokoro"
           description={`
             Personal wellness app and social space focused on balancing the mind, body and soul.
@@ -57,19 +47,17 @@ const ProjectsList = () => {
           `}
           live_url="https://getkokoro.herokuapp.com"
           repo_url="https://github.com/Cudderson/kokoro-app"
-          icons={
-            [
-              {family: null, icon: custom_icons.django, text: 'Django'},
-              {family: 'fab', icon: 'python', text: 'Python'},
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-              {family: 'fas', icon: 'database', text: 'SQL'}
-            ]
-          }
+          icons={[
+            { family: null, icon: custom_icons.django, text: "Django" },
+            { family: "fab", icon: "python", text: "Python" },
+            { family: "fab", icon: "js", text: "Javascript" },
+            { family: "fab", icon: "html5", text: "HTML5" },
+            { family: "fab", icon: "css3-alt", text: "CSS3" },
+            { family: "fas", icon: "database", text: "SQL" },
+          ]}
           images={slider_images.kokoro}
         />
-        <br/>
+        <br />
         <Project
           name="Tesla Now"
           description={`
@@ -78,19 +66,17 @@ const ProjectsList = () => {
           `}
           live_url="https://tesla-now.herokuapp.com"
           repo_url="https://github.com/Cudderson/tesla-now"
-          icons={
-            [
-              {family: null, icon: custom_icons.django, text: 'Django'},
-              {family: null, icon: custom_icons.plotly, text: 'Plotly'},
-              {family: 'fab', icon: 'react', text: 'React'},
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'},
-            ]
-          }
+          icons={[
+            { family: null, icon: custom_icons.django, text: "Django" },
+            { family: null, icon: custom_icons.plotly, text: "Plotly" },
+            { family: "fab", icon: "react", text: "React" },
+            { family: "fab", icon: "js", text: "Javascript" },
+            { family: "fab", icon: "html5", text: "HTML5" },
+            { family: "fab", icon: "css3-alt", text: "CSS3" },
+          ]}
           images={slider_images.tesla_now}
         />
-        <br/>
+        <br />
         <Project
           name="Portfolio"
           description={`
@@ -99,17 +85,15 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/portfolio"
-          icons={
-            [
-              {family: 'fab', icon: 'react', text: 'React'},
-              {family: 'fab', icon: 'js', text: 'Javascript'},
-              {family: 'fab', icon: 'html5', text: 'HTML5'},
-              {family: 'fab', icon: 'css3-alt', text: 'CSS3'}
-            ]
-          }
+          icons={[
+            { family: "fab", icon: "react", text: "React" },
+            { family: "fab", icon: "js", text: "Javascript" },
+            { family: "fab", icon: "html5", text: "HTML5" },
+            { family: "fab", icon: "css3-alt", text: "CSS3" },
+          ]}
           images={slider_images.portfolio}
         />
-        <br/>
+        <br />
         <Project
           name="password manager"
           description={`
@@ -118,25 +102,29 @@ const ProjectsList = () => {
           `}
           live_url={null}
           repo_url="https://github.com/Cudderson/password-manager"
-          icons={
-            [
-              {family: 'fab', icon: 'python', text: 'Python'},
-              {family: 'fas', icon: 'database', text: 'SQL'}
-            ]
-          }
+          icons={[
+            { family: "fab", icon: "python", text: "Python" },
+            { family: "fas", icon: "database", text: "SQL" },
+          ]}
           images={slider_images.password_manager}
         />
       </div>
       <hr />
-      <div className={styles['all-work']}>
-          <strong>View code and documentation for each project on Github, including what I'm working on now:</strong>
-          <a href="https://github.com/Cudderson">
-            <FontAwesomeIcon icon={['fab', 'github']} className={styles['all-work-icon']} />
-            View Profile
-          </a>
+      <div className={styles["all-work"]}>
+        <strong>
+          View code and documentation for each project on Github, including what
+          I'm working on now:
+        </strong>
+        <a href="https://github.com/Cudderson">
+          <FontAwesomeIcon
+            icon={["fab", "github"]}
+            className={styles["all-work-icon"]}
+          />
+          View Profile
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectsList;

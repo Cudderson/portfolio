@@ -3,11 +3,7 @@ import styles from './Contact.module.css';
 
 const Contact = () => {
   return (
-    // image images on either side of this container
     <div className={styles['contact-form-container']}>
-      {/* <div className={styles['contact-image-container']}>
-        <img src="https://avatars.githubusercontent.com/u/74884805?v=4" alt="my_avatar"></img>
-      </div> */}
       <h3>
         Contact Me
       </h3>

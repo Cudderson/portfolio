@@ -1,8 +1,7 @@
-// the new portfolio will have a dedicated skills section
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./Skills.module.css";
 
-// get django/plotly (change location)
+// get django/plotly icons
 // rest of icons imported into <App /> globally
 import custom_icons from "./../assets/custom-icons/customIcons.js";
 

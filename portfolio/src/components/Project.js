@@ -12,9 +12,6 @@ const Project = (props) => {
   const image_ref = useRef(null);
   const text_ref = useRef(null);
 
-  // this should only appear on initial project renders (5 times)
-  // console.log("rerendered!");
-
   // we are creating eventListeners on the initial render in useEffect()
 
   // options for IntersectionObserver
@@ -49,15 +46,7 @@ const Project = (props) => {
         if (entry.isIntersecting) {
           // proper way to add class with current method
           entry.target.classList.add(styles["slidein-text"]);
-
-          // we don't need to rerender the component, as we're just adding a class
-          // console.log("class added");
         }
-        // else {
-        //   // remove class when element leaves visibility (make sure you want this)
-        //   entry.target.classList.remove(styles.fadein);
-        //   console.log("class removed");
-        // }
       });
     }, options);
 
@@ -65,7 +54,7 @@ const Project = (props) => {
     if (text_ref.current) {
       text_observer.observe(text_ref.current);
     }
-  }, [text_ref.current]); // depedency array could be empty, but populating for now
+  }, [text_ref.current]); // depedency array could be empty, but populating for now (FIX)
 
   return (
     <div className={styles.project}>
@@ -73,7 +62,6 @@ const Project = (props) => {
         <ImageSlider images={props.images} />
       </div>
       <div className={styles["project-text"]} ref={text_ref}>
-        {/* shrink long title sizes to smaller font size */}
         {props.name.length < 20 ? (
           <h2 className={styles["project-title"]}>{props.name}</h2>
         ) : (

@@ -4,17 +4,14 @@ import { useEffect } from "react";
 // recreate hero section
 const Hero = ({ avatar }) => {
   useEffect(() => {
-    document.getElementsByClassName(styles['hero-container'])[0].classList.add(styles['fade-in']);
+    document
+      .getElementsByClassName(styles["hero-container"])[0]
+      .classList.add(styles["fade-in"]);
   }, []);
 
   return (
     <div className={styles["hero-container"]}>
-      {/* this should contain my avatar, as well as "about" text */}
       <div className={styles["avatar-container"]}>
-        {/* <img
-          src="https://avatars.githubusercontent.com/u/74884805?v=4"
-          alt=""
-        ></img> */}
         <img src={avatar} alt="hand-drawn avatar"></img>
       </div>
       <div className={styles["hero-content"]}>
@@ -28,17 +25,5 @@ const Hero = ({ avatar }) => {
     </div>
   );
 };
-
-// const Hero = () => {
-//   return (
-//     <div className={styles['hero-container']}>
-//       <h2>I'm a frontend developer</h2>
-//       <h2>with a passion for the modern web.</h2>
-//       {/* <h2>I'm a web developer from Wisconsin.</h2>
-//       <h2>I create efficient tech solutions using</h2>
-//       <h2>passion, persistence, and a positive attitude.</h2> */}
-//     </div>
-//   )
-// }
 
 export default Hero;

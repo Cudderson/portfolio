@@ -18,7 +18,7 @@ import {
   faMoon,
   faSun,
   faLongArrowAltLeft,
-  faLongArrowAltRight
+  faLongArrowAltRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
