@@ -31,10 +31,10 @@ const ImageSlider = (props) => {
   return (
     <div className={styles["image-slider"]} ref={sliderElement}>
       <img src={props.images[display_index]} alt="" />
-      <button className={styles.prev} onClick={() => handleSliderClick("prev")}>
+      <button className={styles.prev} name="left-btn" onClick={() => handleSliderClick("prev")}>
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-left"]} />
       </button>
-      <button className={styles.next} onClick={() => handleSliderClick("next")}>
+      <button className={styles.next} name="right-btn" onClick={() => handleSliderClick("next")}>
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} />
       </button>
     </div>

@@ -1,4 +1,5 @@
-.project-links > h4 {
+.project-links > span {
+  display: block;
   margin-bottom: .25rem;
   font-family: "Verdana";
   font-size: 12px;

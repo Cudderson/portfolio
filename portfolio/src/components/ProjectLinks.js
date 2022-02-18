@@ -3,7 +3,7 @@ import styles from "./ProjectLinks.module.css";
 const ProjectLinks = (props) => {
   return (
     <div className={styles["project-links"]}>
-      <h4>Links</h4>
+      <span>Links</span>
       {props.live_url ? (
         <a
           href={props.live_url}
