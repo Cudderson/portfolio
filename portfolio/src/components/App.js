@@ -1,36 +1,37 @@
-import Header from './Header';
-import Hero from './Hero';
-import ProjectsList from './ProjectsList';
-import AboutMe from './AboutMe.js';
-import ContactForm from './ContactForm.js';
-import Footer from './Footer.js';
+import Header from "./Header";
+import Hero from "./Hero";
+import Skills from "./Skills";
+import ProjectsList from "./ProjectsList";
+import AboutMe from "./AboutMe.js";
+import Contact from "./Contact.js";
+import Footer from "./Footer.js";
 
-import styles from './App.module.css';
+import styles from "./App.module.css";
 
-// fa library
-import './../utilities/fa_library.js';
+import avatar from './../assets/images/avatar.jpg';
+
+import "./../utilities/fa_library.js";
+
+import { useState } from "react";
 
 const App = () => {
-
-  // probably do this better in future (use/add class)
-  document.querySelector('body').style.margin = 0;
-  document.querySelector('html').style.margin = 0;
-  document.querySelector('body').style.padding = 0;
-  document.querySelector('html').style.padding = 0;
+  const [theme, setTheme] = useState("dark");
 
   return (
     <div>
-      {/* header should cover 100% width, but inner container should be capped to 90% / 1200px (same as '.app-main') */}
-      <Header />
-      <main className={styles['app-main']}>
-        <Hero />
+      <Header theme={theme} setTheme={setTheme} avatar={avatar} />
+      <main className={styles["app-main"]}>
+        <Hero avatar={avatar} />
+        <Skills />
         <ProjectsList />
-        <AboutMe />
-        <ContactForm />
+        <hr />
+        <AboutMe avatar={avatar} />
+        <hr />
+        <Contact />
       </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default App;

@@ -1,0 +1,138 @@
+.skills-outer {
+  padding: 150px 0;
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  margin-top: 50px;
+  padding: 0 0 8rem;
+}
+
+/* identical to ProjectsList header(h2)
+    consider global h2 style
+*/
+.skills-header > h2 {
+  margin: 0;
+  font-family: 'PT Serif', serif;
+  font-size: clamp(20px, 2.5vw, 32px);
+  word-break: keep-all;
+  color: var(--primary);
+}
+
+.separator {
+  display: inline-block;
+  border-top: 2px solid var(--border);
+  margin-top: 10px;
+  width: 100%;
+  height: 1px;
+}
+
+.skills-inner {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  column-gap: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+  row-gap: .5rem;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 48%;
+  min-width: 400px;
+  flex-grow: 1;
+}
+
+.skills-list > li {
+  transition: .25s;
+  color: rgb(131, 138, 132);
+}
+
+.skills-list > li:hover {
+  transition: .25s;
+  color: var(--secondary);
+}
+
+.skills-list > li > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 38px;
+  font-family: "Roboto", sans-serif;
+}
+
+.skills-list > li > span > svg,
+.skills-list > li > img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  transition: .25s;
+}
+
+.skills-list > li > img {
+  filter: var(--icon-filter);
+}
+
+/* filter works for both themes */
+.skills-list > li > img:hover {
+  filter: invert(59%) sepia(14%) saturate(2345%) hue-rotate(88deg) brightness(94%) contrast(91%);
+}
+
+/* set initial color for svgs */
+.skills-list svg path {
+  display: block;
+  fill: var(--secondary);
+  transition: .25s;
+}
+
+.skills-list svg:hover,
+.skills-list > li > img:hover {
+  transform: translateY(-12px);
+  transition: .25s;
+  color: var(--primary);
+}
+
+/* set path color here, cannot transform path in above selector while targeting 'fill' */
+.skills-list svg:hover path {
+  fill: var(--primary);
+}
+
+.skill-text {
+  display: block;
+  font-size: 16px !important;
+  padding-top: 1rem;
+}
+
+/* mobile styles */
+@media (max-width: 450px) {
+  .skills-list {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .skills-list > li > span {
+    font-size: 30px;
+  }
+
+  .skills-list > li > img,
+  .skills-list > li > span > svg {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+  }
+
+  .skill-text {
+    font-size: 12px !important;
+  }
+}

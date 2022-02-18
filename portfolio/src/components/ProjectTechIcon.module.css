@@ -1,31 +1,28 @@
 .project-tech-icon {
   display: inline-flex;
   border-radius: 9999px;
-  padding: 6px 12px;
-  font-size: 20px;
+  padding: 7px 14px;
+  font-size: 13px;
   align-items: center;
-  background-color: rgb(240, 240, 240);
-  color: black;
+  background-color: var(--bg-offset);
+  color: var(--secondary);
 }
 
 .project-tech-icon > span {
   padding-left: 5px;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
   font-weight: 500;
-  color: black;
+  color: var(--secondary);
 }
 
 .project-tech-icon > img {
   width: 14px;
   height: 14px;
+  background-color: var(--secondary);
+  border-radius: 4px;
 }
 
 @media (min-width: 500px) {
-  .project-tech-icon > span {
-    font-size: 15px;
-  }
-  
   .project-tech-icon > img {
     width: 16px;
     height: 16px;

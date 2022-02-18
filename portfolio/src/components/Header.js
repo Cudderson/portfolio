@@ -1,16 +1,16 @@
-import styles from './Header.module.css';
-import HeaderBrand from './HeaderBrand';
-import HeaderNav from './HeaderNav';
+import styles from "./Header.module.css";
+import HeaderBrand from "./HeaderBrand";
+import HeaderNav from "./HeaderNav";
 
-const Header = () => {
+const Header = ({ theme, setTheme, avatar }) => {
   return (
     <header className={styles.header}>
       <div>
-        <HeaderBrand />
-        <HeaderNav />
+        <HeaderBrand avatar={avatar} />
+        <HeaderNav theme={theme} setTheme={setTheme} />
       </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

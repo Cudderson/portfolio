@@ -1,49 +1,58 @@
 .hero-container {
-  padding: 8rem 0rem 10rem; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 0;
+  row-gap: 2rem;
+  padding-top: 4rem;
+  opacity: 0;
+  transform: translateX(15px);
+  transition: .5s;
 }
 
-.hero-container > h2 {
-  display: inline;
-  margin: 0;
-  position: relative;
-  font-family: "PT Serif", sans-serif;
-  font-size: clamp(24px, 3.5vw, 48px);
-  font-weight: 700;
+.avatar-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-basis: 50%;
+  padding: 1.5rem 0;
 }
 
-.hero-container > h2:nth-child(2),
-.hero-container > h2:nth-child(3) {
-  padding-left: 5px;
+.avatar-container > img, .filler-div {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  /* this handles mobile/desktop scaling */
+  min-width: 240px;
+  width: 50%;
+  max-width: 300px;
 }
 
-/* .floating-image {
-  position: absolute;
-  z-index: -1;
-  top: -50px;
-  right: -75px;
-  border-radius: 2px;
-  width: 300px;
-  height: 375px;
-  background-color: crimson;
-  font-size: 14px;
-} */
-
-/* use multiple media queries if needed to get hero font-size correct */
-@media (min-width: 570px) {
-  /* to solve: make text scale so that new lines arent created on shrink */
-  /* new lines = push down featured projects */
-  .hero-container > h2:nth-child(1),
-  .hero-container > h2:nth-child(2),
-  .hero-container > h2:nth-child(3) {
-    display: block;
-    padding: 0;
-  }
-  
+.filler-div {
+  background-color: var(--bg-gradient);
 }
 
-@media (min-width: 1000px) {
-  .hero-container {
-    width: 85%;
-    padding: 7rem 0rem 17em; 
-  }
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  flex-basis: 50%;
+  padding: 0 1rem;
+  min-width: 300px;
+}
+
+.hero-content > p {
+  font-family: "PT Serif", serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin: .5rem 0;
+  color: var(--secondary);
+  transition: .5s;
+}
+
+.fade-in {
+  transform: translateX(-15px);
+  opacity: 1;
+  transition: .75s;
 }

@@ -1,30 +1,46 @@
-.projects-list-outer {
-  color: black;
-  border-bottom: 1px solid black;
+.projects-list-header {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  margin-top: 50px;
+  padding: 0 0 0rem;
 }
 
-.projects-list-header {
+.projects-list-header > h2 {
   margin: 0 0 .1rem;
   font-family: 'PT Serif', serif;
-  font-size: clamp(20px, 2.5vw, 34px);
-  font-weight: 700;
+  font-size: clamp(20px, 2.5vw, 32px);
+  word-break: keep-all;
+  color: var(--primary);
+}
+
+.separator {
+  display: inline-block;
+  border-top: 2px solid var(--border);
+  margin-top: 10px;
+  height: 1px;
+  flex-grow: 1;
 }
 
 .projects-list-sub-header {
   display: flex;
   align-items: center;
+  padding-bottom: 4rem;
 }
 
-.projects-list-sub-header > h3 {
+.projects-list-sub-header > p {
   margin: 0 5px 0 0;
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  font-size: clamp(13px, 1.5vw, 16px);
+  font-style: italic;
+  font-size: clamp(13px, 1.5vw, 15px);
+  color: var(--secondary);
+  opacity: .75;
 }
 
 .all-work {
   margin: 0 auto;
-  padding: 0rem 0 6rem 0;
+  padding: 6rem 0;
   max-width: 500px;
   text-align: center;
 }
@@ -33,7 +49,10 @@
   display: block;
   padding-bottom: 2.5em;
   font-family: "PT Serif", serif;
-  font-size: clamp(14px, 3.5vw, 22px);
+  font-size: clamp(14px, 3.5vw, 20px);
+  font-weight: 400;
+  color: var(--secondary);
+  opacity: .9;
 }
 
 .all-work-icon {
@@ -41,21 +60,27 @@
 }
 
 .all-work > a {
-  border: 2px solid gray;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--secondary);
   border-radius: 4px;
   padding: .3em .6em;
+  width: 50%;
+  background-color: var(--bg-offset);
   font-family: "Roboto", sans-serif;
-  font-size: clamp(16px, 4vw, 26px);
-  color: black;
+  font-size: clamp(16px, 4vw, 22px);
+  color: var(--secondary);
   text-decoration: none;
   transition: .25s;
+  opacity: .8;
 }
 
 .all-work > a:hover {
-  border-color: rgb(46, 54, 46);
-  color: rgb(47, 255, 47);
-  background-color: rgb(46, 54, 46);
-  transition: .25s;
+  border-color: var(--bg-offset);
+  color: var(--bg-offset);
+  background-color: var(--secondary);
+  transition: .5s;
+  opacity: 1;
 }
 
 @media (min-width: 500px) {
@@ -64,7 +89,7 @@
   }
 
   .all-work {
-    padding: 4rem 0 10rem 0;
+    padding: 4rem 0;
   }
 }
 

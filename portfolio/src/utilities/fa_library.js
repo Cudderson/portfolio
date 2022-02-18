@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faHtml5,
   faCss3Alt,
@@ -10,8 +10,16 @@ import {
   faBootstrap,
   faLinkedin,
   faNodeJs,
-} from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faDatabase,
+  faEnvelope,
+  faMoon,
+  faSun,
+  faLongArrowAltLeft,
+  faLongArrowAltRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 library.add(
   faHtml5,
@@ -24,6 +32,11 @@ library.add(
   faBootstrap,
   faLinkedin,
   faNodeJs,
+  faEnvelope,
+  faMoon,
+  faSun,
+  faLongArrowAltLeft,
+  faLongArrowAltRight,
   faDatabase
 );
 

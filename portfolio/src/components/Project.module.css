@@ -2,9 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 2rem auto 6rem;
-
-  /* creates space between imageslider and project text when collapsing to 2 rows */
-  gap: 2rem; /* row-gap / column-gap */
+  gap: 2rem;
   justify-content: space-around;
 }
 
@@ -66,7 +64,7 @@
   margin: 0;
   font-family: 'PT Serif', serif;
   font-size: 28px;
-  font-weight: 700;
+  color: var(--primary);
 }
 
 .project-title-long {
@@ -78,12 +76,15 @@
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 1.55rem;
+  color: var(--secondary);  
 }
 
 .made-with {
   margin: 1.75rem 0 .5rem;
   font-family: 'Verdana';
-  font-size: 13px;
+  font-size: 12px;
+  color: var(--primary);
+  opacity: .75;
 }
 
 @media (min-width: 500px) {
@@ -97,7 +98,7 @@
 
   .project-description {
     margin: .8rem 0;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 

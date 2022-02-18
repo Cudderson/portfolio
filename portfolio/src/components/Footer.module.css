@@ -1,7 +1,8 @@
 footer {
-  border-top: 2px solid lightgray;
+  border-top: 1px solid var(--border);
   padding: 2rem 0;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .footer-inner {
@@ -23,24 +24,34 @@ footer {
   flex-basis: 50%;
 }
 
+.footer-inner > p > span,
+.footer-inner > div > span {
+  color: var(--secondary);
+  opacity: .75;
+}
+
 .footer-inner strong {
   display: block;
   font-family: "PT Serif", serif;
   padding-bottom: .4rem;
+  color: var(--secondary);
+  opacity: .75;
 }
 
 .footer-social > a {
   text-decoration: none;
-  color: black;
+  color: var(--secondary);
+  opacity: .75;
 }
 
 .footer-social > a:hover {
-  color: lightseagreen
+  opacity: 1;
 }
 
 .footer-social > span {
   margin: 0 .5rem;
   pointer-events: none;
+  color: var(--secondary);
 }
 
 @media (min-width: 700px) {

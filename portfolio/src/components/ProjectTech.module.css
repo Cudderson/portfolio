@@ -1,6 +1,5 @@
-/* consider using an element selector when final to reduce amount of class names */
 .project-tech-list {
-  /* reset <ul> */
+  /* reset <ul> (possible global?) */
   margin: 0;
   padding: 0;
 

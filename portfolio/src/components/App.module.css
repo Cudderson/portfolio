@@ -1,3 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url('./../assets/fonts/PTSerif-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url('./../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: 400;
+}
+
+[data-theme="light"] {
+  --bg-gradient: linear-gradient(
+    to top,
+    #f6f4e8,
+    #f5f2e4,
+    #f3f1df,
+    #f2efdb,
+    #f1edd7,
+    #f1ecd5,
+    #f0ecd4,
+    #f0ebd2,
+    #f0ebd2,
+    #f0ebd2,
+    #f0ebd2,
+    #f0ebd2
+  );
+
+  --bg-offset: #e7e4d3;
+  /* --primary: #1db954; og */
+  --primary: #15853c;
+  --secondary: rgb(30, 32, 30);
+  --border: rgb(155, 155, 155);
+  --icon-filter: none;
+}
+
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(
+    to top,
+    #121212,
+    #141414,
+    #161616,
+    #171717,
+    #171717,
+    #161616,
+    #141414,
+    #121212
+  );
+
+  --bg-offset: rgb(37, 37, 37);
+  --primary: #1db954;
+  --secondary: #f0ebd2;
+  --border: rgb(68, 68, 68);
+  --icon-filter: invert(96%) sepia(8%) saturate(507%) hue-rotate(1deg) brightness(97%) contrast(94%);
+}
+
+html {
+  background-image: var(--bg-gradient);
+  height: 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;
+  border-top: thin solid var(--border);
+  margin: 0;
+}
+
 .app-main {
   width: 90%;
   max-width: 1200px;

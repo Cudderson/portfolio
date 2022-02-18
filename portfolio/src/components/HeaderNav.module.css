@@ -1,4 +1,4 @@
-.header-nav > ul {
+.header-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -10,13 +10,26 @@
   list-style-type: none;
 }
 
-.icon {
-  font-size: 35px;
-  padding: 0 .25rem;
-  color: black;
+.header-nav > button {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  border: none;
+  background-color: transparent;
+  transition: .5s;
 }
 
-/* need to update for new links/icons */
-.header-nav > ul > li:hover {
-  color: goldenrod;
+.header-nav > button > .icon:hover {
+  color: gold;
+}
+
+.icon {
+  font-size: 36px;
+  padding: 0 .25rem;
+  transition: .5s;
+  color: var(--secondary);
+}
+
+.icon:hover {
+  transition: .5s;
+  color: var(--primary);
 }

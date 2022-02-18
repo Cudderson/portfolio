@@ -7,12 +7,12 @@
 .header-brand > img {
   border-radius: 50%;
   margin-right: .6rem;
-  max-width: 50px;
+  max-width: 40px;
 }
 
 .header-brand > span {
   font-family: "PT Serif", serif;
-  font-size: 17px;
-  font-weight: 700;
-  /* font-family: "Roboto", sans-serif; */
+  font-size: 14px;
+  color: var(--secondary);
+  transition: .5s;
 }
