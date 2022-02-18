@@ -6,45 +6,35 @@ const ImageSlider = (props) => {
   const [display_index, setDisplayIndex] = useState(0);
   const sliderElement = useRef(null);
 
+  // on image (state) change, fade component back in by removing the fade-out class
   useEffect(() => {
-    // when the display index changes, re-run the animation
-    if (display_index !== 0) {
-      sliderElement.current.classList.add(styles['flash-animation']);
-
-
-      // TODO: remove class when animation ends, so that it will replay on next transition
-      // currently, it works, but breaks if you click a photo before the animation is over
-      sliderElement.current.addEventListener('animationstart', () => {
-        sliderElement.current.classList.add(styles['freeze']);
-      })
-
-      sliderElement.current.addEventListener('animationend', () => {
-        sliderElement.current.classList.remove(styles['flash-animation']);
-        sliderElement.current.classList.remove(styles['freeze']);
-      })
-    }
+    sliderElement.current.classList.remove(styles["hide"]);
   }, [display_index]);
 
-  const calcDisplayIndex = (button_pressed) => {
+  const handleSliderClick = async (button_pressed) => {
+    sliderElement.current.classList.add(styles["hide"]);
 
-    if (button_pressed === "prev") {
-      setDisplayIndex(
-        display_index === 0 ? props.images.length - 1 : display_index - 1
-      );
-    } else if (button_pressed === "next") {
-      setDisplayIndex(
-        display_index === props.images.length - 1 ? 0 : display_index + 1
-      );
-    }
+    // update state when animation finishes (component hidden)
+    setTimeout(() => {
+      if (button_pressed === "prev") {
+        setDisplayIndex(
+          display_index === 0 ? props.images.length - 1 : display_index - 1
+        );
+      } else if (button_pressed === "next") {
+        setDisplayIndex(
+          display_index === props.images.length - 1 ? 0 : display_index + 1
+        );
+      }
+    }, 500);
   };
 
   return (
     <div className={styles["image-slider"]} ref={sliderElement}>
       <img src={props.images[display_index]} alt="" />
-      <button className={styles.prev} onClick={() => calcDisplayIndex("prev")} >
+      <button className={styles.prev} onClick={() => handleSliderClick("prev")}>
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-left"]} />
       </button>
-      <button className={styles.next} onClick={() => calcDisplayIndex("next")}>
+      <button className={styles.next} onClick={() => handleSliderClick("next")}>
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} />
       </button>
     </div>

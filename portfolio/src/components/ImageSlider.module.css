@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
+  transition: .4s;
 }
 
 .image-slider > img {
@@ -12,24 +13,9 @@
   box-shadow: -4px 6px 12px rgba(0, 0, 0, .5);
 }
 
-.freeze {
-  pointer-events: none;
-}
-
 /* animation on photo change */
-.flash-animation {
-  animation-duration: .75s;
-  animation-name: flash;
-}
-
-@keyframes flash {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.hide {
+  opacity: 0;
 }
 
 .prev, .next {
