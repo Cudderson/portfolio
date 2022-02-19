@@ -9,5 +9,5 @@
 <br>
 
 <p>
-  <h3>My portfolio site is built with React and displays a short biogrpahy, featured personal projects, social links and contact information.</h3>
+  <h3>My portfolio site is built with React and displays a short biography, featured personal projects, social links and contact information.</h3>
 </p>
