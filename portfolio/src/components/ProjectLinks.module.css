@@ -15,7 +15,8 @@
   padding: .3rem .65rem;
 
   background-color: var(--bg-offset);
-  text-decoration: 0;
+  text-decoration: none;
+  -webkit-text-decoration: none;
   font-family: "Roboto", serif;
   font-size: 15px;
   color: var(--secondary);

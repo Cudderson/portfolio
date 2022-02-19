@@ -8,10 +8,13 @@ const ImageSlider = (props) => {
 
   // on image (state) change, fade component back in by removing the fade-out class
   useEffect(() => {
-    sliderElement.current.classList.remove(styles["hide"]);
+    // make sure new image loaded before showing slider
+    setTimeout(() => {
+      sliderElement.current.classList.remove(styles["hide"]);
+    }, 250);
   }, [display_index]);
 
-  const handleSliderClick = async (button_pressed) => {
+  const handleSliderClick = (button_pressed) => {
     sliderElement.current.classList.add(styles["hide"]);
 
     // update state when animation finishes (component hidden)
@@ -25,7 +28,7 @@ const ImageSlider = (props) => {
           display_index === props.images.length - 1 ? 0 : display_index + 1
         );
       }
-    }, 500);
+    }, 400);
   };
 
   return (
