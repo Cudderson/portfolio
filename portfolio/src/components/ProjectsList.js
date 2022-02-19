@@ -1,7 +1,7 @@
 import Project from "./Project";
 import styles from "./ProjectsList.module.css";
 
-// get django/plotly icons 
+// get django/plotly icons
 // rest of icons imported into <App /> globally
 import custom_icons from "../assets/custom-icons/customIcons.js";
 import slider_images from "./../assets/images/slider_images.js";
@@ -34,28 +34,9 @@ const ProjectsList = () => {
             { family: "fab", icon: "js", text: "Javascript" },
             { family: "fab", icon: "html5", text: "HTML5" },
             { family: "fab", icon: "css3-alt", text: "CSS3" },
-            { family: "fab", icon: "node-js", text: "Node" },
+            // { family: "fab", icon: "node-js", text: "Node" }, not added yet
           ]}
           images={slider_images.nss}
-        />
-        <br />
-        <Project
-          name="kokoro"
-          description={`
-            Personal wellness app and social space focused on balancing the mind, body and soul.
-            Complete daily activities, add friends, write posts, and more!
-          `}
-          live_url="https://getkokoro.herokuapp.com"
-          repo_url="https://github.com/Cudderson/kokoro-app"
-          icons={[
-            { family: null, icon: custom_icons.django, text: "Django" },
-            { family: "fab", icon: "python", text: "Python" },
-            { family: "fab", icon: "js", text: "Javascript" },
-            { family: "fab", icon: "html5", text: "HTML5" },
-            { family: "fab", icon: "css3-alt", text: "CSS3" },
-            { family: "fas", icon: "database", text: "SQL" },
-          ]}
-          images={slider_images.kokoro}
         />
         <br />
         <Project
@@ -75,6 +56,25 @@ const ProjectsList = () => {
             { family: "fab", icon: "css3-alt", text: "CSS3" },
           ]}
           images={slider_images.tesla_now}
+        />
+        <br />
+        <Project
+          name="kokoro"
+          description={`
+            Personal wellness app and social space focused on balancing the mind, body and soul.
+            Complete daily activities, add friends, write posts, and more!
+          `}
+          live_url="https://getkokoro.herokuapp.com"
+          repo_url="https://github.com/Cudderson/kokoro-app"
+          icons={[
+            { family: null, icon: custom_icons.django, text: "Django" },
+            { family: "fab", icon: "python", text: "Python" },
+            // { family: "fab", icon: "js", text: "Javascript" }, no js in this project yet
+            { family: "fab", icon: "html5", text: "HTML5" },
+            { family: "fab", icon: "css3-alt", text: "CSS3" },
+            { family: "fas", icon: "database", text: "SQL" },
+          ]}
+          images={slider_images.kokoro}
         />
         <br />
         <Project
