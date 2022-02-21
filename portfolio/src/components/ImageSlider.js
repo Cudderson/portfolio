@@ -3,21 +3,23 @@ import { useState, useEffect, useRef } from "react";
 import styles from "./ImageSlider.module.css";
 
 const ImageSlider = (props) => {
+  const [isHidden, setIsHidden] = useState(false);
   const [display_index, setDisplayIndex] = useState(0);
   const sliderElement = useRef(null);
 
-  // on image (state) change, fade component back in by removing the fade-out class
   useEffect(() => {
-    // make sure new image loaded before showing slider
+    // since setIsHidden(true) will trigger a state change, we need to wait to call setIsHidden(false) until
+    // the setDisplayIndex() state update occurs (new image displayed)
     setTimeout(() => {
-      sliderElement.current.classList.remove(styles["hide"]);
-    }, 250);
-  }, [display_index]);
+      setIsHidden(false);
+    }, 500);
+  }, [display_index]); // we only want the slider to be shown when a new image is added
 
   const handleSliderClick = (button_pressed) => {
-    sliderElement.current.classList.add(styles["hide"]);
+    // hide slider
+    setIsHidden(true);
 
-    // update state when animation finishes (component hidden)
+    // update displayed image when slider hidden (transition complete)
     setTimeout(() => {
       if (button_pressed === "prev") {
         setDisplayIndex(
@@ -32,12 +34,25 @@ const ImageSlider = (props) => {
   };
 
   return (
-    <div className={styles["image-slider"]} ref={sliderElement}>
+    <div
+      className={
+        isHidden ? styles["hidden-image-slider"] : styles["image-slider"]
+      }
+      ref={sliderElement}
+    >
       <img src={props.images[display_index]} alt="" />
-      <button className={styles.prev} name="left-btn" onClick={() => handleSliderClick("prev")}>
+      <button
+        className={styles.prev}
+        name="left-btn"
+        onClick={() => handleSliderClick("prev")}
+      >
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-left"]} />
       </button>
-      <button className={styles.next} name="right-btn" onClick={() => handleSliderClick("next")}>
+      <button
+        className={styles.next}
+        name="right-btn"
+        onClick={() => handleSliderClick("next")}
+      >
         <FontAwesomeIcon icon={["fas", "long-arrow-alt-right"]} />
       </button>
     </div>

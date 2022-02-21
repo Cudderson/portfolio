@@ -2,7 +2,17 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  transition: .4s;
+  transition: 250ms;
+}
+
+/* animation on photo change */
+.hidden-image-slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  transition: 3s;
+  opacity: 0;
+  transition: 250ms;
 }
 
 .image-slider > img {
@@ -11,11 +21,6 @@
   margin: auto;
   /* horizontal, vertical, blur, color */
   box-shadow: -4px 6px 12px rgba(0, 0, 0, .5);
-}
-
-/* animation on photo change */
-.hide {
-  opacity: 0;
 }
 
 .prev, .next {
